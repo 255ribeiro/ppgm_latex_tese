@@ -51,14 +51,8 @@
 
 \begin{frame}[fragile]{Premissas}
 
-  A qualidade dos deslocamentos de pessoas e veículos pela malha interna e/ou entre cidades é uma das grandes preocupações dos planejadores e gestores do ambiente urbano \cite{Bermudez-Edo2018}. Desde a constatação da pandemia do vírus SARS-CoV2, em 2020, o monitoramento destes deslocamentos em tempo real passou a ter implicações ainda mais urgentes e dramáticas.
-
-  Neste contexto, algumas plataformas digitais passaram a disponibilizar dados de mobilidade para consulta e download \cite{Oh2021,Tyrovolas2021,Szocska2021}.
-
-  Estudos já utilizam dados de redes sociais para entender o deslocamentos as pessoas nas cidades \cite{Tejaswin2015,Chaturvedi2020,Milusheva2021}.
   
-  É preciso entender os potenciais, as limitações e implicações éticas do uso destes dados
-  
+
 \end{frame}
 
 \begin{frame}{Mapa Exemplo}
@@ -69,24 +63,25 @@
 
 \begin{frame}{Objetivo Principal}
 
-A automação do processo de coleta e georreferenciamento  dos dados de mobilidade disponibilizados pelas plataformas digitais, em um conjunto de informações GIS de fácil visualização e manipulação.
+  Investigar as correlações entre as variáveis climáticas através do coeficiente \dmc e utilizar o conhecimento destas correlações para alimentar um modelo preditivo do clima.
 
   
 \end{frame}
 
 \begin{frame}{Objetivos Gerais}
 
-
-  \begin{itemize}
-		\item Entender a natureza dos dados.
-		\item Qual a precisão destas informações?
-		\item Como o anonimato dos usuários é tratado?
-		\item Estas informações podem agregar valor para pesquisadores, planejadores urbanos e gestores públicos?
-	\end{itemize}
+  \begin{enumerate}
+    \label{enum:obj_espec}
+    \item Implementar um algoritmo computacional geral para calcular o \dmc para qualquer número de séries temporais.
+    \item Analisar um conjunto de dados climáticos contendo medições meteorológicas de todas as capitais brasileiras.
+    \item Analisar um conjunto de dados meteorológicos sobre radiação solar com estações locadas em diversas partes do globo.
+    \item Desenvolver e implementar um algoritmo de predição baseado em aprendizado de máquina e redes neurais artificias agregados com o coeficiente \dmc.
+\end{enumerate}
 
 \end{frame}
 
-\section{Metodologia}
+
+\section{Fundamentação Teórica}
 
 \begin{frame}{Metodologia}
 
@@ -94,28 +89,17 @@ A automação do processo de coleta e georreferenciamento  dos dados de mobilida
 
 \end{frame}
 
-\begin{frame}{Fontes de dados}
+\begin{frame}{DFA - Algoritmo}
 
-  \begin{table}[]
-    \centering
-    \caption{Dados Utilizados}
-    \label{tabel:tab01}
-    \begin{adjustbox}{width=\textwidth}
-  
-    \begin{tabular}{|p{3cm}|p{1cm}|p{3cm}|p{1cm}|p{1cm}|p{2.5cm}|p{3cm}|}
-    \hline
-    Tema                   & Tipo    & Dados tabulares \newline associados     & Data & Fonte  & Escala/Resolução & Observações \\ \hline
-    Municípios do Brasil   & Vetor   & Nome, Estado, Região           & 2020 & IBGE   & Municipio        &             \\ \hline
-    Divisão territorial da cidade de Salvador   & Vetor   & Nome, Estado, Região           & 2020 & PMS   & bairro        &             \\ \hline
-    Google Mobility report & Tabular & Indices de movimentação e data & 2021 & Google & Municipio        &             \\ \hline
-    Apple Mobility		   & Tabular & Indices de movimentação e data & 2021 &  Apple & Verificar        &             \\ \hline
-    Waze         		   & Tabular & Indices de movimentação e data & 2021 &  Waze  & Verificar        &             \\ \hline
-    Ton Ton        		   & Tabular & Indices de movimentação e data & 2021 &  Ton Ton & Algumas cidades&             \\ \hline
-    Uber        		   & Tabular & início e destino de corridas (frequência) e data & 2021 &  Uber &  Bairro &             \\ \hline
-  
-    \end{tabular}
-      \end{adjustbox}
-    \end{table}
+  \begin{enumerate}
+    \label{dfa}
+    \item Pegando a série temporal \(\{x_{i}\}\) com  \(i\) variando de  \(1\) à \(N\), a série integrada \(X_{k}\) é calculada por \(X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right] \) com \(k\) também variando entre \(1\) e \(N\);
+    \item A série  \(X_{k}\) e dividida em \(N - n\) caixas de tamanha\(n\) (escala temporal), cada caixa contendo \(n + 1\) observações, iniciando em \(i\) até \(i + n\);
+    \item Para cada caixa um polinômio (geralmente de grau 1) é ajustado, gerando \(\widetilde{X}_{k, i}\) with \( i \le k \le (i + n) \) eliminando assim a tendência (detrended values);
+    \item  para cada caixa é calculado: \(f_{DFA}^{2}(n, i) = \frac{1}{1+n} \sum_{k=i}^{i + n}(X_{k}-\widetilde{X}_{k, i})^{2}\)
+    \item Para todas as caixas de umaescala temporal o DFA é calculado como: \(F_{DFA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DFA}^{2}(n, i)}\);
+    \item Para um número de diferentes escalas temorais (n), com valores possíveis entre \( 4 \le n \le \frac{N}{4}\), a função \(F_{DFA}\) é calculada para encontrar a relação entre \(F_{DFA} \times n\)
+  \end{enumerate}
  
 
 \end{frame}
@@ -131,7 +115,7 @@ A automação do processo de coleta e georreferenciamento  dos dados de mobilida
 \end{frame}
 
 
-\section{Resultados Esperados}
+\section{Resultados}
 
 \begin{frame}{Resultados Esperados}
 
@@ -163,9 +147,7 @@ A automação do processo de coleta e georreferenciamento  dos dados de mobilida
 \begin{frame}[allowframebreaks]
 
   \bibliography{../References/referencias.bib}
-
-
-
+  
 \end{frame}
 
 \end{document}
