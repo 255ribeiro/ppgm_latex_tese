@@ -1,0 +1,171 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+%Tabelas
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{pgfplotstable}
+
+% Equações
+\newcommand{\dmc}{\(DMC_x^2\) }
+\newcommand{\pdcca}{\({\rho}_{DCCA}\) }
+\newcommand{\fdfa}{\(F_{DFA}\) }
+
+% Dados da apresentação
+
+\title{\dmc e aprendizado de máquina aplicados à análise de dados se séries temporais do clima}
+\subtitle{Apresentação do andamento da pesquisa}
+%\date{\today}
+\date{15/05/2023}
+\author{Fernando Ferraz Ribeiro}
+\institute{UEFS PPGM}
+
+% \titlegraphic{\includegraphics[height=1.5cm]{../Figures/Logo_Uefs.jpg}}
+
+\titlegraphic{\hfill\includegraphics[height=1.3cm]{../Figures/Logo_Uefs.jpg}\includegraphics[height=1.3cm]{../Figures/logoPPGM-UEFS.png}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Sumário}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Introdução}
+
+\begin{frame}[fragile]{Premissas}
+
+  A qualidade dos deslocamentos de pessoas e veículos pela malha interna e/ou entre cidades é uma das grandes preocupações dos planejadores e gestores do ambiente urbano \cite{Bermudez-Edo2018}. Desde a constatação da pandemia do vírus SARS-CoV2, em 2020, o monitoramento destes deslocamentos em tempo real passou a ter implicações ainda mais urgentes e dramáticas.
+
+  Neste contexto, algumas plataformas digitais passaram a disponibilizar dados de mobilidade para consulta e download \cite{Oh2021,Tyrovolas2021,Szocska2021}.
+
+  Estudos já utilizam dados de redes sociais para entender o deslocamentos as pessoas nas cidades \cite{Tejaswin2015,Chaturvedi2020,Milusheva2021}.
+  
+  É preciso entender os potenciais, as limitações e implicações éticas do uso destes dados
+  
+\end{frame}
+
+\begin{frame}{Mapa Exemplo}
+
+
+  
+\end{frame}
+
+\begin{frame}{Objetivo Principal}
+
+A automação do processo de coleta e georreferenciamento  dos dados de mobilidade disponibilizados pelas plataformas digitais, em um conjunto de informações GIS de fácil visualização e manipulação.
+
+  
+\end{frame}
+
+\begin{frame}{Objetivos Gerais}
+
+
+  \begin{itemize}
+		\item Entender a natureza dos dados.
+		\item Qual a precisão destas informações?
+		\item Como o anonimato dos usuários é tratado?
+		\item Estas informações podem agregar valor para pesquisadores, planejadores urbanos e gestores públicos?
+	\end{itemize}
+
+\end{frame}
+
+\section{Metodologia}
+
+\begin{frame}{Metodologia}
+
+  Os dados que tem resolução do município e englobam uma parcela significativa dos municípios da Bahia, serão representados no arquivo dos municípios da Bahia. Conjuntos de dados que apresentam escala dos estados, serão representados no mapa dos estados do Brasil, Conjunto que apresentem apenas as capitais e cidades maiores, representaremos nos mapas dos municípios brasileiros.
+
+\end{frame}
+
+\begin{frame}{Fontes de dados}
+
+  \begin{table}[]
+    \centering
+    \caption{Dados Utilizados}
+    \label{tabel:tab01}
+    \begin{adjustbox}{width=\textwidth}
+  
+    \begin{tabular}{|p{3cm}|p{1cm}|p{3cm}|p{1cm}|p{1cm}|p{2.5cm}|p{3cm}|}
+    \hline
+    Tema                   & Tipo    & Dados tabulares \newline associados     & Data & Fonte  & Escala/Resolução & Observações \\ \hline
+    Municípios do Brasil   & Vetor   & Nome, Estado, Região           & 2020 & IBGE   & Municipio        &             \\ \hline
+    Divisão territorial da cidade de Salvador   & Vetor   & Nome, Estado, Região           & 2020 & PMS   & bairro        &             \\ \hline
+    Google Mobility report & Tabular & Indices de movimentação e data & 2021 & Google & Municipio        &             \\ \hline
+    Apple Mobility		   & Tabular & Indices de movimentação e data & 2021 &  Apple & Verificar        &             \\ \hline
+    Waze         		   & Tabular & Indices de movimentação e data & 2021 &  Waze  & Verificar        &             \\ \hline
+    Ton Ton        		   & Tabular & Indices de movimentação e data & 2021 &  Ton Ton & Algumas cidades&             \\ \hline
+    Uber        		   & Tabular & início e destino de corridas (frequência) e data & 2021 &  Uber &  Bairro &             \\ \hline
+  
+    \end{tabular}
+      \end{adjustbox}
+    \end{table}
+ 
+
+\end{frame}
+
+\begin{frame}{Dados Google}
+
+
+
+
+ 
+
+
+\end{frame}
+
+
+\section{Resultados Esperados}
+
+\begin{frame}{Resultados Esperados}
+
+  Para cada um dos conjunto de dados que apresentem escala de município e incluam um grande conjunto de cidades do município da Bahia, serão representados em conjuntos de 7 mapas, representando em formato coroplético a mediana da mobilidade de cada município. A necessidade de normalização/padronização dos dados será avaliada caso a caso. 
+
+  Os mapas que apresentem poucos cidades no território nacional, ou que apresente dados no nível d bairro será utilizada visualização por tamanho de ponto.
+  
+\end{frame}
+
+\section{Considerações Finais}
+
+\begin{frame}{Considerações Finais}
+
+  As mudanças provocadas pela pandemia de COVID 19 em diversas áreas ainda precisa ser melhor entendido. No que diz respeito aos dados oriundos de dispositivos móveis de comunicação muito temos que analisar.
+
+  Tanto das possibilidades e limitações, quanto as questões éticas e respeito à privacidade devem ser analisadas. A visualização de dados proposta neste estudo pretende fornecer subsídios para este debate. 
+
+
+\end{frame}
+
+\begin{frame}{Trabahos Futuros}
+
+  Armazenamento das informações coletadas em um banco de dados georeferenciados.
+  
+\end{frame}
+
+\section{Referências}
+
+\begin{frame}[allowframebreaks]
+
+  \bibliography{../References/referencias.bib}
+
+
+
+\end{frame}
+
+\end{document}
