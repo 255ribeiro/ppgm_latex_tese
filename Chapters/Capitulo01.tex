@@ -7,26 +7,27 @@
 (Harvey Pekar)
 \end{flushright}
 
-Os sistemas complexos compreendem um campo interdisciplinar da ciência que não possui uma definição exata. Este campo procura estudar numericamente um conjunto amplo de fenômenos não determinísticos, formados pela contribuição de um conjunto (geralmente grande) de componentes (muitas vezes simples) que, interagindo, estruturam-se de forma auto-organizada, gerando resultados inesperados, que não podem ser previstos pelos estudos estatísticos e/ou matemáticos tradicionais dos elementos formadores do sistema.
+Os sistemas complexos compreendem um campo interdisciplinar da ciência que não possui uma definição exata. Este conjunto amplo de fenômenos é comumente identificado e agrupado por algumas de suas características: são formados pela contribuição de um conjunto (geralmente grande) de componentes (muitas vezes simples) que, interagindo, estruturam-se de forma auto-organizada, gerando resultados inesperados, que não podem ser previstos pelos estudos estatísticos e/ou matemáticos tradicionais dos elementos formadores do sistema.
 
-Na área dos estudos ambientais, os sistemas complexos possuem diversas aplicações: sistemas de transportes, redes de energia e comunicação, organizações sociais e econômicas, densidade e ocupação humana do espaço, dentre outas. Os estudos do clima ocupam um espaço de particular relevância na intercessão entre os estudos ambientais e os sistemas complexos. Em 2021 a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física para Syukuro Manabe e Klaus Hasselmann, cujos estudos apresentam modelos complexos para a análise do clima. Em particular apontam uma correlação entre as emissões de dióxido de carbono e as mudanças climáticas.
+Na área dos estudos ambientais, os sistemas complexos possuem diversas aplicações: sistemas de transportes, redes de energia e comunicação, organizações sociais e econômicas, densidade e ocupação humana do espaço, dentre outas. Os estudos do clima ocupam um espaço de particular relevância na intercessão entre os estudos ambientais e os sistemas complexos. Em 2021, a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física para Syukuro Manabe e Klaus Hasselmann, cujos estudos apresentam modelos complexos para a análise do clima. Em particular apontam uma correlação entre as emissões de dióxido de carbono e as mudanças climáticas.
 
-A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico. Um campo do conhecimento que recebeu a denominação de Ciência de Dados, conceito que envelopa alguns termos frequentemente associados à inovação científica, técnica e social como \emph{Big Data}, mineração de dados, \emph{Business Intelligence} internet das coisas, inteligência artificial e aprendizado de máquina(AM), dentre outros \cite[p. 12-13]{EMCdata2015}.
+Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É notável a velocidade e quantidade de dados que são gerados e armazenados pela humanidade atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico. Um campo do conhecimento que recebeu a denominação de Ciência de Dados, conceito que envelopa alguns termos frequentemente associados à inovação científica, técnica e social como \emph{Big Data}, mineração de dados, \emph{Business Intelligence} internet das coisas, inteligência artificial e aprendizado de máquina(AM), dentre outros \cite[p. 12-13]{EMCdata2015}.
 
-As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas) ordenado no tempo.  Embora muitos dos dados que descrevem as dinâmicas espaciais podem ser registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas sub-áreas das ciências ambientais\cite{Bermudez-Edo2018}.
+Uma das formas em que os dados costumam ser organizados são as denominadas séries temporais. As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas) ordenado no tempo.  Embora muitos dos dados que descrevem as dinâmicas espaciais podem ser registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas sub-áreas das ciências ambientais\cite{Bermudez-Edo2018}.
 
+Esta pesquisa propõe-se um estudo de dois conjuntos de variáveis meteorológicas, utilizando o \dmc como ferramenta de medição das correlações entre múltiplas variáveis. Após a avaliação dos resultados destes estudos, propõe-se a criação de um modelo preditivo utilizando ferramentas de AM e o \dmc.
 
 \section{Definição do problema}
 \label{sec:problema}
 
-Os fenômenos climáticos apresentam as características dos sistemas complexos. Um sistema integrado, envolvendo aspectos globais e as condicionantes planetárias, fatores locais de cobertura da terra, proximidade de corpos d'agua, regime de ventos, dentre outros. Em alguns casos, podendo citar o bioma dominante de um determinado lugar, o fator tanto influencia o clima quanto é influenciado por ele.
+Os fenômenos climáticos apresentam as características dos sistemas complexos. Um sistema integrado, envolvendo aspectos globais e as condicionantes planetárias, fatores locais de cobertura da terra, proximidade de corpos d'agua, regime de ventos, dentre outros. Em alguns casos é difícil estabelecer relações de causa e efeito de forma determinística, como exemplo pode-se citar o bioma dominante de um determinado lugar, fator que tanto influencia o clima quanto é influenciado por ele.
 
 As inter-relações entre as diversas variáveis climáticas não podem ser facilmente correlacionadas em grande escala. É possível estabelecer relações entre certas medidas meteorológicas em uma determinada localidade, ainda que as relações entre essas não sejam necessariamente relações que podem ser transportadas para toda e qualquer localidade do planeta. Mas a possibilidade de estabelecer relações em rede entre as variáveis climáticas de diferentes localidades umas com as outras ainda é um problema aberto.
 
 \section{Objetivos}
 \label{sec:Objetivos}
 
-O objetivo principal desta pesquisa é: investigar as correlações entre as variáveis climáticas através do coeficiente \dmc e utilizar o conhecimento destas correlações para alimentar um modelo preditivo do clima.
+O objetivo principal desta pesquisa é: investigar as correlações entre as variáveis meteorológicas de diferentes localidades através do coeficiente \dmc e utilizar o conhecimento destas correlações para alimentar um modelo preditivo de condições meteorológicas.
 
 Como objetivos gerais foram elencados:
 
@@ -45,10 +46,13 @@ Um estudo mais amplo destas correlações pode levar a um entendimento maior dos
 
 A Organização das Nações Unidas (ONU) estabeleceu um conjunto de 17 objetivos em uma agenda que busca a melhoria das condições de vida no planeta e a mitigação de efeitos das mudanças climáticas (Agenda 2030). Denominados de Objetivos de desenvolvimento Sustentável (ODS). Pesquisas sobre o clima podem ser relacionadas diretamente com o ODS (13) Ação contra a mudança global do clima. Pode-se  encontrar importantes relações desta pesquisa com outros objetivos (2) Fome zero e agricultura sustentável, (6) Água potável e saneamento, (7) Energia limpa e acessível, (11) Cidades e comunidades sustentáveis, (14) Vida na água, (15) Vida na terra e, a difusão do conhecimento gerado nesta pesquisa pode levar a (17) Parceria e meios de implementação.
 
+\section{Viabilidade e Limitações}
+\label{sec:limites}
 
-
-% \section{Limites e Limitações}
-% \label{sec:limites}
+O \dmc é capaz de identificar comportamentos e relações entre um conjunto de séries temporais, mas, até o momento de elaboração deste projeto, não são utilizados em predições. A integração do \dmc com as RNA podem gerar uma nova arquitetura de RNA, capaz de capturar características de longo alcance das séries temporais estudadas. 
+A viabilidade como análise de hipóteses existe. Certamente limitações como o peso computacional são mais difíceis de antever, mas devem ser levadas em
+conta desde o princípio.
+De resto, vale lembrar que a honestidade do trabalho científico pode levar a resultados que validam, total ou parcialmente, ou invalidam as conjecturas inicias. Apenas com a atenta avaliação dos experimentos realizados pode-se entender os ganhos obtidos no percurso. A análise dos dados meteorológicos será aplicada para descrever esse percurso, independente do status da validação dos resultados.
 
 \section{Questões e Hipóteses}
 \label{sec:questoes}
@@ -59,6 +63,8 @@ Esta proposta foi baseada em duas premissas:
     \label{enum:premissas}
     \item Os fenômenos climáticos estão relacionados de forma complexa. Por exemplo: massas de ar percorrem distâncias na atmosfera e influenciam uma série de variáveis climáticas nas localidades por onde passam, mas que também são influenciadas, em seu percurso ou sua dissolução pelas mesmas variáveis.
     \item O \dmc, pelas características de análise do método, pode ajudar a entender estas correlações.
+    \item O \dmc~é uma generalização do método \pdcca~para múltiplas séries temporais.
+	\item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais~\cite{Wang2013}. 
 \end{enumerate}
 
 Partindo destas premissas, procuramos responder duas perguntas basilares:
@@ -66,9 +72,9 @@ Partindo destas premissas, procuramos responder duas perguntas basilares:
 \begin{enumerate}
     \label{enum:quest}
 
-    \item É possível estabelecer e medir correlações entre aspectos climáticos de uma determinada localidade e um conjunto de outras localidades?
+    \item É possível estabelecer e medir correlações entre variáveis meteorológicas de uma determinada localidade e um conjunto de outras localidades?
 
-    \item Em caso de resposta positiva, seria possível utilizar essas correlações para melhorar modelos climáticos preditivos?
+    \item Em caso de resposta positiva, seria possível utilizar essas correlações para melhorar modelos meteorológicos preditivos?
 \end{enumerate}
 
 Para orientar o trabalho, duas hipóteses foram formuladas:
@@ -81,8 +87,25 @@ Para orientar o trabalho, duas hipóteses foram formuladas:
 \section{Aspectos Metodológicos}
 \label{sec:metodologia}
 
+%https://assessingsolar.org/intro.html
 
-\subsection{implementação do \dmc para um número qualquer de Variáveis independentes}
+O conjunto de dados das estações meteorológicas brasileiras foram baixados do banco de dados online do site do Instituto Nacional de Meteorologia (INMET) \url{https://portal.inmet.gov.br/}. Do massivo conjunto de dados disponível, foram baixados apenas os registros das capitais.
+
+Para as estações globais tomou-se por referência o Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede de medições meteorológicas de alta precisão com estações filidadas no mundo inteiro. Para que uma estação faça parte desta rede deve seguir rigorosamente os critérios estabelecidos para medição de radiação solar definidos pela organização \cite{Salazar2020}.
+
+Com os dois conjuntos de dados organizados, para cada uma das análises seguiremos as seguintes etapas.
+
+\begin{enumerate}
+    \item Análise exploratória dos dados e identificação das necessidades de pré-processamento
+    \item Pré-processamento dos dados
+    \item Seleção de variáveis para a aplicação do método
+    \item Aplicação do \dmc
+    \item visualização e análise dos resultados
+\end{enumerate}
+
+
+
+\subsection{\dmc para um número qualquer de variáveis independentes}
 
 Embora esteja matematicamente definido, o \dmc~utiliza a inversão de matrizes no cálculo do coeficiente múltiplo. Este cálculo envolve o determinante da matriz e pode ser computacionalmente muito custoso.
 
@@ -120,7 +143,6 @@ A tese será formada pelos seguintes capítulos:
 	\item Metodologia
 	\item Análise dos dados meteorológicos pelo \dmc
 	\item Características e validação do modelo de AM proposto
-	\item Tratamento dos dados de mobilidade urbana
-	\item Aplicação do modelo proposto na análise da mobilidade urbana
+	\item Resultados
 	\item Conclusões
 \end{enumerate}
