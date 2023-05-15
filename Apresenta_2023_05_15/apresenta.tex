@@ -189,7 +189,7 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 \section{Fundamentação Teórica}
 
 
-\begin{frame}{DFA - Algoritmo}
+\begin{frame}{DFA - \cite{Peng_1994}}
 
 
   \begin{enumerate}
@@ -206,7 +206,7 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 \end{frame}
 
 \begin{frame}
-  \frametitle{DCCA}
+  \frametitle{DCCA - \cite{Podobnik2008}}
   \begin{enumerate}
     \label{list:dcca}
     \item Para duas séries temporais \(\{x_{i}\}\) e \(\{x_{i}\}\) com  \(i\) variando de  \(1\) à \(N\), as séries integradas \(X_{k}\) e \(Y_{k}\) são calculadas por \(X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right] \) e \(Y_{k} = \sum_{i=1}^{k}\left[y_{i} - \langle x \rangle \right] \) com \(k\) também variando entre \(1\) e \(N\);
@@ -216,14 +216,11 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
     \item Para todas as caixas de uma escala temporal a função $F_{DCCA}^{2}(n)$ é calculada por: $F_{DCCA}^{2}(n) = \frac{1}{N-n} \sum_{i=1}^{N-n} f_{DCCA}^{2}(n, i)$;
     \item Para um número de diferentes escalas temporais $(n)$, com valores possíveis entre \( 4 \le n \le \frac{N}{4}\), a função $F_{DCCA}^{2}(n)$ é calculada para encontrar a relação entre $F_{DCCA}^{2}(n) \times n$.
   \end{enumerate}
-
-
-
- 
+  
 \end{frame}
 
 \begin{frame}
-  \frametitle{\pdcca}
+  \frametitle{\pdcca - \cite{Zebende2011}}
 
   \begin{equation}
     \label{eq_pdcca}
@@ -233,7 +230,7 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 \end{frame}
 
 \begin{frame}
-  \frametitle{\dmc}
+  \frametitle{\dmc - \cite{Zebende2018}}
   \begin{equation}\label{eq:dmc}
   {DMC}_{x}^{2}  \equiv \rho_{y,x_{i}}(n)^{T} \rho^{-1}(n) \rho_{y,x_{i}}(n)
 \end{equation}
@@ -255,10 +252,18 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 
 \section{Resultados}
 
-\begin{frame}{Resultados Esperados}
+\begin{frame}{Produtos da Tese}
 
 
   
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{}
+
+  
+
 \end{frame}
 
 \section{Considerações Finais}
