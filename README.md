@@ -1,4 +1,4 @@
-# LatexTemplate
+<!-- # LatexTemplate
 
 Modelos de Dissertação e Tese feitos em TeX para o PPGM.
 
@@ -18,4 +18,7 @@ A pasta `Figures` contém as figuras e imagens utilizadas no seu documento.
 
 Por fim, a pasta `References` abriga o arquivo de referências bibliográficas no formato BibTeX.
 
-Para mais ajuda, leia os comentários no arquivo `Dissertacao.tex`.
+Para mais ajuda, leia os comentários no arquivo `Dissertacao.tex`. -->
+# Apresentação Oficina III
+
+[apresentação](./Apresenta_2023_05_15/apresenta.pdf)
