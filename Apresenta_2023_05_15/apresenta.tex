@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[9pt, aspectratio=169]{beamer}
 
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
@@ -31,10 +31,13 @@
 \subtitle{Apresentação do andamento da pesquisa}
 %\date{\today}
 \date{15/05/2023}
-\author{Fernando Ferraz Ribeiro}
+\author{Discente: Fernando Ferraz Ribeiro \\Orientador: Prof. Dr.Gilney Figueira Zebende \\Co-orientador: Prof. Dr. Juan Alberto Leyva Cruz}
+
+
+
 \institute{UEFS PPGM - Feira de Santana, BA}
 
-\titlegraphic{\hfill\includegraphics[height=1.2cm]{../Figures/Logo_Uefs.jpg}\includegraphics[height=1.2cm]{../Figures/logoPPGM-UEFS.png}}
+\titlegraphic{\hfill\includegraphics[height=1.0cm]{../Figures/Logo_Uefs.jpg}\includegraphics[height=1.0cm]{../Figures/logoPPGM-UEFS.png}}
 
 \begin{document}
 
@@ -171,8 +174,8 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
   \begin{figure}[!htb]
     \centering
     \caption{Diagrama de Grimm e Railsback}
-    \includegraphics[width=.7\textwidth]{../Figures/intro/Ciclo_Grimm.png}
-    \\{\footnotesize Fonte: Elaborada Pelo Autor}
+    \includegraphics[height=.6\paperheight]{../Figures/intro/Ciclo_Grimm.png}
+    \\{\footnotesize Fonte: Elaborada pelos autores}
     \label{fig:fluxoGrimm}
   \end{figure}
 
@@ -244,20 +247,62 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{Aprendizado de Maquina - Machine Learning}
+
+
+  \begin{figure}[!htb]
+    \centering
+    \caption{Conceituação - AM}
+    \includegraphics[height=.6\paperheight]{../Figures/ML/mat_est_ML.png}
+    \\{\footnotesize Fonte: Elaborada pelos autores}
+    \label{fig:diag_ml_01}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aprendizado de Maquina - Machine Learning}
+
+  \begin{figure}[!htb]
+    \centering
+    \caption{Diagrama conceitual - AM}
+    \includegraphics[height=.6\paperheight]{../Figures/ML/MAPA_conceitual_ciencia_de_dados_recorte.jpg}
+    \\{\footnotesize Fonte: Elaborada pelos autores}
+    \label{fig:diag_ml}
+  \end{figure}
+
+\end{frame}
 
 \section{Resultados}
 
 \begin{frame}{Produtos da Tese}
+\begin{itemize}
+	\item {Artigo: revisão de literatura.}
+	\item Aplicativo de Cálculo do \dmc.
+	\item Pacote Python para cálculo do DFA, DCCA, \pdcca, e  \dmc.
+	\item Artigo: revista Software X.
+	\item Artigo: análise de dados meteorológicos com \dmc
 
+	\item Implementação do modelo de AM usando \dmc.
+	\item Artigo: validação do modelo AM.
+	\item Aplicação Artigo AM / dados meteorológicos
+\end{itemize}
 
   
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{Artigo Pubicado}
 
-  
+\begin{frame}
+  \frametitle{Artigo Publicado}
+
+  \begin{figure}[!htb]
+    \centering
+    \caption{\cite{Oliveira2023}}
+    \includegraphics[height=.6\paperheight]{../Figures/artigos_publicados/artigo_01_abr_2023.png}
+    \label{fig:ar_pub_01}
+  \end{figure}
 
 \end{frame}
 
@@ -278,6 +323,6 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
   
 \end{frame}
 
-\section{Obrigado}
+\section*{Obrigado}
 
 \end{document}
