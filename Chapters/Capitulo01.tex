@@ -108,7 +108,11 @@ Com os dois conjuntos de dados organizados, para cada uma das análises seguirem
 
 A análise exploratória dos dados tem por objetivo entender características, potenciais, limitações e possíveis erros na coleta dos dados de cada um dos conjuntos de dados. Nesta etapa deve-se ter em mentes a as propriedades dos métodos aplicados. O \pdcca apresenta resultados apurados com conjuntos de dados com número de pontos maior que mil. O \dmc quantifica a correlação entre múltiplas séries temporais. Partindo destas premissas, conclui-se que quanto mais longas as séries temporais, quanto maior o número de variáveis medidas ao mesmo tempo, maiores as chances de êxito do experimento.
 
-Ambos os conjuntos de dados utilizam redes de estações que entraram em operação em tempos diferentes. É necessário 
+Ambos os conjuntos de dados utilizam redes de estações que entraram em operação em tempos diferentes. Além disso algumas estações deixaram de operar ao longo do tempo. É necessário estabelecer um corte temporal e uma seleção de estações para aplicar o método.
+
+Nos conjuntos de dados do INMET algumas inconsistências foram identificadas. Amplitudes térmicas muito grandes em um único dia em regiões e períodos onde isso não deveria ocorrer. A frequência destas ocorrência torna necessário um contato para entender a confiabilidade dos dados.
+
+Os conjuntos de dados do BRSN possuem cinco séries temporais obrigatórias: Global Horizontal Irradiance (GHI), Direct Normal Irradiance (DNI), Direct Horizontal Irradiance (DNI),Low-Wave Down (LWD), medidas em $\frac{W}{m^2}$, e a Temperatura do ar, medida em graus centigrados.  
 
 \subsection{\dmc para um número qualquer de variáveis independentes}
 
