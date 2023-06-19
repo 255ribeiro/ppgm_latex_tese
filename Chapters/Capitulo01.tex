@@ -84,7 +84,7 @@ Para orientar o trabalho, duas hipóteses foram formuladas:
 	\item É possível criar uma modelo preditivo para séries temporais de aprendizado de Máquina eficiente baseado no \dmc.
 \end{enumerate}
 
-\section{Aspectos Metodológicos}
+\section{Metodologia}
 \label{sec:metodologia}
 
 %https://assessingsolar.org/intro.html
@@ -116,7 +116,9 @@ Os conjuntos de dados do BRSN possuem cinco séries temporais obrigatórias: Glo
 
 \subsection{Pré-processamento}
 
+O pré-processamento é a etapa que visa preparar o conjunto de dados para a aplicação do algoritmo. Aspectos da análise exploratória devem ser considerados e estratégias devem ser definidas para: eliminar valores com erros de medição, tratar valores faltantes, dependendo do método aplicado, normalizar as medições.
 
+No caso da base do BSRN, é preciso considerar que a incidência solar é distribuída ao longo do globo terrestre de acordo com a longitude. reorganizar as séries para os horários locais de cada estação é uma tarefa necessária para as análises que levem em conta variáveis relacionadas com a radiação.
 
 \subsection{Seleção de atributos}
 
@@ -152,7 +154,7 @@ Os nós da Pergunta~(1) e Hipótese~(2) estão descritos na Seção~\ref{sec:que
 	\centering
 	\caption{Diagrama de Grimm e Railsback}
 	\includegraphics[width=.8\textwidth]{../Figures/intro/Ciclo_Grimm.png}
-	\\{\footnotesize Fonte: Elaborada Pelo Autor}
+	\\{\footnotesize Fonte: Elaborada Pelos Autores}
 	\label{fig:fluxoGrimm}
 \end{figure}
 

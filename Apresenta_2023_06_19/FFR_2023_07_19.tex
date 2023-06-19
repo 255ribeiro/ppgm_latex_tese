@@ -30,7 +30,7 @@
 \title{\dmc e aprendizado de máquina aplicados à análise de séries temporais de dados meteorológicos}
 \subtitle{Apresentação do andamento da pesquisa}
 %\date{\today}
-\date{15/05/2023}
+\date{18/06/2023}
 \author{Discente: Fernando Ferraz Ribeiro \\Orientador: Prof. Dr.Gilney Figueira Zebende \\Coorientador: Prof. Dr. Juan Alberto Leyva Cruz}
 
 
@@ -138,7 +138,52 @@
 \end{frame}
 
 
-\section{Aspectos Metodológicos}
+\section{Metodologia}
+
+
+\begin{frame}
+  \frametitle{Aprendizado de Maquina - Machine Learning}
+
+  \begin{figure}[!htb]
+    \centering
+    \caption{Diagrama conceitual - AM}
+    \includegraphics[height=.6\paperheight]{../Figures/ML/MAPA_conceitual_ciencia_de_dados_recorte.jpg}
+    \\{\footnotesize Fonte: Elaborada pelos autores}
+    \label{fig:diag_ml}
+  \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Princípios norteadores}
+
+  \begin{itemize}
+    \item Conheça os dados
+    \item Entenda os algoritmos
+    \item Desconfie dos resultados
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Etapas}
+Com os dois conjuntos de dados organizados, para cada uma das análises seguiremos as seguintes etapas.
+
+\begin{enumerate}
+    \item Aquisição dos dados
+    \item Análise exploratória
+    \item Pré-processamento
+    \item Seleção de variáveis
+    \item Aplicação do \dmc
+    \item Visualização e análise dos resultados
+    \item Seleção de variáveis para aplicação do modelo preditivo
+    \item Validação e ajustes do modelo
+    \item Visualização e análise dos resultados
+\end{enumerate}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Fontes de dados}
@@ -149,24 +194,73 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{Metodologia}
+  \frametitle{Técnicas de aquisição de dados}
 
-  Com os dois conjuntos de dados organizados, para cada uma das análises seguiremos as seguintes etapas.
+Para grandes conjuntos de dados, faz-se necessário a utilização de técnicas raspagem de dados (data scraping) para adquirir e organizar os conjuntos de dados. Para os dados do INMET será usado o pacote Bealtiful Soap do python para baixar os arquivos.
 
-\begin{enumerate}
-    \item Análise exploratória dos dados e identificação das necessidades de pré-processamento
-    \item Pré-processamento dos dados
-    \item Seleção de variáveis para a aplicação do método
-    \item Aplicação do \dmc
-    \item Visualização e análise dos resultados
-    \item Seleção de variáveis para aplicação do modelo preditivo
-    \item Validação e ajustes do modelo
-    \item Visualização e análise dos resultados
-\end{enumerate}
+Para os dados do BSRN será usado um pacote próprio (pvlib) para acessar os dados.
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Análise exploratória}
+
+A análise exploratória dos dados tem por objetivo entender características, potenciais, limitações e possíveis erros na coleta dos dados de cada um dos conjuntos de dados.
 
   
 \end{frame}
+
+\begin{frame}
+  \frametitle{Pré-processamento}
+
+ Etapa que visa preparar o conjunto de dados para a aplicação do algoritmo. Aspectos da análise exploratória devem ser considerados e estratégias devem ser definidas para: eliminar valores com erros de medição, tratar valores faltantes, dependendo do método aplicado, normalizar as medições.
+
+ No caso da base do BSRN, é preciso considerar que a incidência solar é distribuída ao longo do globo terrestre de acordo com a longitude. reorganizar as séries para os horários locais de cada estação é uma tarefa necessária para as análises que levem em conta variáveis relacionadas com a radiação.
+
+
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Seleção de atributos}
+
+Em ciência de dados, a seleção de atributos é a escolha de um subconjunto de atributos ou variáveis são selecionados para uma determinada análise ou para a criação de um modelo.
+
+Nesta pesquisa utilizaremos alguns algoritmos de seleção de atributos para comparar os resultados com as correlações do \dmc, a saber:
+
+\begin{itemize}
+    \item Time Series Feature Importance
+    \item Mutual Information
+    \item Autoencoder
+    \item Random Forest Importance(?)
+\end{itemize}
+
+  
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Aplicação do \dmc}
+
+Selecionar variáveis de acordo com os algoritmos de seleção de atributos.
+
+Utilizar estratégias de visualização de dados e comparar os resultados do \dmc com as seleções de variáveis 
+
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Seleção de variáveis para aplicação do modelo preditivo}
+
+Baseado nas análises anteriores, escolher um conjunto de variáveis para iniciar a implementação do modelo.
+
+  
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Validação do Algoritmo de AM}
@@ -181,6 +275,15 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 
   
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Questionamento}
+
+\Huge{Questionamentos de pesquisadores sobre riscos da I.A.}
+
+\small{\url{https://www.newyorker.com/humor/daily-shouts/another-warning-letter-from-ai-researchers-and-executives}}
+  
 \end{frame}
 
 
@@ -261,18 +364,7 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{Aprendizado de Maquina - Machine Learning}
 
-  \begin{figure}[!htb]
-    \centering
-    \caption{Diagrama conceitual - AM}
-    \includegraphics[height=.6\paperheight]{../Figures/ML/MAPA_conceitual_ciencia_de_dados_recorte.jpg}
-    \\{\footnotesize Fonte: Elaborada pelos autores}
-    \label{fig:diag_ml}
-  \end{figure}
-
-\end{frame}
 
 \section{Resultados}
 
