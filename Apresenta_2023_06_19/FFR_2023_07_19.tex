@@ -59,7 +59,7 @@
 \begin{frame}
   \frametitle{Reconhecimento}
 
-  Em 2021, a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física para Syukuro Manabe e Klaus Hasselmann, cujos estudos apresentam modelos complexos para a análise do clima. Em particular apontam uma correlação entre as emissões de dióxido de carbono e as mudanças climáticas.  
+  Em 2021, a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física para Syukuro Manabe e Klaus Hasselmann, cujos estudos apresentam modelos complexos para a análise do clima. Em particular apontam uma correlação entre as emissões de dióxido de carbono e as mudanças climáticas.
 
 \end{frame}
 
@@ -80,7 +80,7 @@
 \begin{frame}{Proposta}
 
   Esta pesquisa propõe-se um estudo de dois conjuntos de variáveis meteorológicas, utilizando o \dmc como ferramenta de medição das correlações entre múltiplas variáveis. Após a avaliação dos resultados destes estudos, propõe-se a criação de um modelo preditivo utilizando ferramentas de AM e o \dmc.
-  
+
 \end{frame}
 
 \begin{frame}{Objetivo Principal}
@@ -97,7 +97,7 @@
     \item Analisar um conjunto de dados climáticos contendo medições meteorológicas de todas as capitais brasileiras.
     \item Analisar um conjunto de dados meteorológicos sobre radiação solar com estações locadas em diversas partes do globo.
     \item Desenvolver e implementar um algoritmo de predição baseado em aprendizado de máquina e redes neurais artificias agregados com o coeficiente \dmc.
-\end{enumerate}
+  \end{enumerate}
 
 \end{frame}
 
@@ -109,8 +109,8 @@
     \item Os fenômenos climáticos estão relacionados de forma complexa. Por exemplo: massas de ar percorrem distâncias na atmosfera e influenciam uma série de variáveis climáticas nas localidades por onde passam, mas que também são influenciadas, em seu percurso ou sua dissolução pelas mesmas variáveis.
     \item O \dmc, pelas características de análise do método, pode ajudar a entender estas correlações.
     \item O \dmc~é uma generalização do método \pdcca~para múltiplas séries temporais.
-	\item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais~\cite{Wang2013}. 
-\end{enumerate}
+    \item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais~\cite{Wang2013}.
+  \end{enumerate}
 
 \end{frame}
 
@@ -123,7 +123,7 @@
     \item É possível estabelecer e medir correlações entre variáveis meteorológicas de uma determinada localidade e um conjunto de outras localidades?
 
     \item Em caso de resposta positiva, seria possível utilizar essas correlações para melhorar modelos meteorológicos preditivos?
-\end{enumerate}
+  \end{enumerate}
 
 \end{frame}
 
@@ -132,8 +132,8 @@
 
   \begin{enumerate}
     \item Um método baseado no \dmc~seria um ferramental importante no estudo de correlações de variáveis climáticas envolvendo um grande número de localidades.
-	\item É possível criar uma modelo preditivo para séries temporais de aprendizado de Máquina eficiente baseado no \dmc.
-\end{enumerate}
+    \item É possível criar uma modelo preditivo para séries temporais de aprendizado de Máquina eficiente baseado no \dmc.
+  \end{enumerate}
 
 \end{frame}
 
@@ -158,20 +158,24 @@
 \begin{frame}
   \frametitle{Princípios norteadores}
 
-  \begin{itemize}
-    \item Conheça os dados
-    \item Entenda os algoritmos
-    \item Desconfie dos resultados
-  \end{itemize}
+  \begin{huge}
+    \begin{center}
+      \begin{itemize}
+        \item Conheça os dados
+        \item Entenda os algoritmos
+        \item Desconfie dos resultados
+      \end{itemize}
+    \end{center}
+  \end{huge}
 
 \end{frame}
 
 \begin{frame}
 
-\frametitle{Etapas}
-Com os dois conjuntos de dados organizados, para cada uma das análises seguiremos as seguintes etapas.
+  \frametitle{Etapas}
+  Com os dois conjuntos de dados organizados, para cada uma das análises seguiremos as seguintes etapas.
 
-\begin{enumerate}
+  \begin{enumerate}
     \item Aquisição dos dados
     \item Análise exploratória
     \item Pré-processamento
@@ -181,16 +185,16 @@ Com os dois conjuntos de dados organizados, para cada uma das análises seguirem
     \item Seleção de variáveis para aplicação do modelo preditivo
     \item Validação e ajustes do modelo
     \item Visualização e análise dos resultados
-\end{enumerate}
+  \end{enumerate}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Fontes de dados}
 
-Instituto Nacional de Meteorologia (INMET) \url{https://portal.inmet.gov.br/}. Do massivo conjunto de dados disponível, foram baixados apenas os registros das capitais.
+  Instituto Nacional de Meteorologia (INMET) \url{https://portal.inmet.gov.br/}. Do massivo conjunto de dados disponível, foram baixados apenas os registros das capitais.
 
-Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede de medições meteorológicas de alta precisão com estações filiadas no mundo inteiro. 
+  Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede de medições meteorológicas de alta precisão com estações filiadas no mundo inteiro.
 
 \end{frame}
 
@@ -198,9 +202,9 @@ Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede d
 \begin{frame}
   \frametitle{Técnicas de aquisição de dados}
 
-Para grandes conjuntos de dados, faz-se necessário a utilização de técnicas raspagem de dados (data scraping) para adquirir e organizar os conjuntos de dados. Para os dados do INMET será usado o pacote Bealtiful Soap do python para baixar os arquivos.
+  Para grandes conjuntos de dados, faz-se necessário a utilização de técnicas raspagem de dados (data scraping) para adquirir e organizar os conjuntos de dados. Para os dados do INMET será usado o pacote Bealtiful Soap do python para baixar os arquivos.
 
-Para os dados do BSRN será usado um pacote próprio (pvlib) para acessar os dados.
+  Para os dados do BSRN será usado um pacote próprio (pvlib) para acessar os dados.
 
 
 \end{frame}
@@ -208,37 +212,37 @@ Para os dados do BSRN será usado um pacote próprio (pvlib) para acessar os dad
 \begin{frame}
   \frametitle{Análise exploratória}
 
-A análise exploratória dos dados tem por objetivo entender características, potenciais, limitações e possíveis erros na coleta dos dados de cada um dos conjuntos de dados.
+  A análise exploratória dos dados tem por objetivo entender características, potenciais, limitações e possíveis erros na coleta dos dados de cada um dos conjuntos de dados.
 
-  
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Pré-processamento}
 
- Etapa que visa preparar o conjunto de dados para a aplicação do algoritmo. Aspectos da análise exploratória devem ser considerados e estratégias devem ser definidas para: eliminar valores com erros de medição, tratar valores faltantes, dependendo do método aplicado, normalizar as medições.
+  Etapa que visa preparar o conjunto de dados para a aplicação do algoritmo. Aspectos da análise exploratória devem ser considerados e estratégias devem ser definidas para: eliminar valores com erros de medição, tratar valores faltantes, dependendo do método aplicado, normalizar as medições.
 
- No caso da base do BSRN, é preciso considerar que a incidência solar é distribuída ao longo do globo terrestre de acordo com a longitude. reorganizar as séries para os horários locais de cada estação é uma tarefa necessária para as análises que levem em conta variáveis relacionadas com a radiação.
+  No caso da base do BSRN, é preciso considerar que a incidência solar é distribuída ao longo do globo terrestre de acordo com a longitude. reorganizar as séries para os horários locais de cada estação é uma tarefa necessária para as análises que levem em conta variáveis relacionadas com a radiação.
 
 
-  
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Seleção de atributos}
 
-Em ciência de dados, a seleção de atributos é a escolha de um subconjunto de atributos ou variáveis são selecionados para uma determinada análise ou para a criação de um modelo.
+  Em ciência de dados, a seleção de atributos é a escolha de um subconjunto de atributos ou variáveis são selecionados para uma determinada análise ou para a criação de um modelo.
 
-Nesta pesquisa utilizaremos alguns algoritmos de seleção de atributos para comparar os resultados com as correlações do \dmc, a saber:
+  Nesta pesquisa utilizaremos alguns algoritmos de seleção de atributos para comparar os resultados com as correlações do \dmc, a saber:
 
-\begin{itemize}
+  \begin{itemize}
     \item Time Series Feature Importance
     \item Mutual Information
     \item Autoencoder
     \item Random Forest Importance(?)
-\end{itemize}
+  \end{itemize}
 
-  
+
 \end{frame}
 
 
@@ -246,19 +250,19 @@ Nesta pesquisa utilizaremos alguns algoritmos de seleção de atributos para com
 \begin{frame}
   \frametitle{Aplicação do \dmc}
 
-Selecionar variáveis de acordo com os algoritmos de seleção de atributos.
+  Selecionar variáveis de acordo com os algoritmos de seleção de atributos.
 
-Utilizar estratégias de visualização de dados e comparar os resultados do \dmc com as seleções de variáveis 
+  Utilizar estratégias de visualização de dados e comparar os resultados do \dmc com as seleções de variáveis
 
-  
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Seleção de variáveis para aplicação do modelo preditivo}
 
-Baseado nas análises anteriores, escolher um conjunto de variáveis para iniciar a implementação do modelo.
+  Baseado nas análises anteriores, escolher um conjunto de variáveis para iniciar a implementação do modelo.
 
-  
+
 \end{frame}
 
 
@@ -273,23 +277,23 @@ Baseado nas análises anteriores, escolher um conjunto de variáveis para inicia
     \label{fig:fluxoGrimm}
   \end{figure}
 
-  
+
 
 \end{frame}
 
 \begin{frame}
   \frametitle{Questionamento}
-\begin{center}
-  
+  \begin{center}
 
-\Huge{Questionamentos de pesquisadores sobre riscos da I.A.}
 
-\end{center}
-\leavevmode\hphantom{ }
-\begin{center}
-\small{\url{https://www.newyorker.com/humor/daily-shouts/another-warning-letter-from-ai-researchers-and-executives}}
-\end{center}
-  
+    \Huge{Questionamentos de pesquisadores sobre riscos da I.A.}
+
+  \end{center}
+  \leavevmode\hphantom{ }
+  \begin{center}
+    \small{\url{https://www.newyorker.com/humor/daily-shouts/another-warning-letter-from-ai-researchers-and-executives}}
+  \end{center}
+
 \end{frame}
 
 
@@ -323,7 +327,7 @@ Baseado nas análises anteriores, escolher um conjunto de variáveis para inicia
     \item Para todas as caixas de uma escala temporal a função $F_{DCCA}^{2}(n)$ é calculada por: $F_{DCCA}^{2}(n) = \frac{1}{N-n} \sum_{i=1}^{N-n} f_{DCCA}^{2}(n, i)$;
     \item Para um número de diferentes escalas temporais $(n)$, com valores possíveis entre \( 4 \le n \le \frac{N}{4}\), a função $F_{DCCA}^{2}(n)$ é calculada para encontrar a relação entre $F_{DCCA}^{2}(n) \times n$.
   \end{enumerate}
-  
+
 \end{frame}
 
 \begin{frame}
@@ -339,20 +343,20 @@ Baseado nas análises anteriores, escolher um conjunto de variáveis para inicia
 \begin{frame}
   \frametitle{\dmc - \cite{Zebende2018}}
   \begin{equation}\label{eq:dmc}
-  {DMC}_{x}^{2}  \equiv \rho_{y,x_{i}}(n)^{T} \rho^{-1}(n) \rho_{y,x_{i}}(n)
-\end{equation}
+    {DMC}_{x}^{2}  \equiv \rho_{y,x_{i}}(n)^{T} \rho^{-1}(n) \rho_{y,x_{i}}(n)
+  \end{equation}
 
 
-\begin{equation}\label{eq:dmc_mat_inv}
-  \rho^{-1}(n) = \left(\begin{matrix} 
-    1 & \rho_{x_{1},x_{2}}(n)                       &  \rho_{x_{1},x_{3}}(n) & \dots  &  \rho_{x_{1},x_{i}}(n) \\
-    \rho_{x_{2},x_{1}}(n) & 1                       &  \rho_{x_{2},x_{3}}(n) & \dots  &  \rho_{x_{2},x_{i}}(n) \\
-    \vdots                &  \vdots                 &  \vdots                & \dots  & \vdots \\
-    \rho_{x_{i},x_{1}}(n) & \rho_{x_{i},x_{2}}(n)   &  \rho_{x_{i},x_{3}}(n) & \dots  &  1 \\
+  \begin{equation}\label{eq:dmc_mat_inv}
+    \rho^{-1}(n) = \left(\begin{matrix}
+      1                     & \rho_{x_{1},x_{2}}(n) & \rho_{x_{1},x_{3}}(n) & \dots & \rho_{x_{1},x_{i}}(n) \\
+      \rho_{x_{2},x_{1}}(n) & 1                     & \rho_{x_{2},x_{3}}(n) & \dots & \rho_{x_{2},x_{i}}(n) \\
+      \vdots                & \vdots                & \vdots                & \dots & \vdots                \\
+      \rho_{x_{i},x_{1}}(n) & \rho_{x_{i},x_{2}}(n) & \rho_{x_{i},x_{3}}(n) & \dots & 1                     \\
     \end{matrix}\right)^{-1}
-\end{equation}
+  \end{equation}
 
-  
+
 
 \end{frame}
 
@@ -375,19 +379,19 @@ Baseado nas análises anteriores, escolher um conjunto de variáveis para inicia
 \section{Resultados}
 
 \begin{frame}{Produtos da Tese}
-\begin{itemize}
-	\item {Artigo: revisão de literatura.}
-	\item Aplicativo de Cálculo do \dmc.
-	\item Pacote Python para cálculo do DFA, DCCA, \pdcca, e  \dmc.
-	\item Artigo: revista Software X.
-	\item Artigo: análise de dados meteorológicos com \dmc
+  \begin{itemize}
+    \item {Artigo: revisão de literatura.}
+    \item Aplicativo de Cálculo do \dmc.
+    \item Pacote Python para cálculo do DFA, DCCA, \pdcca, e  \dmc.
+    \item Artigo: revista Software X.
+    \item Artigo: análise de dados meteorológicos com \dmc
 
-	\item Implementação do modelo de AM usando \dmc.
-	\item Artigo: validação do modelo AM.
-	\item Aplicação Artigo AM / dados meteorológicos
-\end{itemize}
+    \item Implementação do modelo de AM usando \dmc.
+    \item Artigo: validação do modelo AM.
+    \item Aplicação Artigo AM / dados meteorológicos
+  \end{itemize}
 
-  
+
 \end{frame}
 
 
@@ -418,7 +422,7 @@ Baseado nas análises anteriores, escolher um conjunto de variáveis para inicia
 \begin{frame}[allowframebreaks]
 
   \bibliography{../References/referencias.bib}
-  
+
 \end{frame}
 
 \section*{Obrigado}
