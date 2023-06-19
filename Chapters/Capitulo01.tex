@@ -99,7 +99,7 @@ Com os dois conjuntos de dados organizados, para cada uma das análises seguirem
 \begin{enumerate}
     \item Análise exploratória dos dados e identificação das necessidades de pré-processamento
     \item Pré-processamento dos dados
-    \item Seleção de variáveis para a aplicação do método
+    \item Seleção de atributos
     \item Aplicação do \dmc
     \item visualização e análise dos resultados
 \end{enumerate}
@@ -112,21 +112,41 @@ Ambos os conjuntos de dados utilizam redes de estações que entraram em operaç
 
 Nos conjuntos de dados do INMET algumas inconsistências foram identificadas. Amplitudes térmicas muito grandes em um único dia em regiões e períodos onde isso não deveria ocorrer. A frequência destas ocorrência torna necessário um contato para entender a confiabilidade dos dados.
 
-Os conjuntos de dados do BRSN possuem cinco séries temporais obrigatórias: Global Horizontal Irradiance (GHI), Direct Normal Irradiance (DNI), Direct Horizontal Irradiance (DNI),Low-Wave Down (LWD), medidas em $\frac{W}{m^2}$, e a Temperatura do ar, medida em graus centigrados.  
+Os conjuntos de dados do BRSN possuem cinco séries temporais obrigatórias: Global Horizontal Irradiance (GHI), Direct Normal Irradiance (DNI), Direct Horizontal Irradiance (DNI),Low-Wave Down (LWD), medidas em $W/m^2$, e a Temperatura do ar, medida em graus centigrados. Além dos registros mínimos, as estações costumam agregar outros dados meteorológicos. A análise exploratória deve determinar um conjunto de estações suficientes para a execução das análises. As variáveis opcionais devem, a princípio, ser comuns à todas as estações escolhidas.
 
-\subsection{\dmc para um número qualquer de variáveis independentes}
+\subsection{Pré-processamento}
+
+
+
+\subsection{Seleção de atributos}
+
+Em ciência de dados, a seleção de atributos é a escolha de um subconjunto de atributos ou variáveis são selecionados para uma determinada análise ou para a criação de um modelo. A escolha pode ser feita de forma exploratória, guiada pela experiência dos analistas; ou baseada em algoritmos. Um aspecto positivo do uso de algoritmos para a seleção de atributos e a possibilidade de encontrar correlações não imaginadas pelos pesquisadores, além de apontar uma ordem de relevância dos atributos do banco de dados.
+
+Nesta pesquisa utilizaremos alguns algoritmos de seleção de atributos e pretendemos comparar os resultados com as correlações do \dmc, a saber:
+
+\begin{itemize}
+    \item Time Series Feature Importance
+    \item Mutual Information
+    \item Autoencoder
+    \item Random Forest Importance
+\end{itemize}
+
+Neste passo podemos comparar diferentes critérios de seleção de variáveis e definir quais destes métodos mais se aproximam e quais se distanciam das correlações encontradas no \dmc.
+
+\subsection{Detrended Multiple Cross-correlation coefficient para um número qualquer de variáveis independentes}
 
 Embora esteja matematicamente definido, o \dmc~utiliza a inversão de matrizes no cálculo do coeficiente múltiplo. Este cálculo envolve o determinante da matriz e pode ser computacionalmente muito custoso.
 
 A generalização proposta é a implementação de um algoritmo eficiente para o calculo do \dmc. A ideia é que este algoritmo seja publicado como um programa e um artigo sobre este programa pode ser submetido ao periódico \emph{Software X}, que tem um foco em publicações sobre programas científicos livres. Caso se entenda que o produto deste trabalho tem potencial para publicação em uma revista de maior fator de impacto, a mudança será feita.
 
-Esta implementação é necessária para possibilitar a criação de um algoritmo de AM baseado no \dmc, visto que os estudos de ML baseiam-se na busca por padrões em um conjunto de atributos que costuma ser maior do que 1. Em seguida abordaremos o problema da criação do algoritmo. 
+Esta implementação é necessária para possibilitar a criação de um algoritmo de AM baseado no \dmc, visto que os estudos de ML baseiam-se na busca por padrões em um conjunto de atributos que costuma ser maior do que 1. Em seguida aborda-se o problema da criação do algoritmo.
+
 
 \subsection{Validação do modelo de AM}
 \label{ssec:vlalid}
 A validação do modelo de AM está representado na Figura~\ref{fig:fluxoGrimm}, baseada no diagrama de modelagem de Grimm e Railsback, um fluxograma circular que procura representar o trabalho de modelagem. Cada um dos nós deste fluxograma representa uma etapa do trabalho de modelagem.
 
-Os nós da Pergunta~(1) e Hipótese~(2) estão descritos na Seção~\ref{quesHip} do Capitulo~\ref{intro} deste projeto. Os padrões esperados~(3) são os padrões de um algoritmo de AM: que após o treinamento, caso não aconteça um sobre-ajuste~(\emph{overfitting}), o modelo seja capaz de generalizar a informação obtida através da busca por padrões para as aplicações pretendidas.
+Os nós da Pergunta~(1) e Hipótese~(2) estão descritos na Seção~\ref{sec:questoes} do Capitulo~\ref{cap:introducao} deste projeto. Os padrões esperados~(3) são os padrões de um algoritmo de AM: que após o treinamento, caso não aconteça um sobre-ajuste~(\emph{overfitting}), o modelo seja capaz de generalizar a informação obtida através da busca por padrões para as aplicações pretendidas.
 
 \begin{figure}[!htb]
 	\centering
@@ -135,7 +155,6 @@ Os nós da Pergunta~(1) e Hipótese~(2) estão descritos na Seção~\ref{quesHip
 	\\{\footnotesize Fonte: Elaborada Pelo Autor}
 	\label{fig:fluxoGrimm}
 \end{figure}
-
 
 O nó Estrutura do modelo~(4) representa um dos maiores desafios da tese: o de validar uma nova estrutura de modelos. Ao invés de buscar uma ferramenta de modelagem conhecida, pretende-se buscar, dentre as ferramentas conhecidas, aspectos que possam ser aproveitados na formatação de uma estratégia de AM baseada nas ferramentas também conhecidas do \pdcca~e \dmc.
 
