@@ -1,0 +1,81 @@
+stages:
+  - prebuild
+  - export_layouts
+  - build
+  - screenshots
+  - deploy
+
+variables:
+  LATEX_IMAGE: aergus/latex
+
+tex-compile_layouts:
+  image: $LATEX_IMAGE
+  stage: prebuild
+  script:
+    - make layouts
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_SHA"
+    paths:
+      - "./screenshots/trigon_layouts.pdf"
+  only:
+    - master
+
+screenshot_layouts:
+  stage: export_layouts
+  image: agflow/poppler
+  script:
+    - cd screenshots
+    - pdftoppm trigon_layouts.pdf layout_example -jpeg
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_SHA"
+    paths:
+      - "./screenshots/*jpg"
+  only:
+    - master
+
+tex-compile:
+  image: $LATEX_IMAGE
+  stage: build
+  script:
+    - make doc demo
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_SHA"
+    paths:
+      - "./demo/trigon_demo.pdf"
+      - "./demo/trigon_demo_alt.pdf"
+      - "./docs/trigontheme.pdf"
+  only:
+    - master
+
+screenshots:
+  stage: screenshots
+  image: agflow/poppler
+  script:
+    - cd demo
+    - pdftoppm trigon_demo.pdf trigon_demo -jpeg
+    - pdftoppm trigon_demo_alt.pdf trigon_demo_alt -jpeg
+    - cd ..
+    - mv demo/*.jpg screenshots
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_SHA"
+    paths:
+      - "./screenshots/*jpg"
+  only:
+    - master
+
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp screenshots/*.jpg public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
+
+# cache all auxiliary files to speed up compilation
+cache:
+  untracked: true
+  key: "$CI_BUILD_NAME"

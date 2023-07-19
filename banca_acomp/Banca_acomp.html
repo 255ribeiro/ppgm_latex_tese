@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title> </title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/league.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<!-- Latex -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+	.row {
+		display: flex;
+
+	}
+
+	.column {
+
+		flex: 45%;
+		padding: 1px;
+
+	}
+
+	.caption {
+		font-size: 1rem;
+
+	}
+</style>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- CAPA -->
+			<section style="margin: 0px; padding: 0px;" data-background-video=".\img\capa\bg.mp4"
+				data-background-video-loop data-background-video-muted data-background-opacity="0.2">
+
+				<div class="row">
+					<div class="column">
+						<img src=".\img\capa\Logo_Uefs.jpg" alt="lcad" style="width:75px">
+					</div>
+					<div>
+						<h4 style="font-size: 30px;">20/07/2023 Banca de acompanhamento - Oficina III - PPGM - UEFS <br>
+							Prof. Dra. Marjorie Cseko Nolasco <br> Prof. Dra. Joselisa Chaves</h4>
+					</div>
+
+					<div class="column">
+						<img src=".\img\capa\logoPPGM-UEFS.png" alt="ufba" style="width:110px">
+					</div>
+
+				</div>
+
+				<br>
+				<h4>\(DMC_{x}^{2}~~\) e aprendizado de máquina aplicados à análise de séries temporais de dados
+					meteorológicos</h4>
+				<br>
+				<p style="font-size: 22px; position: absolute; left: 40px;">Fernando Ferraz Ribeiro -
+					fernando.ribeiro@ufba.br</p>
+
+			</section>
+
+
+
+			<section>
+				<blockquote
+					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+					"The more accurate the map, the more it resembles the territory. The most accurate map possible
+					would be the territory, and thus would be perfectly accurate and perfectly useless."
+				</blockquote>
+				<p> Neil Gaiman, American Gods</p>
+
+
+			</section>
+
+
+			<!-- Introdução  -->
+			<section>
+				<section>
+					<h2><span style="color: lightcoral">Introdução</span></h2>
+				</section>
+
+				<section>
+					<h3><span style="color: lightcoral">Sistemas Complexos</span></h3>
+					<div style="font-size: 2rem;">
+						<p>Este conjunto amplo de fenômenos é comumente identificado e agrupado por algumas de suas
+							características: são formados pela contribuição de um conjunto (geralmente grande) de
+							componentes (muitas vezes simples) que, interagindo, estruturam-se de forma auto-organizada,
+							gerando resultados inesperados, que não podem ser previstos pelos estudos estatísticos e/ou
+							matemáticos tradicionais dos elementos formadores do sistema.</p>
+
+					</div>
+
+					<!-- <a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.proceedings.blucher.com.br/article-details/a-evoluo-do-significado-atribudo-ao-acrnimo-bim-uma-perspectiva-no-tempo-27662">Trecho
+						do artigo: GASPAR, J. A.; RUSCHEL, R. C. A evolução do significado atribuído ao acrônimo BIM
+						:
+						Uma perspectiva no tempo The evolution of the meaning ascribed to the acronym BIM : A
+						perspective in timeSIGraDi 2017, XXI Congreso de la Sociedad Ibero-americana de Gráfica
+						Digital.
+						Anais...Concepcíon, Chile: 2017</a> -->
+
+				</section>
+
+				<section>
+
+					<h3>Reconhecimento da área dos sistemas complexos </h3>
+					<div style="font-size: 2rem;">
+						<p>Em 2021, a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física
+							para <span style="color: lightcoral">Syukuro Manabe</span> e <span
+								style="color: lightcoral">Klaus Hasselmann</span>, cujos estudos apresentam modelos
+							complexos para a análise do clima. Em particular apontam uma correlação entre as emissões de
+							dióxido de carbono e as mudanças climáticas.</p>
+
+						<div class="row">
+
+							<figure class="column">
+								<img src="https://cdn-japantimes.com/wp-content/uploads/2021/12/np_file_128003.jpeg"
+									alt="lcad" style="height:15rem;">
+							</figure>
+							<figure class="column">
+								<img src="https://www.ecmwf.int/sites/default/files/medialibrary/2022-01/NL-170-News-2-Cavaleri-Figure-1.jpg"
+									alt="lcad" style="height:15rem;">
+							</figure>
+						</div>
+
+					</div>
+
+				</section>
+				<section>
+
+					<h3>Sistemas Complexos e Ciência de Dados</h3>
+					<div style="font-size: 1.5rem;">
+						<p>Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É
+							notável a velocidade e quantidade de dados que são gerados e armazenados pela humanidade
+							atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de
+							dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma
+							tecnológico. Um campo do conhecimento que recebeu a denominação de Ciência de Dados,
+							conceito que envelopa alguns termos frequentemente associados à inovação científica, técnica
+							e social como <strong>Big Data</strong>, mineração de dados, <strong>Business
+								Intelligence</strong> internet das coisas, inteligência artificial e aprendizado de
+							máquina(AM), dentre outros (EMC EDUCATION SERVICE, 2015, p. 12-13).</p>
+					</div>
+
+				</section>
+				<section>
+					<h3>Series Temporais</h3>
+					<div style="font-size: 1.5rem;">
+						<p>As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas)
+							ordenado no tempo. <br>Mitos dos dados que descrevem as dinâmicas espaciais podem ser
+							registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de
+							energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença
+							por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração
+							destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas
+							sub-áreas das ciências ambientais (Bermudez-Edo; BARNAGHI; MOESSNER, 2018).
+							</p>
+					</div>
+				</section>
+
+				<section>
+					<H3>Proposta</H3>
+					<div style="font-size: 1.5rem;">
+						<p>Esta pesquisa propõe-se um estudo de dois conjuntos de variáveis meteorológicas, utilizando o \(DMC_{x}^{2}~\) como
+							ferramenta de medição das correlações entre múltiplas variáveis. Após a avaliação dos resultados destes
+							estudos, propõe-se a criação de um modelo preditivo utilizando ferramentas de AM e o \(DMC_{x}^{2}~\).</p>
+							<p>Este processo resultará na criação de um novo modelo de aprendizado de Máquina</p>
+					</div>
+				
+				</section>
+				<section>
+
+					<h3>Objetivo principal</h3>
+
+					<div style="font-size: 1.5rem;"><p>
+						O objetivo principal desta pesquisa é: investigar as correlações entre as variáveis meteorológicas de diferentes localidades através do coeficiente \(DMC_{x}^{2}~\) e utilizar o conhecimento destas correlações para alimentar um modelo preditivo de condições meteorológicas.
+					</p></div>
+
+				</section>
+				<section>
+
+					<h3>Objetivos Gerais</h3>
+
+					<ol style="font-size: 1.5rem;">
+						<li>Implementar um algoritmo computacional geral para calcular o \(DMC_{x}^{2}~\) para qualquer número de séries temporais.</li>
+						<li>Analisar um conjunto de dados contendo medições meteorológicas de todas as capitais brasileiras.</li>
+						<li>Analisar um conjunto de dados meteorológicos sobre radiação solar com estações locadas em diversas partes do globo.</li>
+						<li>Desenvolver e implementar um algoritmo de predição baseado em aprendizado de máquina e redes neurais artificias agregados com o coeficiente \dmc.</li>
+					</ol>
+				
+
+				</section>
+
+				<section>
+					<h3>
+						Premissas
+					</h3>
+
+					<ul style="font-size: 1.5rem;">
+						<li>Os fenômenos climáticos estão relacionados de forma complexa. Por exemplo: massas de ar percorrem distâncias na atmosfera e influenciam uma série de variáveis climáticas nas localidades por onde passam, mas que também são influenciadas, em seu percurso ou sua dissolução pelas mesmas variáveis.</li>
+						<li>O \(DMC_{x}^{2}~\), pelas características de análise do método, pode ajudar a entender estas correlações.</li>
+						<li>O \(DMC_{x}^{2}~\)é uma generalização do método \({\rho}_{DCCA}~\)para múltiplas séries temporais.</li>
+						<li>O \({\rho}_{DCCA}~\), em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais  (WANG et al., 2013).</li>
+						
+					</ul>
+				</section>
+
+				<section>
+					<h3>Questões</h3>
+
+					<ul style="font-size: 1.5rem;">
+						<li>Os fenômenos climáticos estão relacionados de forma complexa. Por exemplo: massas de ar percorrem distâncias na atmosfera e influenciam uma série de variáveis climáticas nas localidades por onde passam, mas que também são influenciadas, em seu percurso ou sua dissolução pelas mesmas variáveis.</li>
+						<li>O \(DMC_{x}^{2}~\), pelas características de análise do método, pode ajudar a entender estas correlações.</li>
+						<li>O \(DMC_{x}^{2}~\)é uma generalização do método \({\rho}_{DCCA}~\)para múltiplas séries temporais.</li>
+						<li>O \({\rho}_{DCCA}~\), em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais  (WANG et al., 2013).</li>
+						
+					</ul>
+
+					
+
+
+				<section>
+		
+
+				</section>
+
+				<section>
+					<h2> Implementando BIM</h2>
+					<p>Obstáculos para a implementação do BIM</p>
+				</section>
+
+				<section>
+					<h3>Documentação do processo BIM</h3>
+
+					<ul style="font-size: 1.8rem;">
+						<li> BIM Mandate</li>
+						<li> BIM Implementation Plan (BIP) </li>
+						<li> BIM Execution Plan (BEP) </li>
+						<li> BIM Protocol </li>
+						<li> Manual de estilo </li>
+
+					</ul>
+					<br>
+					<a target="_blank" href="https://bimdictionary.com/"
+						style="font-size: 1.5rem;">https://bimdictionary.com/</a>
+				</section>
+
+				<section>
+					<h3>IFC e OpenBIM</h3>
+
+					<p style="font-size: 2rem;">Para tornar o BIM uma plataforma aberta, em 1994 cria-se o Building
+						Smart, grupo técnico responsável pelo desenvolvimento do IFC (Industry Foundation Classes),
+						em 1997, protocolo de organização de dados de arquitetura aberta, uma linguagem comum,
+						utilizada para a troca entre modelos de diversos fabricantes;</p>
+
+					<p style="font-size: 2rem;">No entanto, como existem diversas ferramentas de criação com
+						diferentes mecanismos de se criar a geometria e dados associados, no processo de exportação
+						para IFC, esse mapeamento pode não ser bem identificado. Desta forma, pode ocorrer perda de
+						informação.</p>
+					<br>
+					<a target="_blank" href="https://www.buildingsmart.org/">https://www.buildingsmart.org/</a>
+					<br>
+					<a target="_blank"
+						href="https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/">IFC
+						Schema Specifications</a>
+
+
+				</section>
+
+			</section>
+
+			<!-- Conclusão -->
+
+
+			<!-- <section data-background-color="indigo">
+
+					<h3 style="text-align: left;">Conclusão:</h3>
+					<img style="width: 70%;" src="img/will-robots-take-over-our-jobs.jpg" /><br>
+
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg">
+						https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg </a>
+
+				</section> -->
+
+			<!-- <section data-background-color="IndianRed">
+
+					<h3 style="text-align: left;">Referências:</h3>
+					<div style="font-size: 1rem;text-align: justify;">
+
+						<p>ALBINO, V.; BERARDI, U.; DANGELICO, R. M. Smart Cities: Definitions, Dimensions, Performance, and Initiatives. Journal of Urban Technology, v. 22, n. 1, p. 3–21, 2 jan. 2015.</p>
+
+						<p>CHANG, K.-M.; DZENG, R.-J.; WU, Y.-J. An Automated IoT Visualization BIM Platform for Decision Support in Facilities Management. Applied Sciences, v. 8, n. 7, p. 1086, 2018.</p> 
+
+						<p>CHEN, L. et al. Estimating Vehicle and Pedestrian Activity from Town and City Traffic Cameras. Sensors, 2021.</p> 
+						
+						<p>REIS, J. et al. Digital Transformation: A Literature Review and Guidelines for Future Research. Em: ROCHA, Á. et al. (Eds.). Trends and Advances in Information Systems and Technologies. Advances in Intelligent Systems and Computing. Cham: Springer International Publishing, 2018. v. 745p. 411–421.</p>
+						
+						<p>SHANG, Y. et al. Long-term evaluation on urban intensive land use in five fast-growing cities of northern China with GEE support. Scientific Reports, p. 1–14, 2021.</p> 
+						
+						<p>SZOCSKA, M. et al. Countrywide population movement monitoring using mobile devices generated (big) data during the COVID-19 crisis. Scientific Reports, v. 11, n. 1, p. 1–9, 2021.</p> 
+						
+						<p>VIAL, G. Understanding digital transformation: A review and a research agenda. The Journal of Strategic Information Systems, v. 28, n. 2, p. 118–144, jun. 2019.</p> 
+						
+						<p>ZHONG, R. Y. et al. Prefabricated construction enabled by the Internet-of-Things. Automation in Construction, v. 76, p. 59–70, 2017.</p> 
+
+					</div>
+
+				</section>
+
+			</section> -->
+
+		</div>
+	</div>
+
+
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			transition: "convex",
+			slideNumber: true,
+			hash: true,
+			progress: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
