@@ -1,0 +1,74 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[{Bermudez-Edo}, Barnaghi e Moessner 2018]{Bermudez-Edo2018}
+\abntrefinfo{{Bermudez-Edo}, Barnaghi e Moessner}{{Bermudez-Edo}; BARNAGHI;
+  MOESSNER}{2018}
+{{Bermudez-Edo}, M.; BARNAGHI, P.; MOESSNER, K. Analysing real world data
+  streams with spatio-temporal correlations: {{Entropy}} vs. {{Pearson}}
+  correlation.
+\emph{Automation in Construction}, v.~88, n. May 2017, p. 87--100, 2018.
+ISSN 09265805.}
+
+\bibitem[{EMC EDUCATION SERVICE} 2015]{EMCdata2015}
+\abntrefinfo{{EMC EDUCATION SERVICE}}{{EMC EDUCATION SERVICE}}{2015}
+{{EMC EDUCATION SERVICE}. \emph{Data {{Science}} and {{Big Data Analytics}}:
+  {{Discovering}}, {{Analyzing}}, {{Visualizing}} and {{Presenting Data}}}.
+  {Indianapolis, Indiana, USA}: {JOHN WILEY \textbackslash\& SONS}, 2015.
+ISBN 978-1-118-87605-3 1-118-87605-9 978-1-118-87613-8 1-118-87613-X
+  978-1-118-87622-0 1-118-87622-9.}
+
+\bibitem[Filho et al. 2023]{Oliveira2023}
+\abntrefinfo{Filho et al.}{FILHO et al.}{2023}
+{FILHO, F. O. et al. Statistical study of the {{EEG}} in motor tasks (real and
+  imaginary).
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~622, p.
+  128802, jul. 2023.
+ISSN 03784371.}
+
+\bibitem[Mitchell 1997]{mitchell1997}
+\abntrefinfo{Mitchell}{MITCHELL}{1997}
+{MITCHELL, T.~M. \emph{Machine {{Learning}}}. [S.l.]: {McGraw-Hill}, 1997.
+ISBN 978-0-07-042807-2.}
+
+\bibitem[Peng et al. 1994]{Peng_1994}
+\abntrefinfo{Peng et al.}{PENG et al.}{1994}
+{PENG, C.-K. et al. Mosaic {{Organization}} of {{DNA Nucleotides}}.
+v.~49, n.~2, p. 1685--1689, 1994.}
+
+\bibitem[Podobnik e Stanley 2008]{Podobnik2008}
+\abntrefinfo{Podobnik e Stanley}{PODOBNIK; STANLEY}{2008}
+{PODOBNIK, B.; STANLEY, H.~E. Detrended cross-correlation analysis: {{A}} new
+  method for analyzing two nonstationary time series.
+\emph{Physical Review Letters}, v.~100, n.~8, 2008.
+ISSN 00319007.}
+
+\bibitem[Wang et al. 2013]{Wang2013}
+\abntrefinfo{Wang et al.}{WANG et al.}{2013}
+{WANG, G.~J. et al. Random matrix theory analysis of cross-correlations in the
+  {{US}} stock market: {{Evidence}} from {{Pearson}}'s correlation coefficient
+  and detrended cross-correlation coefficient.
+\emph{Physica A: Statistical Mechanics and its Applications}, {Elsevier B.V.},
+  v.~392, n.~17, p. 3715--3730, 2013.
+ISSN 03784371.}
+
+\bibitem[Zebende 2011]{Zebende2011}
+\abntrefinfo{Zebende}{ZEBENDE}{2011}
+{ZEBENDE, G.~F. {{DCCA}} cross-correlation coefficient: {{Quantifying}} level
+  of cross-correlation.
+\emph{Physica A: Statistical Mechanics and its Applications}, {Elsevier B.V.},
+  v.~390, n.~4, p. 614--618, 2011.
+ISSN 03784371.}
+
+\bibitem[Zebende e Silva 2018]{Zebende2018}
+\abntrefinfo{Zebende e Silva}{ZEBENDE; SILVA}{2018}
+{ZEBENDE, G.~F.; SILVA, A.~M. Detrended {{Multiple Cross-Correlation
+  Coefficient}}.
+\emph{Physica A}, {Elsevier B.V.}, v.~510, p. 91--97, 2018.
+ISSN 0378-4371.}
+
+\end{thebibliography}
