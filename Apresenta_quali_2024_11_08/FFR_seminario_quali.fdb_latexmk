@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex FFR_seminario_quali"] 1731084559 "FFR_seminario_quali.aux" "FFR_seminario_quali.bbl" "FFR_seminario_quali" 1731084575 0
+["bibtex FFR_seminario_quali"] 1731084559 "FFR_seminario_quali.aux" "FFR_seminario_quali.bbl" "FFR_seminario_quali" 1744380262 0
   "../References/referencias.bib" 1684169757 575427 86d440a655f125846c92e8d8c415d69e ""
-  "FFR_seminario_quali.aux" 1731084571 16416 43e927d6a1342ecfddd9ddfeec6dc53c "pdflatex"
+  "FFR_seminario_quali.aux" 1744380259 16416 43e927d6a1342ecfddd9ddfeec6dc53c "pdflatex"
   "c:/texlive/2023/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1691343474 5396 4eb260dac60f150ae608d45252853090 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1691343474 60064 0819ac8568f9a482510a46e3a8a6f605 ""
   (generated)
   "FFR_seminario_quali.bbl"
   "FFR_seminario_quali.blg"
   (rewritten before read)
-["pdflatex"] 1731084560 "d:/gitrepos/ppgm_latex_tese/Apresenta_quali_2024_11_08/FFR_seminario_quali.tex" "FFR_seminario_quali.pdf" "FFR_seminario_quali" 1731084575 0
+["pdflatex"] 1744380250 "d:/gitrepos/ppgm_latex_tese/Apresenta_quali_2024_11_08/FFR_seminario_quali.tex" "FFR_seminario_quali.pdf" "FFR_seminario_quali" 1744380262 0
   "../Figures/Logo_Uefs.jpg" 1683993631 9623 48b1d117cb6aea448fb97e2e0e94f415 ""
   "../Figures/ML/MAPA_conceitual_ciencia_de_dados_recorte.jpg" 1626142380 778173 50ac3377e2529073358aa67d9d775f98 ""
   "../Figures/ML/mat_est_ML.png" 1629063783 82505 ef83afe0c3bf3a46aeb626d1a5f75696 ""
@@ -32,14 +32,14 @@
   "../Figures/logoPPGM-UEFS.png" 1683993631 489632 2f33f90a7c7a48a99ec41c8d6dd73577 ""
   "../Figures/pylib/dmc_chart.png" 1730916186 58869 946bb0593ee9bfc80b3686046b8bfb06 ""
   "../Figures/pylib/pdcca_chart.png" 1730914033 64339 3c8ccc1ce1d7a81b6481143339ee7468 ""
-  "FFR_seminario_quali.aux" 1731084571 16416 43e927d6a1342ecfddd9ddfeec6dc53c "pdflatex"
+  "FFR_seminario_quali.aux" 1744380259 16416 43e927d6a1342ecfddd9ddfeec6dc53c "pdflatex"
   "FFR_seminario_quali.bbl" 1731084560 3018 bbbcc4ec67cef18635cf34ba5c2b3dd4 "bibtex FFR_seminario_quali"
-  "FFR_seminario_quali.brf" 1731084571 317 8fe83bc2ff92175663646144e5e6865a "pdflatex"
-  "FFR_seminario_quali.nav" 1731084571 7321 71ed76cc4688896049c0c55cd5249775 "pdflatex"
-  "FFR_seminario_quali.out" 1731084571 1434 c5724024481c96cc946ddd2868fcf9b6 "pdflatex"
-  "FFR_seminario_quali.tex" 1731084540 23575 4b5ebc1847da4413a572a935df71190e ""
-  "FFR_seminario_quali.toc" 1731084571 561 34e40f39e2ff9fa1f316754d5248374c "pdflatex"
-  "FFR_seminario_quali.vrb" 1731084566 467 859c07b507cb3eb9a3b0c0efc5592389 "pdflatex"
+  "FFR_seminario_quali.brf" 1744380259 317 8fe83bc2ff92175663646144e5e6865a "pdflatex"
+  "FFR_seminario_quali.nav" 1744380259 7321 71ed76cc4688896049c0c55cd5249775 "pdflatex"
+  "FFR_seminario_quali.out" 1744380259 1434 c5724024481c96cc946ddd2868fcf9b6 "pdflatex"
+  "FFR_seminario_quali.tex" 1744380248 23579 52e4e515a233e005f256a43188e6cb9a ""
+  "FFR_seminario_quali.toc" 1744380259 561 34e40f39e2ff9fa1f316754d5248374c "pdflatex"
+  "FFR_seminario_quali.vrb" 1744380254 467 859c07b507cb3eb9a3b0c0efc5592389 "pdflatex"
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1691346502 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1691349831 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcss1095.tfm" 1691348367 1536 f0fa079cdc83a6ffeda21e42352cf1ea ""
@@ -343,7 +343,7 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1691371227 4687025 676c7d7298543c4303eabe86c426c675 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691371334 8172625 f42d0d86b5a9d53df6cf8902d13f892b ""
   "c:/texlive/2023/texmf.cnf" 1691371196 713 e69b156964470283e0530f5060668171 ""
-  "d:/gitrepos/ppgm_latex_tese/Apresenta_quali_2024_11_08/FFR_seminario_quali.tex" 1731084540 23575 4b5ebc1847da4413a572a935df71190e ""
+  "d:/gitrepos/ppgm_latex_tese/Apresenta_quali_2024_11_08/FFR_seminario_quali.tex" 1744380248 23579 52e4e515a233e005f256a43188e6cb9a ""
   (generated)
   "FFR_seminario_quali.aux"
   "FFR_seminario_quali.brf"
