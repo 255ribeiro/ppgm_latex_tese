@@ -30,6 +30,7 @@
 %\documentclass[fancychapter, subook]{Classes/PPGM-UEFS}
 %\documentclass[fancychapter, sureport]{Classes/PPGM-UEFS}
 
+
 %%% Fancy page , chapters and sections headings
 %\documentclass[fancyheadings, fancychapter, subook]{Classes/PPGM-UEFS}
 \documentclass[fancyheadings, fancychapter, sureport]{Classes/PPGM-UEFS}
@@ -111,8 +112,15 @@
 
 % Equações
 \newcommand{\dmc}{\(DMC_x^2\) }
-\newcommand{\pdcca}{\({\rho}_{DCCA}\) }
-\newcommand{\fdfa}{\(F_{DFA}\) }
+
+\usepackage{xparse} % for NewDocumentCommand
+\DeclareRobustCommand{\pdcca}{\raisebox{1.2\depth}{$\boldsymbol{\rho}$}$_{DCCA}$}
+% \newcommand{\pdcca}{\raisebox{1.2\depth}{$\boldsymbol{\rho}$}$_{DCCA}$}
+% \newcommand{\pdcca}{\scalebox{1.2}[1.0]{\ensuremath{\gamma}}}
+\newcommand{\dfa}{$DFA$}
+\newcommand{\dcca}{$DCCA$}
+
+\newcommand{\fdfa}{$F_{DFA}$}
 
 
 %%%-------------------------------------------------------------------------------
@@ -131,8 +139,9 @@
 
 
 
+
 %% Preencha as informações abaixo
-\newcommand{\ppgmtitulo}       {\pdcca e \dmc~: Implementação, Otimização e Aplicações}
+\newcommand{\ppgmtitulo}       {\pdcca~e \dmc~: Implementação, Otimização e Aplicações}
 \newcommand{\ppgmsubtitulo}    {Sub-título da Dissertação ou Tese}
 \newcommand{\ppgmautor}        {Fernando Ferraz Ribeiro}
 \newcommand{\ppgmorientador}   {Prof. Dr. Gilney Figueira Zebende}
@@ -154,6 +163,7 @@
 \ppgmbancaext{Prof. Dr. Thadeu Josino Pereira Penna}{UNIVERSIDADE FEDERAL FLUMINENSE}
 \ppgmbancaext{Prof. Dr. Jés de Jesus Fias Cerqueira}{UNIVERSIDADE FEDERAL DA BAHIA}
 \ppgmbancaext{Prof. Dr. Alexsandro Guerra Cerqueira}{UNIVERSIDADE FEDERAL DA BAHIA}
+\ppgmbancaext{Prof. Dr. -----}{UNIVERSIDADE -----}
 
 
 
@@ -211,11 +221,14 @@
 \usepackage{lipsum}
 \usepackage{pdfpages}
 
+
+
 %\usepackage{abntex2cite}
 \usepackage[alf]{abntex2cite}
 
 \usepackage[left=3cm,top=3cm,right=2cm,bottom=2cm]{geometry}
 \usepackage{ifpdf}
+
 % Tables and Figures Caption
 \setlength{\LTcapwidth}{\textwidth}
 
@@ -309,6 +322,10 @@
     \include{Chapters/Capitulo02}
     \include{Chapters/Capitulo03}
     \include{Chapters/Capitulo04}
+
+    \include{Chapters/Capitulo05}
+
+    \include{Chapters/Capitulo06}
     % Caso precise de mais capítulos, basta criar novos arquivos e acrescentá-los
     % aqui seguindo o modelo acima
 

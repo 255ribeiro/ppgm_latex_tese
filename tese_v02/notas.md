@@ -21,3 +21,14 @@ Certainly! Here is a list of feature selection algorithms commonly used for time
 10. Dynamic Time Warping (DTW): Measures the similarity between two time series by aligning them in the time domain, aiding in feature selection by identifying relevant subsequences.
 
 These are some popular feature selection algorithms used in the context of time series data. It's worth noting that the suitability of each algorithm depends on the specific characteristics and requirements of your time series problem.
+
+dados meteorológicos
+
+https://assessingsolar.org/intro.html
+
+O conjunto de dados das estações meteorológicas brasileiras foram baixados do banco de dados online do site do Instituto Nacional de Meteorologia (INMET) \url{https://portal.inmet.gov.br/}. Do massivo conjunto de dados disponível, foram baixados apenas os registros das capitais.
+
+Para as estações globais tomou-se por referência o Baseline Surface Radiation Network (BSRN) \url{https://bsrn.awi.de/}. Uma rede de medições meteorológicas de alta precisão com estações filiadas no mundo inteiro. Para que uma estação faça parte desta rede deve seguir rigorosamente os critérios estabelecidos para medição de radiação solar definidos pela organização \cite{Salazar2020}.
+
+https://assessingsolar.org/notebooks/bsr
+n.html
