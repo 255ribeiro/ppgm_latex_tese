@@ -9,7 +9,7 @@
 
 O presente capítulo apresenta uma revisão bibliográfica dos métodos utilizados, iniciando por uma explicação passo a passo do método para calcular o \dfa~e o \dcca, sem os quais o \pdcca~e o \dmc~não podem ser entendidos, seguindo pela explanação do cálculo do \pdcca~e do \dmc, como se dá a leitura dos resultados e como são aplicados em análises.
 
-Em seguida apresenta-se as relações dos métodos com a geometria fractal e multifractal, conceitos importantes nas análises das séries temporais propostas pelos métodos derivados do \dfa. Apresentamos também metodologia e algorítmo para da determinação da multifractalidade de uma série temporal, segundo o \dfa.
+Em seguida apresenta-se as relações dos métodos com a geometria fractal e multifractal, conceitos importantes nas análises das séries temporais propostas pelos métodos derivados do \dfa. Apresentamos também metodologia e algorítimo para da determinação da multifractalidade de uma série temporal, segundo o \dfa.
 
 Na Sessão~\ref{ss:vari_cross}, apresenta-se uma seleção de outros algoritmos que, além do \dmc, trabalham com correlações múltiplas baseadas no \dfa. Algoritmos selecionados são apresentados.
 
@@ -26,7 +26,7 @@ O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{D
 \item \textbf{Divisão da série em caixa}s: a série integrada$X_{k}$ é dividida em $N - n$ caixas de tamanho $n$ (escala temporal), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
 \item \textbf{Cálculo do ajuste polinomial}: para cada caixa, é calculado polinômio (geralmente de grau 1) que melhor se ajusta, obtendo $\widetilde{X}_{k, i}$ com $i \le k \le (i + n)$;
 \item \textbf{Cálculo da função $f_{DFA}^{2}$ para cada caixa}: para cada caixa de uma escala temporal é calculada a função de \dfa~pela expressão:\\[10pt]
- $f_{DFA}^{2}(n, i) = \frac{1}{1+n} \sum_{k=i}^{i + n}(X_{k}-\widetilde{X}_{k})^{2}$;
+ $f_{DFA}^{2}(n, i) = \frac{1}{1+n} \sum_{k=i}^{i + n}(X_{k,i}-\widetilde{X}_{k,i})^{2}$;
 \item \textbf{Cálculo do DFA para uma escala temporal}: para todas as caixas de uma escala de tempo, o DFA é calculado como: \\[10pt]
         $F_{DFA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DFA}^{2}(n, i)}$;
 \item \textbf{Análise em diferentes escalas temporais}: para diferentes escalas de tempo ($n$), com valores possíveis $4 \le n \le \frac{N}{4}$, é calculada a função $F_{DFA}$ para encontrar uma relação entre $F_{DFA} \times n$
@@ -51,17 +51,17 @@ O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries tempora
   \begin{enumerate}
     \label{steps:DCCA}
   
-    \item \textbf{Cálculo das séries integradas}: tomando duas séries temporais com a mesma extensão $\{x\alpha_{i}\}$ e $\{x\beta_{i}\}$ com $i$ variando de $1$ a $N$,
+    \item \textbf{Cálculo das séries integradas}: tomando duas séries temporais com a mesma extensão $\{x^{j1}_{i}\}$ e $\{x^{j2}_{i}\}$ com $i$ variando de $1$ a $N$,
           as séries integradas $X\alpha_{k}$ e $X\beta_{k}$ são calculadas por
           $X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right] $ para cada série, com $k$ também variando de $i$ a $N$;
-    \item \textbf{Divisão das séries em caixas}: as séries $X\alpha_{k}$ e $X\beta_{k}$ são divididas em $N - n$ caixas de tamanho $n$ (escala de tempo), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;
+    \item \textbf{Divisão das séries em caixas}: as séries $X^{j1}_{k}$ e $X^{j2}_{k}$ são divididas em $N - n$ caixas de tamanho $n$ (escala de tempo), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;
     \item \textbf{Cálculo dos ajustes de polinômios}: para cada caixa, um polinômio (geralmente de grau 1) melhor se ajusta, obtendo
-          $\widetilde{X\alpha}_{k, i}$ e $\widetilde{X\beta}_{k, i}$,
-          para séries $\{x\alpha_{i}\}$ e $\{x\beta_{i}\}$ respectivamente,
+          $\widetilde{X^{j1}}_{k, i}$ e $\widetilde{X^{j2}}_{k, i}$,
+          para séries $\{x^{j1}_{i}\}$ e $\{x^{j2}_{i}\}$ respectivamente,
           com $i \le k \le (i + n)$;
     \item \textbf{Cálculo da função $f_{DCCA}^{2}$~em cada caixa}: para cada caixa uma das $N - n$ caixas de uma mesma escala temporal a função é calculada por:\\[10pt]
      $f_{DCCA}^{2}(n, i) =
-            \frac{1}{1+n} \sum_{k=i}^{i + n}(X\alpha_{k}-\widetilde{X\alpha}_{k, i}) \times (X\beta_{k}-\widetilde{X\beta}_{k, i})$
+            \frac{1}{1+n} \sum_{k=i}^{i + n}(Xj1_{k,i}-\widetilde{X^{j1}}_{k, i}) \times (X^{j2}_{k,i}-\widetilde{X^{j2}}_{k, i})$
     \item \textbf{Cálculo do \dcca~para toda a escala temporal}: para todas as caixas de uma mesma escala temporal, o \dcca~é calculado como:\\[10pt]
           $F_{DCCA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DCCA}^{2}(n, i)}$;
     \item \textbf{Análise em diferentes escalas temporais}: para um número de escalas de tempo ($n$), com valores possíveis $4 \le n \le \frac{N}{4}$, o \dcca~é calculado para encontrar uma relação entre $F_{DCCA} \times n$
@@ -72,8 +72,8 @@ Este coeficiente \(\lambda\) indica a existência de uma correlação entre duas
 
 
 \begin{equation}
-  {\rho}_{DCCA}(n) = \frac{F_{DCCA~(x\alpha,~x\beta)}^{2}(n)}
-  {F_{DFA~(x\alpha)}(n) \times F_{DFA~(x\beta)}(n)}
+  {\rho}_{DCCA}(n) = \frac{F_{DCCA~(x^{j1},~x^{j2})}^{2}(n)}
+  {F_{DFA~(x^{j1})}(n) \times F_{DFA~(x^{j2})}(n)}
   \label{eq:p_dcca}
 \end{equation}
 
@@ -82,15 +82,15 @@ e critérios para avaliação de relevância estatísticas do resultados foram d
 
 O \pdcca~foi estendido para calcular a correlação cruzada de múltiplas series temporais. Denominado \emph{Detrended Multiple Cross-Correlation Coefficient}~(\dmc), representa a generalização do \pdcca~para múltiplas variáveis~\cite{Zebende2018}. Também foi implementado com abordagem de janelas móveis~\cite{Guedes2021} e foi desenvolvido um teste estatístico para o coeficiente múltiplo~\cite{DaSilvaFilho2021}
 
-A generalização utiliza a equação~\ref{eq:dmc}. Sendo $y$ uma serie temporal definida como variável dependente, $x_{j}$ um conjunto de séries temporais tomadas como variáveis independentes, com $j$ variando de $1$ a $m$. Sendo $\rho_{y,x_{j}}(n)$ o vetor coluna contendo dos valores dos coeficientes \pdcca~entre a serie $y$ e cada uma das séries $x_{j}$~(Eq:~\ref{eq:rho_vec_col}). 
+A generalização utiliza a equação~\ref{eq:dmc}. Sendo $y$ uma serie temporal definida como variável dependente, $x^{j}$ um conjunto de séries temporais tomadas como variáveis independentes, com $j$ variando de $1$ a $m$. Sendo $\rho_{y,x^{j}}(n)$ o vetor coluna contendo dos valores dos coeficientes \pdcca~entre a serie $y$ e cada uma das séries $x^{j}$~(Eq:~\ref{eq:rho_vec_col}). 
 
 \begin{equation}
-  {DMC}_{x}^{2}  \equiv \rho_{Y,X_{j}}(n)^{T} \times \rho^{-1}(n) \times \rho_{Y,X_{j}}(n)
+  {DMC}_{x}^{2}  \equiv \rho_{Y,X^{j}}(n)^{T} \times \rho^{-1}(n) \times \rho_{Y,X^{j}}(n)
   \label{eq:dmc}
 \end{equation}
 
 \begin{equation} \label{eq:rho_vec_col}
-  \rho_{Y,X_{j}}(n)^T=[\rho_{Y,X_1}(n), \rho_{Y,X_2}(n),\cdots,\rho_{Y,X_m}(n)]
+  \rho_{Y,X^{j}}(n)^T=[\rho_{Y,X^1}(n), \rho_{Y,X^2}(n),\cdots,\rho_{Y,X^m}(n)]
 \end{equation}
 
 
@@ -98,10 +98,10 @@ A matriz  $\rho^{-1}(n)$, inversa da matriz apresentada na equação~\ref{eq:p_d
 
 \begin{equation}
   \rho~(n) = \left(\begin{matrix}
-    1                     & \rho_{X_{1},X_{2}}(n) & \rho_{X_{1},X_{3}}(n) & \dots & \rho_{X_{1},X_{m}}(n) \\
-    \rho_{X_{2},X_{1}}(n) & 1                     & \rho_{X_{2},X_{3}}(n) & \dots & \rho_{X_{2},X_{m}}(n) \\
+    1                     & \rho_{X^{1},X^{2}}(n) & \rho_{X^{1},X^{3}}(n) & \dots & \rho_{X^{1},X^{m}}(n) \\
+    \rho_{X^{2},X^{1}}(n) & 1                     & \rho_{X^{2},X^{3}}(n) & \dots & \rho_{X_{2},X^{m}}(n) \\
     \vdots                & \vdots                & \vdots                & \dots & \vdots                \\
-    \rho_{X_{m},X_{1}}(n) & \rho_{X_{m},X_{2}}(n) & \rho_{X_{m},X_{3}}(n) & \dots & 1                     \\
+    \rho_{X^{m},X^{1}}(n) & \rho_{X^{m},X^{2}}(n) & \rho_{X^{m},X^{3}}(n) & \dots & 1                     \\
   \end{matrix}\right)
   \label{eq:p_dcca_matrix}
 \end{equation}
@@ -194,5 +194,5 @@ O cálculo final do $DPDCCA$ é realizado pela Equação~\ref{eq:dpdcca}, a part
 
 O resultado deve ser analisado como a correlação entre as duas variáveis, desconsiderando a atuação das outras variáveis cujos valores de \pdcca foram utilizados na montagem da matriz na Equação~\ref{eq:p_dcca_matrix}.
 
-\section{Aplicações dos métodos}
+\section{Aplicações das funções e coeficientes}
 \label{ss:aplica}
