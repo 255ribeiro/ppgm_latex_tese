@@ -2,8 +2,8 @@
 \label{cap:fund_teorica}
 
 \begin{flushright}
-  ``Time is nature's way of keeping everything\\
-  from happening at once.''\\
+  ``Time is nature's way of keeping \\
+    everything from happening at once.''\\[10px]
   (John Archibald Wheeler)
 \end{flushright}
 
@@ -18,10 +18,13 @@ Na Sessão~\ref{ss:aplica}, apresenta-se aplicações do que está família de m
 \section{Métodos de Análise de Séries Temporais: \dfa, \dcca, \pdcca~e \dmc}
 \label{sec:dmc}
 
-O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos:
+O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}.
+
+
+\begin{algorithm} \caption{\dfa} \label{alg:dfa}
+
 
 \begin{enumerate}
-\label{list:dfa}
 \item \textbf{Cálculo da série integrada}: dada uma série temporal $\{x_{i}\}$, com $i$ variando de $1$ a $N$, a série integrada $X_{k}$ é calculada por $X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right]$, com $k$ também variando de $1$ a $N$;
 \item \textbf{Divisão da série em caixa}s: a série integrada$X_{k}$ é dividida em $N - n$ caixas de tamanho $n$ (escala temporal), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
 \item \textbf{Cálculo do ajuste polinomial}: para cada caixa, é calculado polinômio (geralmente de grau 1) que melhor se ajusta, obtendo $\widetilde{X}_{k, i}$ com $i \le k \le (i + n)$;
@@ -31,6 +34,7 @@ O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{D
         $F_{DFA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DFA}^{2}(n, i)}$;
 \item \textbf{Análise em diferentes escalas temporais}: para diferentes escalas de tempo ($n$), com valores possíveis $4 \le n \le \frac{N}{4}$, é calculada a função $F_{DFA}$ para encontrar uma relação entre $F_{DFA} \times n$
   \end{enumerate}
+\end{algorithm}
 
 O \dfa~também  representa as propriedades de auto-correlação de longo alcance de uma lei de potência~\cite{Zebende2013}. Existe uma proporção entre o \dfa~e o exponente $\alpha$ dada por \fdfa$(n) \propto n^\alpha$, portando uma proporção entre $\log($\fdfa$(n)) \propto \alpha$. Diferentes valores de $\alpha$ podem ser interpretados como:
 
@@ -45,12 +49,10 @@ O \dfa~também  representa as propriedades de auto-correlação de longo alcance
 
 O ajuste do polinômio, definido como a tendência, costuma utilizar um polinômio de primeira ordem, mas existem que comparam o efeito que a ordem do polinômio exerce sobre a análise e a capacidade do polinômio de maior grau capturar a tendência da série \cite{huEffectTrendsDetrended2001}.  
 
-O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries temporais \cite{Podobnik2008}. O valor deste coeficiente tende a ser a média dos valores do \dfa~das duas séries e segue os 6 passos descritos abaixo:
+O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries temporais \cite{Podobnik2008}. O valor deste coeficiente tende a ser a média dos valores do \dfa~das duas séries e segue os 6 passos descritos no Algoritmo~\ref{alg:dcca}.
 
-
+\begin{algorithm} \caption{\dcca} \label{alg:dcca}
   \begin{enumerate}
-    \label{steps:DCCA}
-  
     \item \textbf{Cálculo das séries integradas}: tomando duas séries temporais com a mesma extensão $\{x^{j1}_{i}\}$ e $\{x^{j2}_{i}\}$ com $i$ variando de $1$ a $N$,
           as séries integradas $X\alpha_{k}$ e $X\beta_{k}$ são calculadas por
           $X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right] $ para cada série, com $k$ também variando de $i$ a $N$;
@@ -61,12 +63,13 @@ O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries tempora
           com $i \le k \le (i + n)$;
     \item \textbf{Cálculo da função $f_{DCCA}^{2}$~em cada caixa}: para cada caixa uma das $N - n$ caixas de uma mesma escala temporal a função é calculada por:\\[10pt]
      $f_{DCCA}^{2}(n, i) =
-            \frac{1}{1+n} \sum_{k=i}^{i + n}(Xj1_{k,i}-\widetilde{X^{j1}}_{k, i}) \times (X^{j2}_{k,i}-\widetilde{X^{j2}}_{k, i})$
+            \frac{1}{1+n} \sum_{k=i}^{i + n}(X^{j1}_{k,i}-\widetilde{X^{j1}}_{k, i}) \times (X^{j2}_{k,i}-\widetilde{X^{j2}}_{k, i})$
     \item \textbf{Cálculo do \dcca~para toda a escala temporal}: para todas as caixas de uma mesma escala temporal, o \dcca~é calculado como:\\[10pt]
           $F_{DCCA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DCCA}^{2}(n, i)}$;
     \item \textbf{Análise em diferentes escalas temporais}: para um número de escalas de tempo ($n$), com valores possíveis $4 \le n \le \frac{N}{4}$, o \dcca~é calculado para encontrar uma relação entre $F_{DCCA} \times n$
 
 \end{enumerate}
+\end{algorithm}
 
 Este coeficiente \(\lambda\) indica a existência de uma correlação entre duas séries regidas por leis de potência, mas não quantifica o nível desta correlação. O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_dcca}) é um coeficiente que, variando entre -1 e 1, aponta ausência de correlação cruzada para valores próximos de zero, sendo maior a correlação quanto mais o valor se aproximar de 1 e maior a anti-correlação quanto mais o valor se aproximar de -1~\cite{Zebende2011}.
 
@@ -92,7 +95,6 @@ A generalização utiliza a equação~\ref{eq:dmc}. Sendo $y$ uma serie temporal
 \begin{equation} \label{eq:rho_vec_col}
   \rho_{Y,X^{j}}(n)^T=[\rho_{Y,X^1}(n), \rho_{Y,X^2}(n),\cdots,\rho_{Y,X^m}(n)]
 \end{equation}
-
 
 A matriz  $\rho^{-1}(n)$, inversa da matriz apresentada na equação~\ref{eq:p_dcca_matrix}. A matriz é montada através dos valores dos coeficientes \pdcca~para cada par de variáveis dependentes em $x_{w}$. Pela propriedade comutativa presente na equação do cálculo do \pdcca~, pode-se afirmar que a matriz é sempre simétrica. O valor do \pdcca~de uma série com ela mesma é sempre o de correlação total~($1$), portando a diagonal principal apresenta o valor $1$~em todas as posições.
 
@@ -137,7 +139,7 @@ A ideia de se dividir uma figura 2D em caixas apresenta semelhança com a divis�
 	\label{fig:peng01}
 \end{figure}
 
-Uma generalização multifractal do \dfa~foi proposta por \citeonline{kantelhardtMultifractalDetrendedUctuation2002}. Apresentado na Equação~\ref{eq:multifractal},onde o valor de $q$ representa a ordem da função \dfa~calculada. Quando $q=2$ a equação assume o valor do \dfa. No caso de $q=0$ a média exponencial é utilizada para a medição. Esses resultados também foram expandidos, baseando-se no \dcca~para a correlação multifractal entre séries temporais \cite{zhouMultifractalDetrendedCrosscorrelation2008}.
+Uma generalização multifractal do \dfa~foi proposta por \citeonline{kantelhardtMultifractalDetrendedUctuation2002}. Apresentado na Equação~\ref{eq:multifractal}, onde o valor de $q$ representa a ordem da função \dfa~calculada. Quando $q=2$ a equação assume o valor do \dfa. No caso de $q=0$ a média exponencial é utilizada para a medição. Esses resultados também foram expandidos, baseando-se no \dcca~para a correlação multifractal entre séries temporais \cite{zhouMultifractalDetrendedCrosscorrelation2008}.
 
 \begin{equation}\label{eq:multifractal}
   \begin{split}
@@ -167,7 +169,7 @@ Diferente do \dmc, que estabelece um valor de função, onde a correlação é m
     \|X-Y\|=\left\|\left(x_1, x_2, \ldots, x_n\right)-\left(y_1, y_2, \ldots, y_n\right)\right\|=\sqrt{\sum_{i=1}^n\left(x_i-y_i\right)^2}
 \end{equation}
 
-Terminando o cálculo de forma semelhante ao apresentado no algoritmo do \dfa~, como mostrado na Equação~\ref{eq:mvdfa_end}. O $MGDFA$ substitui a norma euclideana pela norma de Mahalanobis. Estes métodos não possuem qualquer relação com o \dcca e, por extensão, com o \pdcca.
+Terminando o cálculo de forma semelhante ao apresentado no algoritmo do \dfa~, como mostrado na Equação~\ref{eq:mvdfa_end}. O $MGDFA$ substitui a norma euclideana pela norma de Mahalanobis. Estes métodos não possuem grandes relações com o \dcca~e, por extensão, com o \pdcca e \dmc.
 
 \begin{equation}\label{eq:mvdfa_end}
     F_{M V D F A}(s)=\left\{\frac{1}{2 N_s} \sum_{v=1}^{2 N_s}\left[F^2(v, s)\right]\right\}^{1 / n}
@@ -192,7 +194,18 @@ O cálculo final do $DPDCCA$ é realizado pela Equação~\ref{eq:dpdcca}, a part
   \rho_{D P C C A}\left(j_1, j_2 ; n\right)=\frac{-C_{j_1, j_2}(n)}{\sqrt{C_{j_1, j_1}(n) \cdot C_{j_2, j_2}(n)}}
 \end{equation}
 
-O resultado deve ser analisado como a correlação entre as duas variáveis, desconsiderando a atuação das outras variáveis cujos valores de \pdcca foram utilizados na montagem da matriz na Equação~\ref{eq:p_dcca_matrix}.
+O resultado deve ser analisado como a correlação entre as duas variáveis, desconsiderando a atuação das outras variáveis cujos valores de \pdcca~foram utilizados na montagem da matriz na Equação~\ref{eq:p_dcca_matrix}.
 
 \section{Aplicações das funções e coeficientes}
 \label{ss:aplica}
+
+Muitas aplicações foram testadas para essas funções e coeficientes. Muitas aplicações na área de medicina e saúde \cite{CHEN2018171, FILHO2023128802, GE2023114155, GHOSH2018392} Questões de economia e marcado financeiro na China \cite{LI2024123716}, América Latina \cite{CONTRERASREYES2024130115},Estados Unidos e China \cite{CHEN2024e36537}e no mercado de energia~\cite{ASLAM2024102085}, detre outros, provando que os estudos de correlação entre mercados costuma tratar de aspectos globais e locais, apresentando forte relação com as ciências ambientais.
+
+Muitos estudos também utilizaram esses métodos em outros aspectos das ciências ambientais: estudos sobre dados sísmicos \cite{shadkhooMultifractalDetrendedCrosscorrelation2009} e geológicos~\cite{BIANCHI2018377, QIN2024108559}; transportes \cite{SHI2018165, ZEBENDE20111677, ZEBENDE20094863}; estudos técnicos que podem trazer melhorias para questões de infra-estrutura \cite{RODRIGUESSANTOS2018294}; pesquisas sobre violência urbana \cite{MACHADOFILHO201412}; e muitos estudos sobre o clima.
+
+Dentre os estudos sobre o clima, destacamos: correlações entre temperatura\cite{YU2019122034}; chuvas \cite{ADARSH2020124913}, \cite{LI2024131535}; entre temperatura e umidade \cite{ZEBENDE201817}; entre dados meteorológicos, e poluentes \cite{SHI2014130}, \cite{HE201747}, \cite{ZHANG2015114}, \cite{SHEN2015417}; Chuva e doenças tropicais \cite{OLIVEIRA2023160491}; aquecimento global~\cite{CHATTERJEE2021125815}, \cite{YUAN201471}; meteorologia e previsões \cite{AFUECHETA2021100295, SHIN2019778}; temperatura do solo e composição \cite{KAR2019236}.
+
+Com base nesta pequena amostra dos inúmeros trabalhos que abordam esse conjunto de funções e coeficientes, é possível afirmar que, do ponto de vista das ciências ambientais, o estudos destes algorítimos é uma significativa contribuição.
+
+
+
