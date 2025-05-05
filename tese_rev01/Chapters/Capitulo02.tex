@@ -18,7 +18,7 @@ Na Sessão~\ref{ss:aplica}, apresenta-se aplicações do que está família de m
 \section{Métodos de Análise de Séries Temporais: \dfa, \dcca, \pdcca~e \dmc}
 \label{sec:dmc}
 
-O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}.
+O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}.\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
 
 
 \begin{algorithm} \caption{\dfa} \label{alg:dfa}
@@ -57,7 +57,7 @@ O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries tempora
     \item \textbf{Cálculo das séries integradas}: tomando duas séries temporais com a mesma extensão $\{x^{j1}_{i}\}$ e $\{x^{j2}_{i}\}$ com $i$ variando de $1$ a $N$,
           as séries integradas $X\alpha_{k}$ e $X\beta_{k}$ são calculadas por
           $X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right] $ para cada série, com $k$ também variando de $i$ a $N$;
-    \item \textbf{Divisão das séries em caixas}: as séries $X^{j1}_{k}$ e $X^{j2}_{k}$ são divididas em $N - n$ caixas de tamanho $n$ (escala de tempo), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;
+    \item \textbf{Divisão das séries em caixas}: as séries $X^{j1}_{k}$ e $X^{j2}_{k}$ são divididas em $(N - n)$ caixas de tamanho $n$ (escala de tempo), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;
     \item \textbf{Cálculo dos ajustes de polinômios}: para cada caixa, um polinômio (geralmente de grau 1) melhor se ajusta, obtendo
           $\widetilde{X^{j1}}_{k, i}$ e $\widetilde{X^{j2}}_{k, i}$,
           para séries $\{x^{j1}_{i}\}$ e $\{x^{j2}_{i}\}$ respectivamente,
