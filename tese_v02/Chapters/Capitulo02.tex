@@ -9,7 +9,7 @@
 
 O presente capítulo apresenta uma revisão bibliográfica dos métodos utilizados, iniciando por uma explicação passo a passo do método para calcular o \dfa~e o \dcca, sem os quais o \pdcca~e o \dmc~não podem ser entendidos, seguindo pela explanação do cálculo do \pdcca~e do \dmc, como se dá a leitura dos resultados e como são aplicados em análises.
 
-Em seguida apresenta-se as relações dos métodos com a geometria fractal e multifractal, conceitos importantes nas análises das séries temporais propostas pelos métodos derivados do \dfa. Apresentamos também metodologia e algorítimo para da determinação da multifractalidade de uma série temporal, segundo o \dfa.
+Em seguida apresenta-se as relações dos métodos com a geometria fractal e multifractal, conceitos importantes nas análises das séries temporais propostas pelos métodos derivados do \dfa.~Apresentamos também metodologia e algorítimo para da determinação da multifractalidade de uma série temporal, segundo o \dfa.
 
 Na Sessão~\ref{ss:vari_cross}, apresenta-se uma seleção de outros algoritmos que, além do \dmc, trabalham com correlações múltiplas baseadas no \dfa. Algoritmos selecionados são apresentados.
 
@@ -18,7 +18,7 @@ Na Sessão~\ref{ss:aplica}, apresenta-se aplicações do que está família de m
 \section{Métodos de Análise de Séries Temporais: \dfa, \dcca, \pdcca~e \dmc}
 \label{sec:dmc}
 
-O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}.
+O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}.
 
 
 \begin{algorithm} \caption{\dfa} \label{alg:dfa}
@@ -26,11 +26,11 @@ O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{D
 
 \begin{enumerate}
 \item \textbf{Cálculo da série integrada}: dada uma série temporal $\{x_{i}\}$, com $i$ variando de $1$ a $N$, a série integrada $X_{k}$ é calculada por $X_{k} = \sum_{i=1}^{k}\left[x_{i} - \langle x \rangle \right]$, com $k$ também variando de $1$ a $N$;
-\item \textbf{Divisão da série em caixa}s: a série integrada$X_{k}$ é dividida em $N - n$ caixas de tamanho $n$ (escala temporal), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
+\item \textbf{Divisão da série em caixa}s: a série integrada$X_{k}$ é dividida em $N - n$ caixas de tamanho $n$ (escala temporal), cada caixa contendo $n + 1$ valores, começando em $i$ até $i + n$;
 \item \textbf{Cálculo do ajuste polinomial}: para cada caixa, é calculado polinômio (geralmente de grau 1) que melhor se ajusta, obtendo $\widetilde{X}_{k, i}$ com $i \le k \le (i + n)$;
 \item \textbf{Cálculo da função $f_{DFA}^{2}$ para cada caixa}: para cada caixa de uma escala temporal é calculada a função de \dfa~pela expressão:\\[10pt]
  $f_{DFA}^{2}(n, i) = \frac{1}{1+n} \sum_{k=i}^{i + n}(X_{k,i}-\widetilde{X}_{k,i})^{2}$;
-\item \textbf{Cálculo do DFA para uma escala temporal}: para todas as caixas de uma escala de tempo, o DFA é calculado como: \\[10pt]
+\item \textbf{Cálculo da função de flutuação para uma escala temporal}: para todas as caixas de uma escala de tempo, o DFA é calculado como: \\[10pt]
         $F_{DFA}(n) = \sqrt{\frac{1}{N - n} \sum_{i=1}^{N-n} f_{DFA}^{2}(n, i)}$;
 \item \textbf{Análise em diferentes escalas temporais}: para diferentes escalas de tempo ($n$), com valores possíveis $4 \le n \le \frac{N}{4}$, é calculada a função $F_{DFA}$ para encontrar uma relação entre $F_{DFA} \times n$
   \end{enumerate}
@@ -129,17 +129,17 @@ A fórmula para a dimensão fractal utilizando a técnica de contagem de caixas 
 Sendo $N(\epsilon)$ é o número de caixas de tamanho $\epsilon$ que preenchem o conjunto.
 
 
-A ideia de se dividir uma figura 2D em caixas apresenta semelhança com a divisão de uma série temporal (1D) por segmentos de reta de um polinômio de primeiro grau. Mais do que uma semelhança aleatória, em escala log-log, o \dfa, quando desenha um segmento de reta ligando uma sequência de escalas temporais, representa uma característica de auto-similaridade da série, como mostrado na Figura~\ref{fig:peng01}. \cite{}
+A ideia de se dividir uma figura 2D em caixas apresenta semelhança com a divisão de uma série temporal (1D) por segmentos de reta de um polinômio de primeiro grau. Mais do que uma semelhança aleatória, em escala log-log, o \dfa, quando desenha um segmento de reta ligando uma sequência de escalas temporais, representa uma característica de auto-similaridade da série, como mostrado na Figura~\ref{fig:peng01} \cite{Peng1994}.
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Análise \dfa~de sequências de DNA e sequências de controle, resultados apresentando correlação de longo alcance~($+$~e~$\circ$) e não apresentando correlação. ($\times$~e~$\square$) }
 	\includegraphics[width=.8\textwidth]{../Figures/peng.png}
-	\\{\footnotesize Fonte: \cite{Peng1994}}
-	\label{fig:peng01}
+  \captionsetup{justification=centering}
+  \caption{Análise \dfa~de sequências de DNA e sequências de controle, resultados apresentando correlação de longo alcance~($+$~e~$\circ$) e não apresentando correlação. ($\times$~e~$\square$)\\Fonte: \cite{Peng1994}}
+\label{fig:peng01}
 \end{figure}
 
-Uma generalização multifractal do \dfa~foi proposta por \citeonline{kantelhardtMultifractalDetrendedUctuation2002}. Apresentado na Equação~\ref{eq:multifractal}, onde o valor de $q$ representa a ordem da função \dfa~calculada. Quando $q=2$ a equação assume o valor do \dfa. No caso de $q=0$ a média exponencial é utilizada para a medição. Esses resultados também foram expandidos, baseando-se no \dcca~para a correlação multifractal entre séries temporais \cite{zhouMultifractalDetrendedCrosscorrelation2008}.
+Uma generalização multifractal do \dfa~foi proposta por \citeonline{kantelhardtMultifractalDetrendedUctuation2002}. Apresentado na Equação~\ref{eq:multifractal}, onde o valor de $q$ representa a ordem da função \dfa~calculada. Quando $q=2$ a equação assume o valor do \dfa. No caso de $q=0$ a média exponencial é utilizada para a medição. Esses resultados também foram expandidos, baseando-se no \dcca~para a multi- correlação multifractal entre séries temporais \cite{zhouMultifractalDetrendedCrosscorrelation2008}.
 
 \begin{equation}\label{eq:multifractal}
   \begin{split}

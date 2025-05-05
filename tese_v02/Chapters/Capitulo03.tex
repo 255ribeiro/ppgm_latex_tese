@@ -12,21 +12,21 @@ activity (Real/Imaginary)}
 
 O primeiro artigo apresentado, \emph{DCCA multi cross-correlation analysis applied on EEG signals to study motor activity (Real/Imaginary)}~\cite{RIBEIRO2025107419}, narra uma pesquisa utilizando o \dmc~na busca de padrões cerebrais, através do estudo das séries temporais oriundas de um experimento (de movimentos reais e imaginários dos membros do corpo) monitorado pelas gravações das ondas do cérebro por um aparelho de eletroencefalograma. O artigo trabalha com o \pdcca com a mesma fonte de dados que o artigo intitulado \emph{Statistical study of the EEG in motor tasks (real and imaginary)}~\cite{Oliveira2023}, utilizando o \pdcca~apresentado no Anexo~\ref{an:a}, e representa um avanço técnico em relação ao anterior.
 
-\begin{figure}[!htb]
-	\centering
-	\caption{Desvio padrão dos valores do \dmc para cada uma das tarefas}
+\begin{figure}[!htb]\label{fig:a01_sd}
+    \centering
 	\includegraphics[width=.8\textwidth]{./Figures/art_01/std pop.jpg}
-	\\{\footnotesize Fonte: Elaborada pelos autores}
-	\label{fig:a01_sd}
+    \captionsetup{justification=centering}
+    \caption{Desvio padrão dos valores do \dmc para cada uma das tarefas.\\Fonte: Elaborada pelos autores.}
+	
 \end{figure}
 
 No Artigo de 2023, apenas um subconjunto de 11 indivíduos de universo de 109. Já no artigo de 2025, 108 dos 109 indivíduos foram analisados. Encarando o dilema de, trabalhar com um ambiente de mais alto nível, capaz de manipular o conjunto de dados e visualizar os resultados de foma mais prática e automatizada, com sacrifício do desempenho, ou trabalhar em baixo nível, como maior velocidade de cálculos e menor praticidade para trabalhar, uma solução intermediária foi adotada: os dados foram baixados, carregados, editados e preparados utilizando um ambiante Python, os cálculos foram feitos através de um programa escrito em C e a visualização dos resultados novamente em Python. As chamadas do programa em C foram feitas dentro do código Python, utilizando a biblioteca \emph{subprocess}.
 
 \begin{figure}[!htb]
 	\centering
-	\caption{Médias dos valores do \dmc para cada uma das tarefas}
 	\includegraphics[width=.8\textwidth]{./Figures/art_01/mean.jpg}
-	\\{\footnotesize Fonte: Elaborada pelos autores}
+    \captionsetup{justification=centering}
+    \caption{Médias dos valores do \dmc para cada uma das tarefas.\\ Fonte: Elaborada pelos autores}
 	\label{fig:a01_mean}
 \end{figure}
 
@@ -51,11 +51,12 @@ A pesquisa utilizou-se exaustivamente da análise de gráficos para chegar nas c
 	\url{https://255ribeiro.github.io/Multi_Cross-correlation_EEG/}
 \end{center}
 
+Os códigos utilizados para o \emph{download} dos dados, tratamento, cálculos e geração das figuras estão disponíveis em \url{https://github.com/255ribeiro/Series_EGG_3_14}.
+
 \begin{figure}[!htb]
 	\centering
-	\caption{Mediana dos valores do \dmc para cada uma das tarefas}
 	\includegraphics[width=.8\textwidth]{./Figures/art_01/median.jpg}
-	\\{\footnotesize Fonte: Elaborada pelos autores}
+    \caption{Mediana dos valores do \dmc para cada uma das tarefas.\\  Fonte: Elaborada pelos autores}
 	\label{fig:a01_median}
 \end{figure}
 

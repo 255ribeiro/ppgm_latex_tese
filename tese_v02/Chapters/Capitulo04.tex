@@ -73,11 +73,13 @@ Essa pequena mudança, embora possa até aumentar o tempo de processamento para 
 
 Na biblioteca \emph{Zebende} é possível implementar outras versões do código para o cálculo do \pdcca~com poucas séries temporais. Mas é preciso entender em que ponto o Algoritmo~\ref{alg:det_reuse} passa a ser vantajoso. Caso o $DV$ não seja armazenado, o número de vezes que ele tem que ser calculado é de duas vezes o número de combinações duas a duas para $j$ séries~(Equação~\ref{eq:combinations_2x2}) e o tempo gasto para calcular o $DV$ depende do tamanho das séries.
 
-Vale também ressaltar que as otimizações baseadas nos parâmetros do método dos mínimos quadrados pode ser adaptado para diversos graus para o polinômio da tendência, mas não pode se adaptar à caixas não sobrepostas.
+Vale também ressaltar que as otimizações baseadas no salvamento dos parâmetros do método dos mínimos quadrados pode ser adaptado para diversos graus do polinômio da tendência, mas não pode se adaptar à caixas não sobrepostas.
 
-Como apresentado na Sessão\ref{ss:dfa_fract} do Capítulo~\ref{cap:fund_teorica}, alguns autores ainda advogam pela não sobreosição das caixas~\cite{zhouMultifractalDetrendedCrosscorrelation2008}, nestes casos, o armazenamento dos parâmetros para o cálculo dos mínimos quadrados não funcionaria. Por outro lado, para uma grande quantidade de séries temporais o Algorítimo~\ref{alg:det_reused}, \emph{Detrended Saved}, funcionaria também no cenário de caixas não sobrepostas.
+Como apresentado na Sessão\ref{ss:dfa_fract} do Capítulo~\ref{cap:fund_teorica}, alguns autores ainda advogam pela não sobreposição das caixas~\cite{zhouMultifractalDetrendedCrosscorrelation2008}, nestes casos, o armazenamento dos parâmetros para o cálculo dos mínimos quadrados não funcionaria. Por outro lado, para uma grande quantidade de séries temporais o Algorítimo~\ref{alg:det_reused}, \emph{Detrended Saved}, funcionaria também no cenário de caixas não sobrepostas.
 
-Além da otimização, o artigo apresenta o modo de uso da biblioteca e algumas das funções auxiliares já implementadas. As equações destacadas nas Sessões~\ref{ss:dfa_fract}~e~\ref{ss:vari_cross} do Capítulo~\ref{cap:fund_teorica} estão entre as próximas adições ao pacote. 
+Além da otimização, o artigo apresenta o modo de uso da biblioteca e algumas das funções auxiliares já implementadas. As equações destacadas nas Sessões~\ref{ss:dfa_fract}~e~\ref{ss:vari_cross} do Capítulo~\ref{cap:fund_teorica} estão entre as próximas adições ao pacote.
+
+O código fonte da biblioteca \emph{Zebende} está disponível em \url{https://github.com/255ribeiro/zebende}.
 
 
     \includepdf[pages=-, pagecommand={\thispagestyle{plain}}]{./Papers_publi/paper_zebendelib.pdf}

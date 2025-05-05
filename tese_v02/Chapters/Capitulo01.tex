@@ -13,12 +13,12 @@ Na área dos estudos ambientais, os sistemas complexos aparecem em problemas de 
 
 Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É notável a velocidade e quantidade de dados que são gerados, obtidos e armazenados pela humanidade atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico. Um campo do conhecimento que recebeu a denominação de Ciência de Dados, conceito que envelopa alguns termos frequentemente associados à inovação científica, técnica e social como \emph{Big Data}, mineração de dados, \emph{Business Intelligence} internet das coisas, inteligência artificial (IA) e aprendizado de máquina (AM), dentre outros \cite[p. 12-13]{EMCdata2015}.
 
-Uma das formas em que os dados costumam ser organizados são as denominadas séries temporais. As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas) ordenado no tempo.  Embora muitos dos dados que descrevem as dinâmicas espaciais podem ser registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas sub-áreas das ciências ambientais\cite{Bermudez-Edo2018}.
+Uma das formas em que os dados costumam ser organizados são as denominadas séries temporais. As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas) ordenado no tempo.  Embora muitos dos dados que descrevem as dinâmicas espaciais podem ser registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas sub-áreas das ciências ambientais~\cite{Bermudez-Edo2018}.
 
 \section{Definição do problema}
 \label{sec:problema}
 
-As séries temporais registram aspectos fundamentais de uma série de problemas, de diversas áreas, que, devidamente abordados, podem clarificar características e comportamentos destas estruturas de dados. 
+As séries temporais registram aspectos fundamentais de uma série de problemas, de diversas áreas que, devidamente abordados, podem clarificar características e comportamentos destas estruturas de dados. 
 
 O coeficiente \dmc~é uma ferramenta promissora para a análise de correlações em séries temporais múltiplas, permitindo a identificação de padrões complexos que não são capturados por métodos tradicionais. No entanto, sua aplicação em problemas reais ainda é limitada devido à falta de implementações computacionais eficientes e estudos que explorem seu potencial em diferentes contextos.
 
@@ -27,15 +27,15 @@ O coeficiente \dmc~é uma ferramenta promissora para a análise de correlações
 \section{Objetivos}
 \label{sec:Objetivos}
 
-Neste trabalho, tem-se por objetivo investigar a aplicabilidade do \pdcca~a do \dmc, com o objetivo, não só de identificar correlações entre variáveis, mas também de entender o algoritmo, propor e aperfeiçoar ferramentas computacionais para a realização dos cálculos.
+Neste trabalho, tem-se por objetivo investigar a aplicabilidade do \pdcca~e do \dmc, com o objetivo, não só de identificar correlações entre variáveis, mas também de entender o algoritmo, propor e aperfeiçoar ferramentas computacionais para a realização dos cálculos.
 
 Como objetivos gerais foram elencados:
 
 \begin{enumerate}
     \label{enum:obj_espec}
-    \item  Testar os algoritmos e os métodos; 
-    \item implementar um algoritmo computacional geral para calcular o \dmc para qualquer número de séries temporais;
-    \item testar as ferramentas implementadas em novas análises.
+    \item  Testar os algoritmos e os métodos.
+    \item Implementar um algoritmo computacional geral para calcular o \dmc para qualquer número de séries temporais.
+    \item Testar as ferramentas implementadas em novas análises.
 \end{enumerate}
 
 \section{Importância da Pesquisa}
@@ -64,14 +64,14 @@ De resto, vale lembrar que a honestidade do trabalho científico pode levar a re
 \section{Questões e Hipóteses}
 \label{sec:questoes}
 
-Este trabalho foi baseado em algumas premissas:
+Este projeto foi baseado em algumas premissas:
 
 \begin{enumerate}
     \label{enum:premissas}
 
     \item O \dmc, pelas características de análise do método, pode ajudar a entender características de séries temporais e aplicado em problemas de diversas áreas.
     \item O \dmc~é uma generalização do método \pdcca~para múltiplas séries temporais.
-	\item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais~\cite{Wang2013}. 
+	\item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais não estacionárias~\cite{Wang2013}. 
 \end{enumerate}
 
 Partindo destas premissas, procuramos responder perguntas basilares:
@@ -83,11 +83,12 @@ Partindo destas premissas, procuramos responder perguntas basilares:
     \item A implementação e melhorias, se bem sucedidas, poderiam ampliar o número de possíveis investigações em que os coeficientes podem ser aplicados?
 \end{enumerate}
 
-Para orientar o trabalho, duas hipóteses foram formuladas:
+Para orientar o trabalho, as seguintes hipóteses foram formuladas:
 
 \begin{enumerate}
     \item É possível otimizar os cálculos do \pdcca~e do \dmc.
-	\item Uma ferramenta adequada para o cálculo dos coeficientes seria um impulso na aplicação, utilização e divulgação destes.
+    \item Com maior poder de cálculo o a apicação dos coeficientes seria potencializada.
+	\item Uma ferramenta adequada para o cálculo dos coeficientes seria um impulso na utilização e divulgação destes.
 \end{enumerate}
 
 \section{Metodologia}
@@ -118,7 +119,7 @@ O Capítulo~\ref{cap:paper_01} apresenta um artigo publicado, apresentando uma a
 
 O Capítulo~\ref{cap:paper_02} apresenta um artigo ainda não publicado apresenta a criação de uma ferramenta computacional que possibilita velocidade e \emph{usabilidade} no cálculo dos algorítimos do \dfa, \dcca~e \pdcca. Além da implementação da biblioteca, o artigo apresenta como contribuição, uma mudança na sequência de passos extremamente vantajosa para o cálculo do \dcca~e \pdcca, principalmente para cálculo com muitas séries paralelas, como no caso da atribuição de valores na matriz do \pdcca~para cálculo do \dmc.
 
-O Capítulo~\ref{cap:paper_03}\dots
+O Capítulo~\ref{cap:paper_03} apresenta um experimento utilizando a ferramenta computacional desenvolvida. Testa critérios de semelhança entre séries temporais e aponta a possibilidade de se usar esses critérios na seleção de atributos de algoritmos de aprendizado de máquina.
 
 O Capitulo~\ref{cap:coclusion} por fim, resume os achados e analisa os resultados.
 
