@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@sectionintoc {2}{Metodologia}{14}{0}{2}
+\beamer@sectionintoc {3}{Fundamentação Teórica}{16}{0}{3}
+\beamer@sectionintoc {4}{Resultados}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Artigo 01}{24}{0}{4}
+\beamer@subsectionintoc {4}{2}{Algoritmo registrado - 01}{26}{0}{4}
+\beamer@subsectionintoc {4}{3}{Artigo 02}{27}{0}{4}
+\beamer@subsectionintoc {4}{4}{Algoritmo - biblioteca Python/Zig}{38}{0}{4}
+\beamer@sectionintoc {5}{Referências}{41}{0}{5}
