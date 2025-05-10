@@ -22,6 +22,18 @@ ISBN 978-1-118-87605-3 1-118-87605-9 978-1-118-87613-8 1-118-87613-X 978-1-118-8
 \emph{Physica A: Statistical Mechanics and its Applications}, v.~622, p. 128802, jul. 2023.
 ISSN 03784371.}
 
+\bibitem[Hartmann et al. 2013]{hartmannRealtimeFractalSignal2013}
+\abntrefinfo{Hartmann et al.}{HARTMANN et al.}{2013}
+{HARTMANN, A. et al. Real-time fractal signal processing in the time domain.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~392, n.~1, p. 89--102, jan. 2013.
+ISSN 03784371.}
+
+\bibitem[Kaposzta et al. 2022]{Kapostza2022}
+\abntrefinfo{Kaposzta et al.}{KAPOSZTA et al.}{2022}
+{KAPOSZTA, Z. et al. Real-{{Time Algorithm}} for {{Detrended Cross-Correlation Analysis}} of {{Long-Range Coupled Processes}}.
+\emph{Frontiers in Physiology}, v.~13, p. 817268, mar. 2022.
+ISSN 1664-042X.}
+
 \bibitem[Peng et al. 1994]{Peng_1994}
 \abntrefinfo{Peng et al.}{PENG et al.}{1994}
 {PENG, C.-K. et al. Mosaic {{Organization}} of {{DNA Nucleotides}}.

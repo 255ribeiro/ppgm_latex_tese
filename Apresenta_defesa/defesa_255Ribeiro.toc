@@ -6,4 +6,4 @@
 \beamer@subsectionintoc {4}{2}{Algoritmo registrado - 01}{26}{0}{4}
 \beamer@subsectionintoc {4}{3}{Artigo 02}{27}{0}{4}
 \beamer@subsectionintoc {4}{4}{Algoritmo - biblioteca Python/Zig}{38}{0}{4}
-\beamer@sectionintoc {5}{Referências}{41}{0}{5}
+\beamer@sectionintoc {5}{Referências}{52}{0}{5}
