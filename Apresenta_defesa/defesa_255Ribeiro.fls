@@ -563,6 +563,11 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT ./diag_revisao.jpeg
+INPUT ./diag_revisao.jpeg
+INPUT ./diag_revisao.jpeg
+INPUT ./diag_revisao.jpeg
+INPUT ./diag_revisao.jpeg
 INPUT ../Figures/artigos_publicados/artigo_01_abr_2023.png
 INPUT ../Figures/artigos_publicados/artigo_01_abr_2023.png
 INPUT ../Figures/artigos_publicados/artigo_01_abr_2023.png

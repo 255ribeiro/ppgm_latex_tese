@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.6)  10 MAY 2025 00:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.6)  15 MAY 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1068,230 +1068,242 @@ File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 
 ] [22
 
-] [23
-
 ]
-<../Figures/artigos_publicados/artigo_01_abr_2023.png, id=234, 970.22475pt x 453.49425pt>
-File: ../Figures/artigos_publicados/artigo_01_abr_2023.png Graphic file (type png)
-<use ../Figures/artigos_publicados/artigo_01_abr_2023.png>
-Package pdftex.def Info: ../Figures/artigos_publicados/artigo_01_abr_2023.png  used on input line 256.
-(pdftex.def)             Requested size: 328.7173pt x 153.64644pt.
- [24
+<./diag_revisao.jpeg, id=227, 803.0pt x 602.25pt>
+File: ./diag_revisao.jpeg Graphic file (type jpg)
+<use ./diag_revisao.jpeg>
+Package pdftex.def Info: ./diag_revisao.jpeg  used on input line 250.
+(pdftex.def)             Requested size: 273.15117pt x 204.86061pt.
 
- <../Figures/artigos_publicados/artigo_01_abr_2023.png>]
-<../Figures/artigos_publicados/certificado_alg_01.png, id=243, 817.8555pt x 504.6855pt>
-File: ../Figures/artigos_publicados/certificado_alg_01.png Graphic file (type png)
-<use ../Figures/artigos_publicados/certificado_alg_01.png>
-Package pdftex.def Info: ../Figures/artigos_publicados/certificado_alg_01.png  used on input line 271.
-(pdftex.def)             Requested size: 248.99007pt x 153.64644pt.
- [25
-
- <../Figures/artigos_publicados/certificado_alg_01.png>] [26
-
-] [27
-
-]
-<../Figures/art_02/Fig1.png, id=264, 752.8125pt x 874.76813pt>
-File: ../Figures/art_02/Fig1.png Graphic file (type png)
-<use ../Figures/art_02/Fig1.png>
-Package pdftex.def Info: ../Figures/art_02/Fig1.png  used on input line 315.
-(pdftex.def)             Requested size: 132.21512pt x 153.64644pt.
- [28
-
- <../Figures/art_02/Fig1.png>]
-<../Figures/art_02/Fig2.png, id=271, 1656.1875pt x 828.09375pt>
-File: ../Figures/art_02/Fig2.png Graphic file (type png)
-<use ../Figures/art_02/Fig2.png>
-Package pdftex.def Info: ../Figures/art_02/Fig2.png  used on input line 327.
-(pdftex.def)             Requested size: 256.07463pt x 128.0374pt.
-
-Overfull \vbox (13.03519pt too high) detected at line 327
+Overfull \vbox (49.77089pt too high) detected at line 250
  []
 
-[29
+[23
+
+ <./diag_revisao.jpeg>] [24
+
+]
+<../Figures/artigos_publicados/artigo_01_abr_2023.png, id=241, 970.22475pt x 453.49425pt>
+File: ../Figures/artigos_publicados/artigo_01_abr_2023.png Graphic file (type png)
+<use ../Figures/artigos_publicados/artigo_01_abr_2023.png>
+Package pdftex.def Info: ../Figures/artigos_publicados/artigo_01_abr_2023.png  used on input line 266.
+(pdftex.def)             Requested size: 328.7173pt x 153.64644pt.
+ [25
+
+ <../Figures/artigos_publicados/artigo_01_abr_2023.png>]
+<../Figures/artigos_publicados/certificado_alg_01.png, id=251, 817.8555pt x 504.6855pt>
+File: ../Figures/artigos_publicados/certificado_alg_01.png Graphic file (type png)
+<use ../Figures/artigos_publicados/certificado_alg_01.png>
+Package pdftex.def Info: ../Figures/artigos_publicados/certificado_alg_01.png  used on input line 281.
+(pdftex.def)             Requested size: 248.99007pt x 153.64644pt.
+ [26
+
+ <../Figures/artigos_publicados/certificado_alg_01.png>] [27
+
+] [28
+
+]
+<../Figures/art_02/Fig1.png, id=271, 752.8125pt x 874.76813pt>
+File: ../Figures/art_02/Fig1.png Graphic file (type png)
+<use ../Figures/art_02/Fig1.png>
+Package pdftex.def Info: ../Figures/art_02/Fig1.png  used on input line 325.
+(pdftex.def)             Requested size: 132.21512pt x 153.64644pt.
+ [29
+
+ <../Figures/art_02/Fig1.png>]
+<../Figures/art_02/Fig2.png, id=278, 1656.1875pt x 828.09375pt>
+File: ../Figures/art_02/Fig2.png Graphic file (type png)
+<use ../Figures/art_02/Fig2.png>
+Package pdftex.def Info: ../Figures/art_02/Fig2.png  used on input line 337.
+(pdftex.def)             Requested size: 256.07463pt x 128.0374pt.
+
+Overfull \vbox (13.03519pt too high) detected at line 337
+ []
+
+[30
 
  <../Figures/art_02/Fig2.png>]
-<../Figures/art_02/Fig3.jpg, id=279, 1300.86pt x 650.43pt>
+<../Figures/art_02/Fig3.jpg, id=286, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig3.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig3.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig3.jpg  used on input line 340.
-(pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
- [30
-
- <../Figures/art_02/Fig3.jpg>]
-<../Figures/art_02/Fig4.jpg, id=286, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig4.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig4.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig4.jpg  used on input line 353.
+Package pdftex.def Info: ../Figures/art_02/Fig3.jpg  used on input line 350.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [31
 
- <../Figures/art_02/Fig4.jpg>]
-<../Figures/art_02/Fig5.jpg, id=294, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig5.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig5.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig5.jpg  used on input line 365.
+ <../Figures/art_02/Fig3.jpg>]
+<../Figures/art_02/Fig4.jpg, id=294, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig4.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig4.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig4.jpg  used on input line 363.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [32
 
- <../Figures/art_02/Fig5.jpg>]
-<../Figures/art_02/Fig6.jpg, id=302, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig6.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig6.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig6.jpg  used on input line 378.
+ <../Figures/art_02/Fig4.jpg>]
+<../Figures/art_02/Fig5.jpg, id=302, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig5.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig5.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig5.jpg  used on input line 375.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [33
 
- <../Figures/art_02/Fig6.jpg>]
-<../Figures/art_02/Fig7.jpg, id=309, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig7.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig7.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig7.jpg  used on input line 390.
+ <../Figures/art_02/Fig5.jpg>]
+<../Figures/art_02/Fig6.jpg, id=309, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig6.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig6.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig6.jpg  used on input line 388.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [34
 
- <../Figures/art_02/Fig7.jpg>]
-<../Figures/art_02/Fig8.jpg, id=316, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig8.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig8.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig8.jpg  used on input line 402.
+ <../Figures/art_02/Fig6.jpg>]
+<../Figures/art_02/Fig7.jpg, id=316, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig7.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig7.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig7.jpg  used on input line 400.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [35
 
- <../Figures/art_02/Fig8.jpg>]
-<../Figures/art_02/Fig9.jpg, id=323, 1300.86pt x 650.43pt>
-File: ../Figures/art_02/Fig9.jpg Graphic file (type jpg)
-<use ../Figures/art_02/Fig9.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig9.jpg  used on input line 415.
+ <../Figures/art_02/Fig7.jpg>]
+<../Figures/art_02/Fig8.jpg, id=323, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig8.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig8.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig8.jpg  used on input line 412.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [36
 
+ <../Figures/art_02/Fig8.jpg>]
+<../Figures/art_02/Fig9.jpg, id=330, 1300.86pt x 650.43pt>
+File: ../Figures/art_02/Fig9.jpg Graphic file (type jpg)
+<use ../Figures/art_02/Fig9.jpg>
+Package pdftex.def Info: ../Figures/art_02/Fig9.jpg  used on input line 425.
+(pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
+ [37
+
  <../Figures/art_02/Fig9.jpg>]
-<../Figures/art_02/Fig10.jpg, id=330, 1084.05pt x 1445.4pt>
+<../Figures/art_02/Fig10.jpg, id=338, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig10.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig10.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig10.jpg  used on input line 462.
+Package pdftex.def Info: ../Figures/art_02/Fig10.jpg  used on input line 472.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 462--462
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 472--472
  [][] 
  []
 
-<../Figures/art_02/Fig11.jpg, id=331, 1084.05pt x 1445.4pt>
+<../Figures/art_02/Fig11.jpg, id=339, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig11.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig11.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig11.jpg  used on input line 462.
+Package pdftex.def Info: ../Figures/art_02/Fig11.jpg  used on input line 472.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 462--462
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 472--472
  [][] 
  []
 
-<../Figures/art_02/Fig12.jpg, id=332, 1084.05pt x 1445.4pt>
+<../Figures/art_02/Fig12.jpg, id=340, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig12.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig12.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig12.jpg  used on input line 462.
+Package pdftex.def Info: ../Figures/art_02/Fig12.jpg  used on input line 472.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 462--462
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 472--472
  [][] 
  []
 
-<../Figures/art_02/Fig13.jpg, id=333, 1084.05pt x 1445.4pt>
+<../Figures/art_02/Fig13.jpg, id=341, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig13.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig13.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig13.jpg  used on input line 462.
+Package pdftex.def Info: ../Figures/art_02/Fig13.jpg  used on input line 472.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 462--462
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 472--472
  [][] 
  []
 
-[37
+[38
 
- <../Figures/art_02/Fig10.jpg> <../Figures/art_02/Fig11.jpg> <../Figures/art_02/Fig12.jpg> <../Figures/art_02/Fig13.jpg>] [38
+ <../Figures/art_02/Fig10.jpg> <../Figures/art_02/Fig11.jpg> <../Figures/art_02/Fig12.jpg> <../Figures/art_02/Fig13.jpg>] [39
 
 ]
-<../Figures/pylib/pdcca_chart.png, id=350, 1019.60925pt x 261.97874pt>
+<../Figures/pylib/pdcca_chart.png, id=357, 1019.60925pt x 261.97874pt>
 File: ../Figures/pylib/pdcca_chart.png Graphic file (type png)
 <use ../Figures/pylib/pdcca_chart.png>
-Package pdftex.def Info: ../Figures/pylib/pdcca_chart.png  used on input line 489.
+Package pdftex.def Info: ../Figures/pylib/pdcca_chart.png  used on input line 499.
 (pdftex.def)             Requested size: 364.19664pt x 93.57674pt.
- [39
-
- <../Figures/pylib/pdcca_chart.png>]
-<../Figures/pylib/dmc_chart.png, id=358, 1006.962pt x 273.4215pt>
-File: ../Figures/pylib/dmc_chart.png Graphic file (type png)
-<use ../Figures/pylib/dmc_chart.png>
-Package pdftex.def Info: ../Figures/pylib/dmc_chart.png  used on input line 503.
-(pdftex.def)             Requested size: 364.19664pt x 98.89058pt.
  [40
 
- <../Figures/pylib/dmc_chart.png>] [41
+ <../Figures/pylib/pdcca_chart.png>]
+<../Figures/pylib/dmc_chart.png, id=365, 1006.962pt x 273.4215pt>
+File: ../Figures/pylib/dmc_chart.png Graphic file (type png)
+<use ../Figures/pylib/dmc_chart.png>
+Package pdftex.def Info: ../Figures/pylib/dmc_chart.png  used on input line 513.
+(pdftex.def)             Requested size: 364.19664pt x 98.89058pt.
+ [41
 
-] [42
+ <../Figures/pylib/dmc_chart.png>] [42
+
+] [43
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 548.
+(Font)              using `OT1/cmss/bx/n' instead on input line 558.
 
-[43
+[44
 
-] [44
+] [45
 
 
 ]
-<../Figures/pylib/elapsed_tws_04.png, id=397, 927.2241pt x 632.3625pt>
+<../Figures/pylib/elapsed_tws_04.png, id=404, 927.2241pt x 632.3625pt>
 File: ../Figures/pylib/elapsed_tws_04.png Graphic file (type png)
 <use ../Figures/pylib/elapsed_tws_04.png>
-Package pdftex.def Info: ../Figures/pylib/elapsed_tws_04.png  used on input line 558.
+Package pdftex.def Info: ../Figures/pylib/elapsed_tws_04.png  used on input line 568.
 (pdftex.def)             Requested size: 364.19664pt x 248.37651pt.
 
-Overfull \vbox (60.80272pt too high) detected at line 558
+Overfull \vbox (60.80272pt too high) detected at line 568
  []
 
-[45
+[46
 
- <../Figures/pylib/elapsed_tws_04.png>] [46
+ <../Figures/pylib/elapsed_tws_04.png>] [47
 
 ]
-<../Figures/pylib/elapsed_tws_12.png, id=411, 935.1738pt x 632.3625pt>
+<../Figures/pylib/elapsed_tws_12.png, id=418, 935.1738pt x 632.3625pt>
 File: ../Figures/pylib/elapsed_tws_12.png Graphic file (type png)
 <use ../Figures/pylib/elapsed_tws_12.png>
-Package pdftex.def Info: ../Figures/pylib/elapsed_tws_12.png  used on input line 588.
+Package pdftex.def Info: ../Figures/pylib/elapsed_tws_12.png  used on input line 598.
 (pdftex.def)             Requested size: 364.19664pt x 246.26337pt.
 
-Overfull \vbox (58.68958pt too high) detected at line 588
+Overfull \vbox (58.68958pt too high) detected at line 598
  []
 
-[47
+[48
 
  <../Figures/pylib/elapsed_tws_12.png>]
-<../tese_rev01/Figures/art_03/dmc_all.png, id=419, 1790.1279pt x 1196.7912pt>
+<../tese_rev01/Figures/art_03/dmc_all.png, id=426, 1790.1279pt x 1196.7912pt>
 File: ../tese_rev01/Figures/art_03/dmc_all.png Graphic file (type png)
 <use ../tese_rev01/Figures/art_03/dmc_all.png>
-Package pdftex.def Info: ../tese_rev01/Figures/art_03/dmc_all.png  used on input line 621.
+Package pdftex.def Info: ../tese_rev01/Figures/art_03/dmc_all.png  used on input line 631.
 (pdftex.def)             Requested size: 219.08743pt x 146.45755pt.
 
-Overfull \vbox (3.32776pt too high) detected at line 621
+Overfull \vbox (3.32776pt too high) detected at line 631
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48
+ [49
 
-] [49 <../tese_rev01/Figures/art_03/dmc_all.png>]
+] [50 <../tese_rev01/Figures/art_03/dmc_all.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{tab:time_4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.642 \end{frame}
-                  [50
-
-] [51
+l.652 \end{frame}
+                  [51
 
 ] [52
+
+] [53
 
 ] (./defesa_255Ribeiro.bbl (./defesa_255Ribeiro.brf)
 \tf@brf=\write6
@@ -1305,15 +1317,15 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbackslash' on input line 18.
 
-) [53
+) [54
 
- <c:/texlive/2023/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [54
-
-
-] [55
+ <c:/texlive/2023/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [55
 
 
 ] [56
+
+
+] [57
 
 ]
 \tf@nav=\write7
@@ -1338,23 +1350,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `defesa_255Ribeiro.out' has not changed.
-(rerunfilecheck)             Checksum: 78E1BB2026AD65C887A9FDEED091189D;1271.
+(rerunfilecheck)             Checksum: 495C599F2F11B4C1ADB85653A82798A9;1271.
 Package rerunfilecheck Info: File `defesa_255Ribeiro.brf' has not changed.
-(rerunfilecheck)             Checksum: 1AFF158405056FAC3F966A4B1AD88A14;449.
+(rerunfilecheck)             Checksum: 1E18366907E60824204C7DEC0979EEA2;449.
  ) 
 Here is how much of TeX's memory you used:
- 38549 strings out of 475188
- 916333 string characters out of 5767805
+ 38562 strings out of 475188
+ 916585 string characters out of 5767805
  1931248 words of memory out of 5000000
- 58914 multiletter control sequences out of 15000+600000
+ 58924 multiletter control sequences out of 15000+600000
  574453 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,1936b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on defesa_255Ribeiro.pdf (56 pages, 8481446 bytes).
+Output written on defesa_255Ribeiro.pdf (57 pages, 8511928 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 167 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 
