@@ -239,67 +239,45 @@ Etapas:
 
 \begin{frame}
   \frametitle{Variações do \dfa.}
-
    \begin{figure}[!htb]
     \centering
     \caption{Diagrama}
     \includegraphics[height=.8\paperheight]{./diag_revisao.jpeg}
     \label{fig:diag_revisao}
   \end{figure}
-
 \end{frame}
 
-\section{Resultados}
+
+\begin{frame}
+  \frametitle{Detrended Partial-Cross-Correlation Analysis - DPDCCA}
+  
+  
+\end{frame}
+\section{Pesquisas e resultados}
 
 \subsection{Artigo 01}
 
 \begin{frame}
   \frametitle{Artigo 01 - Publicado}
-
-  \begin{figure}[!htb]
-    \centering
+  \begin{figure}[!htb]    \centering
     \caption{\cite{Oliveira2023}}
     \includegraphics[height=.6\paperheight]{../Figures/artigos_publicados/artigo_01_abr_2023.png}
     \label{fig:ar_pub_01}
   \end{figure}
-
 \end{frame}
 
-% \section{Considerações Finais}
-
-% \begin{frame}{Considerações Finais}
 \begin{frame}
-  \frametitle{Algoritmo registrado}
-
+  \frametitle{Artigo 01 - Publicado}
   \begin{figure}[!htb]
     \centering
-    \caption{Registro de Software}
-    \includegraphics[height=.6\paperheight]{../Figures/artigos_publicados/certificado_alg_01.png}
-    \label{fig:alg_pub_01}
+    \caption{International 10–10 system of 64 EEG electrodes.}
+    \includegraphics[height=.6\paperheight]{../Figures/artigo_anexo/canais_cabeca.png}
+    \label{fig:ar_canais_cabeça}
   \end{figure}
-
+  Utilizando 11 pacientes selecionados aleatoriamente dentre os 109.
 \end{frame}
 
 
-\subsection{Algoritmo registrado - 01}
-
-\begin{frame}
-  \frametitle{Algoritmo registrado - 01}
-
-  \begin{equation}
-    \begin{split}
-      DMC_{x}^{2} \quad = \quad & \Big( \Big. \rho^{2}_{X_{2},X_{3}} \times \rho^{2}_{Y,X_{1}}- \rho^{2}_{Y,X_{1}} + \rho^{2}_{X_{1},X_{3}}\times \rho^{2}_{Y,X_{2}}-\rho^{2}_{Y,X_{2}} \\
-      &+ 2 \times \rho_{X_{1},X_{2}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{2}}   - 2 \times \rho_{X_{1},X_{3}} \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{1}} \\
-      &+ \rho^{2}_{X_{1},X_{2}} \times \rho^{2}_{Y,X_{3}}-\rho^{2}_{Y,X_{3}} + 2 \times \rho_{X_{1},X_{3}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{3}} \\
-      &- 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{3}} \\
-      &- 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{1},X_{3}} \times \rho_{Y,X_{2}} \times \rho_{Y,X_{3}} \\
-      &+ 2 \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{2}} \times \rho_{Y,X_{3}} \Big. \Big)    \quad \Big/ \\
-      & \Big( \Big. \rho^{2}_{X_{1},X_{2}} + \rho^{2}_{X_{1},X_{3}} + \rho^{2}_{X_{2},X_{3}} - 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{1},X_{3}} \times \rho_{X_{2},X_{3}}^{-1}\Big. \Big)  \\
-    \end{split}
-    \label{eq:dmc_3x_y}
-  \end{equation}
-
-\end{frame}
 
 \subsection{Artigo 02}
 
@@ -308,10 +286,29 @@ Etapas:
 
   \textbf{\Large{Multi Cross-correlation Analysis in a Multi-channel EEG applied in Motor Activity (Real/Imaginary)}}
   \medskip
-  \begin{center}
-    \url{https://255ribeiro.github.io/Multi_Cross-correlation_EEG/}
-  \end{center}
- 
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tarefas e experimentos}
+\begin{table}[!ht]
+	%\begin{adjustwidth}{0in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+	\centering
+	\caption{The activity executed and the experiment number for two one-minute baseline runs (one with eyes open, one with eyes closed) and three two-minute runs of a particular task.}
+	\tabcolsep=0.12cm
+  \label{table_tasks}
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Activity\textbackslash Experiment  & 1 & 2 & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} & \textbf{11} & \textbf{12} & \textbf{13} & \textbf{14} \\ \hline
+		Baseline 1 (eyes open)     & 0 &   &   &   &   &   &   &   &   &    &    &    &    &    \\ \hline
+		Baseline 2 (eyes closed)    &   & 0 &   &   &   &   &   &   &   &    &    &    &    &    \\ \hline \hline
+		task 1: Real (L/R)        &   &   & X &   &   &   & X &   &   &    & X  &    &    &    \\ \hline
+		task 2: Imag (L/R)         &   &   &   & X &   &   &   & X &   &    &    & X &    &    \\ \hline
+		task 3: Real (T/D)         &   &   &   &   & X &   &   &   & X &    &    &    & X  &    \\ \hline
+		task 4: Imag (T/D)         &   &   &   &   &   & X &   &   &   & X  &    &    &    & X  \\ \hline
+	\end{tabular}
+
+\end{table}
 
 \end{frame}
 
@@ -322,7 +319,14 @@ Etapas:
     \caption{Posição dos canais de EEG e canais utilizados}
     \label{fig01}
   \end{figure}
+ \begin{center}
+    \url{https://255ribeiro.github.io/Multi_Cross-correlation_EEG/}
+  \end{center}
 \end{frame}
+
+
+
+
 
 
 
@@ -470,6 +474,35 @@ Etapas:
   \end{figure}
   %%%%%%%%%%%%%%%%%%%%%%%%
 \end{frame}
+  \begin{frame}
+  \frametitle{Algoritmo registrado - 01}
+
+  \begin{equation}
+    \begin{split}
+      DMC_{x}^{2} \quad = \quad & \Big( \Big. \rho^{2}_{X_{2},X_{3}} \times \rho^{2}_{Y,X_{1}}- \rho^{2}_{Y,X_{1}} + \rho^{2}_{X_{1},X_{3}}\times \rho^{2}_{Y,X_{2}}-\rho^{2}_{Y,X_{2}} \\
+      &+ 2 \times \rho_{X_{1},X_{2}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{2}}   - 2 \times \rho_{X_{1},X_{3}} \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{1}} \\
+      &+ \rho^{2}_{X_{1},X_{2}} \times \rho^{2}_{Y,X_{3}}-\rho^{2}_{Y,X_{3}} + 2 \times \rho_{X_{1},X_{3}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{3}} \\
+      &- 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{1}} \times \rho_{Y,X_{3}} \\
+      &- 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{1},X_{3}} \times \rho_{Y,X_{2}} \times \rho_{Y,X_{3}} \\
+      &+ 2 \times \rho_{X_{2},X_{3}} \times \rho_{Y,X_{2}} \times \rho_{Y,X_{3}} \Big. \Big)    \quad \Big/ \\
+      & \Big( \Big. \rho^{2}_{X_{1},X_{2}} + \rho^{2}_{X_{1},X_{3}} + \rho^{2}_{X_{2},X_{3}} - 2 \times \rho_{X_{1},X_{2}} \times \rho_{X_{1},X_{3}} \times \rho_{X_{2},X_{3}}^{-1}\Big. \Big)  \\
+    \end{split}
+    \label{eq:dmc_3x_y}
+  \end{equation}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Algoritmo registrado}
+
+  \begin{figure}[!htb]
+    \centering
+    \caption{Registro de Software}
+    \includegraphics[height=.6\paperheight]{../Figures/artigos_publicados/certificado_alg_01.png}
+    \label{fig:alg_pub_01}
+  \end{figure}
+
+\end{frame}
 
 
 \subsection{Algoritmo - biblioteca Python/Zig}
@@ -479,6 +512,8 @@ Etapas:
   \begin{center}
     pip install zebende \\
     \url{https://pypi.org/project/zebende/}
+    \\[10px] exemplos:\\
+    \url{https://255ribeiro.github.io/paper_zebendelib/notebooks/test_nb.html}
   \end{center}
 
 \end{frame}
@@ -634,7 +669,7 @@ Etapas:
 \frametitle{Maximização do coeficiente \dmc utilizando matriz \pdcca~e $DPDCCA$}
 \begin{table}[h!]
     \centering
-    \caption{Maximização do \dmc. $n=4,~ count=8$, referência$= 0.6726$} \label{tab:time_4}
+    \caption{Maximização do \dmc. $n=4,~ count=8$, referência$= 0.6726$} \label{tab:time_69}
     \begin{tabular}{c|c|c|c}
       \hline
       Critério & canais selecionados & valor & percentual \\

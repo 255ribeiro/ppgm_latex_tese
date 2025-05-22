@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex defesa_255Ribeiro"] 1747360499 "defesa_255Ribeiro.aux" "defesa_255Ribeiro.bbl" "defesa_255Ribeiro" 1747360694 0
+["bibtex defesa_255Ribeiro"] 1747949345 "defesa_255Ribeiro.aux" "defesa_255Ribeiro.bbl" "defesa_255Ribeiro" 1747949361 0
   "../tese_rev01/References/referencias.bib" 1746417129 1036362 bb0b01d536ddddd975dc27e4009aa669 ""
   "c:/texlive/2023/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1691343474 5396 4eb260dac60f150ae608d45252853090 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1691343474 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "defesa_255Ribeiro.aux" 1747360692 17846 52584d055adae451555969f7644d627d "pdflatex"
+  "defesa_255Ribeiro.aux" 1747949358 18222 829ca41cf9e311ef8b77814f06724050 "pdflatex"
   (generated)
   "defesa_255Ribeiro.bbl"
   "defesa_255Ribeiro.blg"
   (rewritten before read)
-["pdflatex"] 1747360683 "d:/gitrepos/papers/ppgm_latex_tese/Apresenta_defesa/defesa_255Ribeiro.tex" "defesa_255Ribeiro.pdf" "defesa_255Ribeiro" 1747360694 0
+["pdflatex"] 1747949346 "d:/gitrepos/papers/ppgm_latex_tese/Apresenta_defesa/defesa_255Ribeiro.tex" "defesa_255Ribeiro.pdf" "defesa_255Ribeiro" 1747949361 0
   "../Figures/Logo_Uefs.jpg" 1683993631 9623 48b1d117cb6aea448fb97e2e0e94f415 ""
   "../Figures/art_02/Fig1.png" 1685755016 835386 671370c5d2805bde46a3cb065231d788 ""
   "../Figures/art_02/Fig10.jpg" 1689660149 573601 9e057df955c76efc36cdbf9afdb2da23 ""
@@ -23,6 +23,7 @@
   "../Figures/art_02/Fig7.jpg" 1689658158 280162 666fce710014446d4f2f002b21faea34 ""
   "../Figures/art_02/Fig8.jpg" 1689660030 284128 374144fa70f8dd87250c0a875d92feef ""
   "../Figures/art_02/Fig9.jpg" 1689660043 258960 c9635304c31aa62bfdb9a5d020c8924c ""
+  "../Figures/artigo_anexo/canais_cabeca.png" 1747945619 182063 a6582ed69a835b0518d0af1d328a3f99 ""
   "../Figures/artigos_publicados/artigo_01_abr_2023.png" 1684167685 245468 fa371a0339d0b4ba8f2112c983688c3a ""
   "../Figures/artigos_publicados/certificado_alg_01.png" 1689786146 599924 9ee97841c6df4cc96a6833be961af205 ""
   "../Figures/logoPPGM-UEFS.png" 1683993631 489632 2f33f90a7c7a48a99ec41c8d6dd73577 ""
@@ -330,15 +331,15 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1691371227 4687025 676c7d7298543c4303eabe86c426c675 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691371334 8172625 f42d0d86b5a9d53df6cf8902d13f892b ""
   "c:/texlive/2023/texmf.cnf" 1691371196 713 e69b156964470283e0530f5060668171 ""
-  "d:/gitrepos/papers/ppgm_latex_tese/Apresenta_defesa/defesa_255Ribeiro.tex" 1747360682 25979 9a2bdc5c517d936b1d10eb1096c8d13d ""
-  "defesa_255Ribeiro.aux" 1747360692 17846 52584d055adae451555969f7644d627d "pdflatex"
-  "defesa_255Ribeiro.bbl" 1747360500 3448 5f7a33dd2d38d4dd0e102649a33bfd27 "bibtex defesa_255Ribeiro"
-  "defesa_255Ribeiro.brf" 1747360692 449 1e18366907e60824204c7dec0979eea2 "pdflatex"
-  "defesa_255Ribeiro.nav" 1747360692 7377 d4b9cc68ea79747c4b2fbeb263ee28fc "pdflatex"
-  "defesa_255Ribeiro.out" 1747360692 1271 495c599f2f11b4c1adb85653a82798a9 "pdflatex"
-  "defesa_255Ribeiro.tex" 1747360682 25979 9a2bdc5c517d936b1d10eb1096c8d13d ""
-  "defesa_255Ribeiro.toc" 1747360692 501 bce2c18b5ab26165b55e06c985c1b011 "pdflatex"
-  "defesa_255Ribeiro.vrb" 1747360687 467 859c07b507cb3eb9a3b0c0efc5592389 "pdflatex"
+  "d:/gitrepos/papers/ppgm_latex_tese/Apresenta_defesa/defesa_255Ribeiro.tex" 1747949324 27824 3d64226052f91e48218608ab19d79c7d ""
+  "defesa_255Ribeiro.aux" 1747949358 18222 829ca41cf9e311ef8b77814f06724050 "pdflatex"
+  "defesa_255Ribeiro.bbl" 1747949346 3448 5f7a33dd2d38d4dd0e102649a33bfd27 "bibtex defesa_255Ribeiro"
+  "defesa_255Ribeiro.brf" 1747949358 449 2e626de00a0e0ae10938426ec427a8cb "pdflatex"
+  "defesa_255Ribeiro.nav" 1747949358 7554 7824a4e5201d8a84e8b3cc3d11312a7c "pdflatex"
+  "defesa_255Ribeiro.out" 1747949358 1144 a058ad4c3035f6a82caef213f345045c "pdflatex"
+  "defesa_255Ribeiro.tex" 1747949324 27824 3d64226052f91e48218608ab19d79c7d ""
+  "defesa_255Ribeiro.toc" 1747949358 445 2fd10f27065a8ec9cf7b1faba02c1be5 "pdflatex"
+  "defesa_255Ribeiro.vrb" 1747949352 467 859c07b507cb3eb9a3b0c0efc5592389 "pdflatex"
   "diag_revisao.jpeg" 1747352582 29573 c06989182346edbd3dff4a2d5ba43792 ""
   (generated)
   "defesa_255Ribeiro.aux"
