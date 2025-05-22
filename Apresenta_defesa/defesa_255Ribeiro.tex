@@ -250,7 +250,21 @@ Etapas:
 
 \begin{frame}
   \frametitle{Detrended Partial-Cross-Correlation Analysis - DPDCCA}
-  
+\begin{equation}\label{eq:dpdcca_mat}
+  C(n)=\boldsymbol{\rho}^{-\mathbf{1}}(n)=\left(\begin{matrix}
+  C_{1,1}(n) & C_{1,2}(n) & \ldots & 
+  C_{1, m}(n) \\
+  C_{2,1}(n) & C_{2,2}(n) & \ldots & C_{2, m}(n) \\
+  \vdots & \vdots & & \vdots \\
+  C_{m, 1}(n) & C_{m, 2}(n) & \ldots & C_{m, m}(n)
+  \end{matrix}\right)
+\end{equation}
+
+O cálculo final do $DPDCCA$ é realizado pela Equação~\ref{eq:dpdcca}, a partir dos valores obtidos pela inversão da matriz do \pdcca.
+
+\begin{equation}\label{eq:dpdcca}
+  \rho_{D P C C A}\left(j_1, j_2 ; n\right)=\frac{-C_{j_1, j_2}(n)}{\sqrt{C_{j_1, j_1}(n) \cdot C_{j_2, j_2}(n)}}
+\end{equation}
   
 \end{frame}
 \section{Pesquisas e resultados}
@@ -277,22 +291,21 @@ Etapas:
   Utilizando 11 pacientes selecionados aleatoriamente dentre os 109.
 \end{frame}
 
-
-
 \subsection{Artigo 02}
-
 \begin{frame}
   \frametitle{Artigo 02}
-
-  \textbf{\Large{Multi Cross-correlation Analysis in a Multi-channel EEG applied in Motor Activity (Real/Imaginary)}}
-  \medskip
-
+    \begin{figure}[!htb]
+    \centering
+    \includegraphics[height=.7\paperheight]{../Figures/art_02/capa.png}
+    \label{fig:capa_art_02}
+  \end{figure}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Tarefas e experimentos}
 \begin{table}[!ht]
-	%\begin{adjustwidth}{0in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+
 	\centering
 	\caption{The activity executed and the experiment number for two one-minute baseline runs (one with eyes open, one with eyes closed) and three two-minute runs of a particular task.}
 	\tabcolsep=0.12cm
@@ -711,6 +724,40 @@ Etapas:
   \end{table}  
 
 \end{frame}
+
+\begin{frame}
+\frametitle{\pdcca: Matriz de correlação}
+\begin{figure}[ht]
+  \caption{Matriz de correlação do \pdcca.}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca4.png}
+    \caption{\pdcca~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca69.png}
+    \caption{\pdcca~$n = 69$}
+  \end{minipage}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{$DPDCCA$: Matriz de correlação}
+\begin{figure}[ht]
+  \caption{Matriz de correlação do $DPDCCA$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/dpdcca4.png}
+    \caption{$DPDCCA$~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/dpdcca69.png}
+    \caption{$DPDCCA$~$n = 69$}
+  \end{minipage}
+\end{figure}
+\end{frame}
+
 
 
 \section{Referências}
