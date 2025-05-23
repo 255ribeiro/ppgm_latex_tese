@@ -5,22 +5,94 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Adarsh et al. 2020]{ADARSH2020124913}
+\abntrefinfo{Adarsh et al.}{ADARSH et al.}{2020}
+{ADARSH, S. et al. Multifractal description of daily rainfall fields over {{India}}.
+\emph{Journal of Hydrology}, v.~586, p. 124913, 2020.
+ISSN 0022-1694.}
+
+\bibitem[Afuecheta e Omar 2021]{AFUECHETA2021100295}
+\abntrefinfo{Afuecheta e Omar}{AFUECHETA; OMAR}{2021}
+{AFUECHETA, E.; OMAR, M.~H. Characterization of variability and trends in daily precipitation and temperature extremes in the {{Horn}} of {{Africa}}.
+\emph{Climate Risk Management}, v.~32, p. 100295, 2021.
+ISSN 2212-0963.}
+
+\bibitem[Aslam et al. 2024]{ASLAM2024102085}
+\abntrefinfo{Aslam et al.}{ASLAM et al.}{2024}
+{ASLAM, F. et al. Interplay of multifractal dynamics between shadow policy rates and energy markets.
+\emph{The North American Journal of Economics and Finance}, v.~71, p. 102085, 2024.
+ISSN 1062-9408.}
+
 \bibitem[{Bermudez-Edo}, Barnaghi e Moessner 2018]{Bermudez-Edo2018}
 \abntrefinfo{{Bermudez-Edo}, Barnaghi e Moessner}{{Bermudez-Edo}; BARNAGHI; MOESSNER}{2018}
 {{Bermudez-Edo}, M.; BARNAGHI, P.; MOESSNER, K. Analysing real world data streams with spatio-temporal correlations: {{Entropy}} vs. {{Pearson}} correlation.
 \emph{Automation in Construction}, v.~88, n. May 2017, p. 87--100, 2018.
 ISSN 09265805.}
 
+\bibitem[Bianchi, Longo e Plastino 2018]{BIANCHI2018377}
+\abntrefinfo{Bianchi, Longo e Plastino}{BIANCHI; LONGO; PLASTINO}{2018}
+{BIANCHI, S.; LONGO, A.; PLASTINO, W. A new methodological approach for worldwide beryllium-7 time series analysis.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~501, p. 377--387, 2018.
+ISSN 0378-4371.}
+
+\bibitem[Chatterjee e Ghosh 2021]{CHATTERJEE2021125815}
+\abntrefinfo{Chatterjee e Ghosh}{CHATTERJEE; GHOSH}{2021}
+{CHATTERJEE, S.; GHOSH, D. Impact of {{Global Warming}} on {{SENSEX}} fluctuations --- {{A}} study based on {{Multifractal}} detrended cross correlation analysis between the temperature anomalies and the {{SENSEX}} fluctuations.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~571, p. 125815, 2021.
+ISSN 0378-4371.}
+
+\bibitem[Chen et al. 2018]{CHEN2018171}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2018}
+{CHEN, Y. et al. {{DCCA}} cross-correlation coefficients reveals the change of both synchronization and oscillation in {{EEG}} of {{Alzheimer}} disease patients.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~490, p. 171--184, 2018.
+ISSN 0378-4371.}
+
+\bibitem[Chen et al. 2024]{CHEN2024e36537}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2024}
+{CHEN, Y. et al. Cross-correlation and multifractality analysis of the {{Chinese}} and {{American}} stock markets based on the {{MF-DCCA}} model.
+\emph{Heliyon}, v.~10, n.~17, p. e36537, 2024.
+ISSN 2405-8440.}
+
+\bibitem[{Contreras-Reyes}, {Jeldes-Delgado} e Carrasco 2024]{CONTRERASREYES2024130115}
+\abntrefinfo{{Contreras-Reyes}, {Jeldes-Delgado} e Carrasco}{{Contreras-Reyes}; {Jeldes-Delgado}; CARRASCO}{2024}
+{{Contreras-Reyes}, J.~E.; {Jeldes-Delgado}, F.; CARRASCO, R. Jensen-{{Detrended Cross-Correlation}} function for non-stationary time series with application to {{Latin American}} stock markets.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~654, p. 130115, 2024.
+ISSN 0378-4371.}
+
 \bibitem[{EMC EDUCATION SERVICE} 2015]{EMCdata2015}
 \abntrefinfo{{EMC EDUCATION SERVICE}}{{EMC EDUCATION SERVICE}}{2015}
 {{EMC EDUCATION SERVICE}. \emph{Data {{Science}} and {{Big Data Analytics}}: {{Discovering}}, {{Analyzing}}, {{Visualizing}} and {{Presenting Data}}}. Indianapolis, Indiana, USA: JOHN WILEY {\textbackslash}\& SONS, 2015.
 ISBN 978-1-118-87605-3 1-118-87605-9 978-1-118-87613-8 1-118-87613-X 978-1-118-87622-0 1-118-87622-9.}
 
+\bibitem[Filho, {da Silva} e Zebende 2014]{MACHADOFILHO201412}
+\abntrefinfo{Filho, {da Silva} e Zebende}{FILHO; {da Silva}; ZEBENDE}{2014}
+{FILHO, A. M.; {da Silva}, M.; ZEBENDE, G. Autocorrelation and cross-correlation in time series of homicide and attempted homicide.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~400, p. 12--19, 2014.
+ISSN 0378-4371.}
+
+\bibitem[Filho et al. 2023]{FILHO2023128802}
+\abntrefinfo{Filho et al.}{FILHO et al.}{2023a}
+{FILHO, F.~O. et al. Statistical study of the {{EEG}} in motor tasks (real and imaginary).
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~622, p. 128802, 2023.
+ISSN 0378-4371.}
+
 \bibitem[Filho et al. 2023]{Oliveira2023}
-\abntrefinfo{Filho et al.}{FILHO et al.}{2023}
+\abntrefinfo{Filho et al.}{FILHO et al.}{2023b}
 {FILHO, F.~O. et al. Statistical study of the {{EEG}} in motor tasks (real and imaginary).
 \emph{Physica A: Statistical Mechanics and its Applications}, v.~622, p. 128802, jul. 2023.
 ISSN 03784371.}
+
+\bibitem[Ge e Lin 2023]{GE2023114155}
+\abntrefinfo{Ge e Lin}{GE; LIN}{2023}
+{GE, X.; LIN, A. Quantifying the direct and indirect interactions for {{EEG}} signals by using detrended permutation mutual information.
+\emph{Chaos, Solitons \& Fractals}, v.~176, p. 114155, 2023.
+ISSN 0960-0779.}
+
+\bibitem[Ghosh et al. 2018]{GHOSH2018392}
+\abntrefinfo{Ghosh et al.}{GHOSH et al.}{2018}
+{GHOSH, D. et al. Chaos based nonlinear analysis to study cardiovascular responses to changes in posture.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~512, p. 392--403, 2018.
+ISSN 0378-4371.}
 
 \bibitem[Hartmann et al. 2013]{hartmannRealtimeFractalSignal2013}
 \abntrefinfo{Hartmann et al.}{HARTMANN et al.}{2013}
@@ -28,11 +100,41 @@ ISSN 03784371.}
 \emph{Physica A: Statistical Mechanics and its Applications}, v.~392, n.~1, p. 89--102, jan. 2013.
 ISSN 03784371.}
 
+\bibitem[He 2017]{HE201747}
+\abntrefinfo{He}{HE}{2017}
+{HE, H.-d. Multifractal analysis of interactive patterns between meteorological factors and pollutants in urban and rural areas.
+\emph{Atmospheric Environment}, v.~149, p. 47--54, 2017.
+ISSN 1352-2310.}
+
 \bibitem[Kaposzta et al. 2022]{Kapostza2022}
 \abntrefinfo{Kaposzta et al.}{KAPOSZTA et al.}{2022}
 {KAPOSZTA, Z. et al. Real-{{Time Algorithm}} for {{Detrended Cross-Correlation Analysis}} of {{Long-Range Coupled Processes}}.
 \emph{Frontiers in Physiology}, v.~13, p. 817268, mar. 2022.
 ISSN 1664-042X.}
+
+\bibitem[Kar, Chatterjee e Ghosh 2019]{KAR2019236}
+\abntrefinfo{Kar, Chatterjee e Ghosh}{KAR; CHATTERJEE; GHOSH}{2019}
+{KAR, A.; CHATTERJEE, S.; GHOSH, D. Multifractal detrended cross correlation analysis of {{Land-surface}} temperature anomalies and {{Soil}} radon concentration.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~521, p. 236--247, 2019.
+ISSN 0378-4371.}
+
+\bibitem[Li et al. 2024]{LI2024131535}
+\abntrefinfo{Li et al.}{LI et al.}{2024}
+{LI, T. et al. Identifying the possible driving mechanisms in {{Precipitation-Runoff}} relationships with nonstationary and nonlinear theory approaches.
+\emph{Journal of Hydrology}, v.~639, p. 131535, 2024.
+ISSN 0022-1694.}
+
+\bibitem[Li e Tian 2024]{LI2024123716}
+\abntrefinfo{Li e Tian}{LI; TIAN}{2024}
+{LI, Z.; TIAN, Y. Skewed multifractal cross-correlation between price and volume during the {{COVID-19}} pandemic: {{Evidence}} from {{China}} and {{European}} carbon markets.
+\emph{Applied Energy}, v.~371, p. 123716, 2024.
+ISSN 0306-2619.}
+
+\bibitem[Oliveira et al. 2023]{OLIVEIRA2023160491}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2023}
+{OLIVEIRA, J.~B. et al. Paradox between adequate sanitation and rainfall in dengue fever cases.
+\emph{Science of The Total Environment}, v.~860, p. 160491, 2023.
+ISSN 0048-9697.}
 
 \bibitem[Peng et al. 1994]{Peng_1994}
 \abntrefinfo{Peng et al.}{PENG et al.}{1994}
@@ -45,11 +147,89 @@ v.~49, n.~2, p. 1685--1689, 1994.}
 \emph{Physical Review Letters}, v.~100, n.~8, 2008.
 ISSN 00319007.}
 
+\bibitem[Qin et al. 2024]{QIN2024108559}
+\abntrefinfo{Qin et al.}{QIN et al.}{2024}
+{QIN, L. et al. A multi-index fusion prediction method for dynamic seismic damage of an arch dam.
+\emph{Soil Dynamics and Earthquake Engineering}, v.~179, p. 108559, 2024.
+ISSN 0267-7261.}
+
+\bibitem[Santos et al. 2018]{RODRIGUESSANTOS2018294}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2018}
+{SANTOS, F. R. et al. Detection of the persistency of the blockages symmetry influence on the multi-scale cross-correlations of the velocity fields in internal turbulent flows in pipelines.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~509, p. 294--301, 2018.
+ISSN 0378-4371.}
+
+\bibitem[Shadkhoo e Jafari 2009]{shadkhooMultifractalDetrendedCrosscorrelation2009}
+\abntrefinfo{Shadkhoo e Jafari}{SHADKHOO; JAFARI}{2009}
+{SHADKHOO, S.; JAFARI, G.~R. Multifractal detrended cross-correlation analysis of temporal and spatial seismic data.
+\emph{The European Physical Journal B}, v.~72, n.~4, p. 679--683, dez. 2009.
+ISSN 1434-6028, 1434-6036.}
+
+\bibitem[Shen, Li e Si 2015]{SHEN2015417}
+\abntrefinfo{Shen, Li e Si}{SHEN; LI; SI}{2015}
+{SHEN, C.-h.; LI, C.-l.; SI, Y.-l. A detrended cross-correlation analysis of meteorological and {{API}} data in {{Nanjing}}, {{China}}.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~419, p. 417--428, 2015.
+ISSN 0378-4371.}
+
+\bibitem[Shi 2014]{SHI2014130}
+\abntrefinfo{Shi}{SHI}{2014}
+{SHI, K. Detrended cross-correlation analysis of temperature, rainfall, {{PM10}} and ambient dioxins in {{Hong Kong}}.
+\emph{Atmospheric Environment}, v.~97, p. 130--135, 2014.
+ISSN 1352-2310.}
+
+\bibitem[Shi et al. 2018]{SHI2018165}
+\abntrefinfo{Shi et al.}{SHI et al.}{2018}
+{SHI, K. et al. Detrended cross-correlation analysis of urban traffic congestion and {{NO2}} concentrations in {{Chengdu}}.
+\emph{Transportation Research Part D: Transport and Environment}, v.~61, p. 165--173, 2018.
+ISSN 1361-9209.}
+
+\bibitem[Shin et al. 2019]{SHIN2019778}
+\abntrefinfo{Shin et al.}{SHIN et al.}{2019}
+{SHIN, K.-H. et al. Neural network and regression methods for optimizations between two meteorological factors.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~523, p. 778--796, 2019.
+ISSN 0378-4371.}
+
 \bibitem[Wang et al. 2013]{Wang2013}
 \abntrefinfo{Wang et al.}{WANG et al.}{2013}
 {WANG, G.~J. et al. Random matrix theory analysis of cross-correlations in the {{US}} stock market: {{Evidence}} from {{Pearson}}'s correlation coefficient and detrended cross-correlation coefficient.
 \emph{Physica A: Statistical Mechanics and its Applications}, Elsevier B.V., v.~392, n.~17, p. 3715--3730, 2013.
 ISSN 03784371.}
+
+\bibitem[Yu, Li e Zhou 2019]{YU2019122034}
+\abntrefinfo{Yu, Li e Zhou}{YU; LI; ZHOU}{2019}
+{YU, D.-L.; LI, W.-J.; ZHOU, Y. Analysis of trends in air temperature at {{Chinese}} stations considering the long-range correlation effect.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~533, p. 122034, 2019.
+ISSN 0378-4371.}
+
+\bibitem[Yuan e Fu 2014]{YUAN201471}
+\abntrefinfo{Yuan e Fu}{YUAN; FU}{2014}
+{YUAN, N.; FU, Z. Different spatial cross-correlation patterns of temperature records over {{China}}: {{A DCCA}} study on different time scales.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~400, p. 71--79, 2014.
+ISSN 0378-4371.}
+
+\bibitem[Yuan et al. 2015]{yuanDetrendedPartialCrossCorrelationAnalysis2015}
+\abntrefinfo{Yuan et al.}{YUAN et al.}{2015}
+{YUAN, N. et al. Detrended {{Partial-Cross-Correlation Analysis}}: {{A New Method}} for {{Analyzing Correlations}} in {{Complex System}}.
+\emph{Scientific Reports}, v.~5, n.~1, p.~8143, jan. 2015.
+ISSN 2045-2322.}
+
+\bibitem[Zebende et al. 2018]{ZEBENDE201817}
+\abntrefinfo{Zebende et al.}{ZEBENDE et al.}{2018}
+{ZEBENDE, G. et al. {{$\rho$DCCA}} applied between air temperature and relative humidity: {{An}} hour/hour view.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~494, p. 17--26, 2018.
+ISSN 0378-4371.}
+
+\bibitem[Zebende, {da Silva} e Filho 2011]{ZEBENDE20111677}
+\abntrefinfo{Zebende, {da Silva} e Filho}{ZEBENDE; {da Silva}; FILHO}{2011}
+{ZEBENDE, G.; {da Silva}, P.; FILHO, A. M. Study of cross-correlation in a self-affine time series of taxi accidents.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~390, n.~9, p. 1677--1683, 2011.
+ISSN 0378-4371.}
+
+\bibitem[Zebende e Filho 2009]{ZEBENDE20094863}
+\abntrefinfo{Zebende e Filho}{ZEBENDE; FILHO}{2009}
+{ZEBENDE, G.; FILHO, A.~M. Cross-correlation between time series of vehicles and passengers.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~388, n.~23, p. 4863--4866, 2009.
+ISSN 0378-4371.}
 
 \bibitem[Zebende 2011]{Zebende2011}
 \abntrefinfo{Zebende}{ZEBENDE}{2011}
@@ -61,6 +241,12 @@ ISSN 03784371.}
 \abntrefinfo{Zebende e Silva}{ZEBENDE; SILVA}{2018}
 {ZEBENDE, G.~F.; SILVA, A.~M. Detrended {{Multiple Cross-Correlation Coefficient}}.
 \emph{Physica A}, Elsevier B.V., v.~510, p. 91--97, 2018.
+ISSN 0378-4371.}
+
+\bibitem[Zhang, Ni e Ni 2015]{ZHANG2015114}
+\abntrefinfo{Zhang, Ni e Ni}{ZHANG; NI; NI}{2015}
+{ZHANG, C.; NI, Z.; NI, L. Multifractal detrended cross-correlation analysis between {{PM2}}.5 and meteorological factors.
+\emph{Physica A: Statistical Mechanics and its Applications}, v.~438, p. 114--123, 2015.
 ISSN 0378-4371.}
 
 \end{thebibliography}

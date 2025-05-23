@@ -77,7 +77,7 @@
 \begin{frame}
   \frametitle{Sistemas Complexos e Ciência de Dados}
 
-  Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É notável a velocidade e quantidade de dados que são gerados e armazenados pela humanidade atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico. ...
+  Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É notável a velocidade e quantidade de dados que são gerados e armazenados pela humanidade atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico.
 
 \end{frame}
 
@@ -265,8 +265,29 @@ O cálculo final do $DPDCCA$ é realizado pela Equação~\ref{eq:dpdcca}, a part
 \begin{equation}\label{eq:dpdcca}
   \rho_{D P C C A}\left(j_1, j_2 ; n\right)=\frac{-C_{j_1, j_2}(n)}{\sqrt{C_{j_1, j_1}(n) \cdot C_{j_2, j_2}(n)}}
 \end{equation}
+
+\cite{yuanDetrendedPartialCrossCorrelationAnalysis2015}
   
 \end{frame}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{Aplicações das funções e coeficientes}
+Muitas aplicações foram testadas para essas funções e coeficientes. Muitas aplicações na área de medicina e saúde \cite{CHEN2018171, FILHO2023128802, GE2023114155, GHOSH2018392}. Questões de economia e marcado financeiro na China \cite{LI2024123716}, América Latina \cite{CONTRERASREYES2024130115}, Estados Unidos e China \cite{CHEN2024e36537} e no mercado de energia~\cite{ASLAM2024102085}, detre outros, provando que os estudos de correlação entre mercados costuma tratar de aspectos globais e locais, apresentando forte relação com as ciências ambientais.
+
+Muitos estudos também utilizaram esses métodos em outros aspectos das ciências ambientais: estudos sobre dados sísmicos \cite{shadkhooMultifractalDetrendedCrosscorrelation2009} e geológicos~\cite{BIANCHI2018377, QIN2024108559}; transportes \cite{SHI2018165, ZEBENDE20111677, ZEBENDE20094863}; estudos técnicos que podem trazer melhorias para questões de infra-estrutura \cite{RODRIGUESSANTOS2018294}; pesquisas sobre violência urbana \cite{MACHADOFILHO201412}; e muitos estudos sobre o clima.
+
+Dentre os estudos sobre o clima, destacamos: correlações entre temperatura~\cite{YU2019122034}; chuvas \cite{ADARSH2020124913}, \cite{LI2024131535}; entre temperatura e umidade \cite{ZEBENDE201817}; entre dados meteorológicos, e poluentes \cite{SHI2014130}, \cite{HE201747}, \cite{ZHANG2015114}, \cite{SHEN2015417}; Chuva e doenças tropicais \cite{OLIVEIRA2023160491}; aquecimento global~\cite{CHATTERJEE2021125815}, \cite{YUAN201471}; meteorologia e previsões \cite{AFUECHETA2021100295, SHIN2019778}; temperatura do solo e composição \cite{KAR2019236}.
+
+Com base nesta pequena amostra dos inúmeros trabalhos que abordam esse conjunto de funções e coeficientes, é possível afirmar que, do ponto de vista das ciências ambientais, o estudos destes algorítimos é uma significativa contribuição.
+
+  
+\end{frame}
+
+
+
+
+
+
 \section{Pesquisas e resultados}
 
 \subsection{Artigo 01}
@@ -758,6 +779,65 @@ O cálculo final do $DPDCCA$ é realizado pela Equação~\ref{eq:dpdcca}, a part
 \end{figure}
 \end{frame}
 
+
+\begin{frame}
+
+  \frametitle{$DPDCCA$: Matriz de correlação}
+\begin{figure}[ht]
+  \caption{Matriz de correlação do $DPDCCA$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_4.png}
+    \caption{Channel: Tf8~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_69.png}
+    \caption{Channel: Tf8~$n = 69$}
+  \end{minipage}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+
+  \frametitle{$DPDCCA$: Matriz de correlação}
+\begin{figure}[ht]
+  \caption{Matriz de correlação do $DPDCCA$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_4.png}
+    \caption{Channel: Af3~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_69.png}
+    \caption{Channel: Af3~$n = 69$}
+  \end{minipage}
+\end{figure}
+\end{frame}
+
+\section{Conclusões}
+
+\begin{frame}
+  \frametitle{Conclusões}
+
+  \begin{itemize}
+    \item A hipótese 1 da Tese (É possível otimizar os cálculos do \pdcca~e do \dmc.) foi validada.
+    \item A hipótese 2 (Com maior poder de cálculo o a aplicação dos coeficientes seria potencializada.) foi validada.
+    \item A hipótese 3 (Uma ferramenta adequada para o cálculo dos coeficientes seria um impulso na utilização e divulgação destes.) só será validada ou descartada com o tempo.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trabalhos Futuros}
+  \begin{itemize}
+    \item O pacote \emph{Zebende} continua sua evolução, mudanças na usabilidade de certas funções serão implementadas, assim como novos algoritmos devem fazer parte da biblioteca.
+    \item   Investigar a possibilidade de implementar paralelismo no cálculo das funções e coeficientes, tanto em \emph{CPU} quanto em \emph{GPU}.
+    \item investigar, através da ferramenta computacional criada, explorar critérios de proximidade entre séries temporais e a sua aplicabilidade como seleção de atributos para algoritmos de aprendizado de máquina.
+    \item Investigar bancos de dados ligados ao Urbanismo
+  \end{itemize}
+\end{frame}
 
 
 \section{Referências}
