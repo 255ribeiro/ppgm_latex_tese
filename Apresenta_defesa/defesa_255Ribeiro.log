@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.6)  22 MAY 2025 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.6)  7 JUN 2025 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,16 +1154,16 @@ Overfull \vbox (26.40913pt too high) detected at line 359
 <../Figures/art_02/Fig2.png, id=404, 1656.1875pt x 828.09375pt>
 File: ../Figures/art_02/Fig2.png Graphic file (type png)
 <use ../Figures/art_02/Fig2.png>
-Package pdftex.def Info: ../Figures/art_02/Fig2.png  used on input line 375.
+Package pdftex.def Info: ../Figures/art_02/Fig2.png  used on input line 376.
 (pdftex.def)             Requested size: 256.07463pt x 128.0374pt.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 375.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 376.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 375.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 376.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 375.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 376.
 
-Overfull \vbox (13.03519pt too high) detected at line 375
+Overfull \vbox (13.03519pt too high) detected at line 376
  []
 
 [34
@@ -1172,7 +1172,7 @@ Overfull \vbox (13.03519pt too high) detected at line 375
 <../Figures/art_02/Fig3.jpg, id=412, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig3.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig3.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig3.jpg  used on input line 388.
+Package pdftex.def Info: ../Figures/art_02/Fig3.jpg  used on input line 389.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [35
 
@@ -1180,7 +1180,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig3.jpg  used on input line 388.
 <../Figures/art_02/Fig4.jpg, id=419, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig4.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig4.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig4.jpg  used on input line 401.
+Package pdftex.def Info: ../Figures/art_02/Fig4.jpg  used on input line 402.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [36
 
@@ -1188,7 +1188,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig4.jpg  used on input line 401.
 <../Figures/art_02/Fig5.jpg, id=426, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig5.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig5.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig5.jpg  used on input line 413.
+Package pdftex.def Info: ../Figures/art_02/Fig5.jpg  used on input line 414.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [37
 
@@ -1196,7 +1196,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig5.jpg  used on input line 413.
 <../Figures/art_02/Fig6.jpg, id=434, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig6.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig6.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig6.jpg  used on input line 426.
+Package pdftex.def Info: ../Figures/art_02/Fig6.jpg  used on input line 427.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [38
 
@@ -1204,7 +1204,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig6.jpg  used on input line 426.
 <../Figures/art_02/Fig7.jpg, id=441, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig7.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig7.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig7.jpg  used on input line 438.
+Package pdftex.def Info: ../Figures/art_02/Fig7.jpg  used on input line 439.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [39
 
@@ -1212,7 +1212,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig7.jpg  used on input line 438.
 <../Figures/art_02/Fig8.jpg, id=449, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig8.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig8.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig8.jpg  used on input line 450.
+Package pdftex.def Info: ../Figures/art_02/Fig8.jpg  used on input line 451.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [40
 
@@ -1220,7 +1220,7 @@ Package pdftex.def Info: ../Figures/art_02/Fig8.jpg  used on input line 450.
 <../Figures/art_02/Fig9.jpg, id=456, 1300.86pt x 650.43pt>
 File: ../Figures/art_02/Fig9.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig9.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig9.jpg  used on input line 463.
+Package pdftex.def Info: ../Figures/art_02/Fig9.jpg  used on input line 464.
 (pdftex.def)             Requested size: 256.05855pt x 128.0374pt.
  [41
 
@@ -1228,40 +1228,40 @@ Package pdftex.def Info: ../Figures/art_02/Fig9.jpg  used on input line 463.
 <../Figures/art_02/Fig10.jpg, id=463, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig10.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig10.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig10.jpg  used on input line 510.
+Package pdftex.def Info: ../Figures/art_02/Fig10.jpg  used on input line 511.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 510--510
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 511--511
  [][] 
  []
 
 <../Figures/art_02/Fig11.jpg, id=464, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig11.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig11.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig11.jpg  used on input line 510.
+Package pdftex.def Info: ../Figures/art_02/Fig11.jpg  used on input line 511.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 510--510
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 511--511
  [][] 
  []
 
 <../Figures/art_02/Fig12.jpg, id=465, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig12.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig12.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig12.jpg  used on input line 510.
+Package pdftex.def Info: ../Figures/art_02/Fig12.jpg  used on input line 511.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 510--510
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 511--511
  [][] 
  []
 
 <../Figures/art_02/Fig13.jpg, id=466, 1084.05pt x 1445.4pt>
 File: ../Figures/art_02/Fig13.jpg Graphic file (type jpg)
 <use ../Figures/art_02/Fig13.jpg>
-Package pdftex.def Info: ../Figures/art_02/Fig13.jpg  used on input line 510.
+Package pdftex.def Info: ../Figures/art_02/Fig13.jpg  used on input line 511.
 (pdftex.def)             Requested size: 96.02194pt x 128.0374pt.
 
-Overfull \hbox (12.36816pt too wide) in paragraph at lines 510--510
+Overfull \hbox (12.36816pt too wide) in paragraph at lines 511--511
  [][] 
  []
 
@@ -1273,7 +1273,7 @@ Overfull \hbox (12.36816pt too wide) in paragraph at lines 510--510
 <../Figures/artigos_publicados/certificado_alg_01.png, id=483, 817.8555pt x 504.6855pt>
 File: ../Figures/artigos_publicados/certificado_alg_01.png Graphic file (type png)
 <use ../Figures/artigos_publicados/certificado_alg_01.png>
-Package pdftex.def Info: ../Figures/artigos_publicados/certificado_alg_01.png  used on input line 539.
+Package pdftex.def Info: ../Figures/artigos_publicados/certificado_alg_01.png  used on input line 540.
 (pdftex.def)             Requested size: 248.99007pt x 153.64644pt.
  [44
 
@@ -1283,7 +1283,7 @@ Package pdftex.def Info: ../Figures/artigos_publicados/certificado_alg_01.png  u
 <../Figures/pylib/pdcca_chart.png, id=498, 1019.60925pt x 261.97874pt>
 File: ../Figures/pylib/pdcca_chart.png Graphic file (type png)
 <use ../Figures/pylib/pdcca_chart.png>
-Package pdftex.def Info: ../Figures/pylib/pdcca_chart.png  used on input line 568.
+Package pdftex.def Info: ../Figures/pylib/pdcca_chart.png  used on input line 569.
 (pdftex.def)             Requested size: 364.19664pt x 93.57674pt.
  [46
 
@@ -1291,7 +1291,7 @@ Package pdftex.def Info: ../Figures/pylib/pdcca_chart.png  used on input line 56
 <../Figures/pylib/dmc_chart.png, id=506, 1006.962pt x 273.4215pt>
 File: ../Figures/pylib/dmc_chart.png Graphic file (type png)
 <use ../Figures/pylib/dmc_chart.png>
-Package pdftex.def Info: ../Figures/pylib/dmc_chart.png  used on input line 582.
+Package pdftex.def Info: ../Figures/pylib/dmc_chart.png  used on input line 583.
 (pdftex.def)             Requested size: 364.19664pt x 98.89058pt.
  [47
 
@@ -1302,7 +1302,7 @@ Package pdftex.def Info: ../Figures/pylib/dmc_chart.png  used on input line 582.
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 627.
+(Font)              using `OT1/cmss/bx/n' instead on input line 628.
 
 [50
 
@@ -1313,10 +1313,10 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 <../Figures/pylib/elapsed_tws_04.png, id=545, 927.2241pt x 632.3625pt>
 File: ../Figures/pylib/elapsed_tws_04.png Graphic file (type png)
 <use ../Figures/pylib/elapsed_tws_04.png>
-Package pdftex.def Info: ../Figures/pylib/elapsed_tws_04.png  used on input line 637.
+Package pdftex.def Info: ../Figures/pylib/elapsed_tws_04.png  used on input line 638.
 (pdftex.def)             Requested size: 364.19664pt x 248.37651pt.
 
-Overfull \vbox (60.80272pt too high) detected at line 637
+Overfull \vbox (60.80272pt too high) detected at line 638
  []
 
 [52
@@ -1327,10 +1327,10 @@ Overfull \vbox (60.80272pt too high) detected at line 637
 <../Figures/pylib/elapsed_tws_12.png, id=559, 935.1738pt x 632.3625pt>
 File: ../Figures/pylib/elapsed_tws_12.png Graphic file (type png)
 <use ../Figures/pylib/elapsed_tws_12.png>
-Package pdftex.def Info: ../Figures/pylib/elapsed_tws_12.png  used on input line 667.
+Package pdftex.def Info: ../Figures/pylib/elapsed_tws_12.png  used on input line 668.
 (pdftex.def)             Requested size: 364.19664pt x 246.26337pt.
 
-Overfull \vbox (58.68958pt too high) detected at line 667
+Overfull \vbox (58.68958pt too high) detected at line 668
  []
 
 [54
@@ -1339,12 +1339,12 @@ Overfull \vbox (58.68958pt too high) detected at line 667
 <../tese_rev01/Figures/art_03/dmc_all.png, id=567, 1790.1279pt x 1196.7912pt>
 File: ../tese_rev01/Figures/art_03/dmc_all.png Graphic file (type png)
 <use ../tese_rev01/Figures/art_03/dmc_all.png>
-Package pdftex.def Info: ../tese_rev01/Figures/art_03/dmc_all.png  used on input line 700.
+Package pdftex.def Info: ../tese_rev01/Figures/art_03/dmc_all.png  used on input line 701.
 (pdftex.def)             Requested size: 219.08743pt x 146.45755pt.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 700.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 701.
 
-Overfull \vbox (3.32776pt too high) detected at line 700
+Overfull \vbox (3.32776pt too high) detected at line 701
  []
 
 
@@ -1358,22 +1358,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{tab:time_69}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.747 \end{frame}
+l.748 \end{frame}
                   [58
 
 ]
 <../Figures/test_dmc/pdcca4.png, id=594, 867.24pt x 722.7pt>
 File: ../Figures/test_dmc/pdcca4.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca4.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca4.png  used on input line 763.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca4.png  used on input line 764.
 (pdftex.def)             Requested size: 179.25114pt x 149.36748pt.
 <../Figures/test_dmc/pdcca69.png, id=595, 867.24pt x 722.7pt>
 File: ../Figures/test_dmc/pdcca69.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca69.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca69.png  used on input line 763.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca69.png  used on input line 764.
 (pdftex.def)             Requested size: 179.25114pt x 149.36748pt.
 
-Overfull \vbox (25.86212pt too high) detected at line 763
+Overfull \vbox (25.86212pt too high) detected at line 764
  []
 
 [59
@@ -1382,15 +1382,15 @@ Overfull \vbox (25.86212pt too high) detected at line 763
 <../Figures/test_dmc/dpdcca4.png, id=603, 867.24pt x 722.7pt>
 File: ../Figures/test_dmc/dpdcca4.png Graphic file (type png)
 <use ../Figures/test_dmc/dpdcca4.png>
-Package pdftex.def Info: ../Figures/test_dmc/dpdcca4.png  used on input line 780.
+Package pdftex.def Info: ../Figures/test_dmc/dpdcca4.png  used on input line 781.
 (pdftex.def)             Requested size: 179.25114pt x 149.36748pt.
 <../Figures/test_dmc/dpdcca69.png, id=604, 867.24pt x 722.7pt>
 File: ../Figures/test_dmc/dpdcca69.png Graphic file (type png)
 <use ../Figures/test_dmc/dpdcca69.png>
-Package pdftex.def Info: ../Figures/test_dmc/dpdcca69.png  used on input line 780.
+Package pdftex.def Info: ../Figures/test_dmc/dpdcca69.png  used on input line 781.
 (pdftex.def)             Requested size: 179.25114pt x 149.36748pt.
 
-Overfull \vbox (25.86212pt too high) detected at line 780
+Overfull \vbox (25.86212pt too high) detected at line 781
  []
 
 [60
@@ -1399,15 +1399,15 @@ Overfull \vbox (25.86212pt too high) detected at line 780
 <../Figures/test_dmc/pdcca_of_T8.._n_4.png, id=612, 462.528pt x 346.896pt>
 File: ../Figures/test_dmc/pdcca_of_T8.._n_4.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca_of_T8.._n_4.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_T8.._n_4.png  used on input line 798.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_T8.._n_4.png  used on input line 799.
 (pdftex.def)             Requested size: 179.25114pt x 134.43668pt.
 <../Figures/test_dmc/pdcca_of_T8.._n_69.png, id=613, 462.528pt x 346.896pt>
 File: ../Figures/test_dmc/pdcca_of_T8.._n_69.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca_of_T8.._n_69.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_T8.._n_69.png  used on input line 798.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_T8.._n_69.png  used on input line 799.
 (pdftex.def)             Requested size: 179.25114pt x 134.43668pt.
 
-Overfull \vbox (10.93132pt too high) detected at line 798
+Overfull \vbox (10.93132pt too high) detected at line 799
  []
 
 [61
@@ -1416,15 +1416,15 @@ Overfull \vbox (10.93132pt too high) detected at line 798
 <../Figures/test_dmc/pdcca_of_Af3._n_4.png, id=622, 462.528pt x 346.896pt>
 File: ../Figures/test_dmc/pdcca_of_Af3._n_4.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca_of_Af3._n_4.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_Af3._n_4.png  used on input line 817.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_Af3._n_4.png  used on input line 818.
 (pdftex.def)             Requested size: 179.25114pt x 134.43668pt.
 <../Figures/test_dmc/pdcca_of_Af3._n_69.png, id=623, 462.528pt x 346.896pt>
 File: ../Figures/test_dmc/pdcca_of_Af3._n_69.png Graphic file (type png)
 <use ../Figures/test_dmc/pdcca_of_Af3._n_69.png>
-Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_Af3._n_69.png  used on input line 817.
+Package pdftex.def Info: ../Figures/test_dmc/pdcca_of_Af3._n_69.png  used on input line 818.
 (pdftex.def)             Requested size: 179.25114pt x 134.43668pt.
 
-Overfull \vbox (10.93132pt too high) detected at line 817
+Overfull \vbox (10.93132pt too high) detected at line 818
  []
 
 [62

@@ -1,0 +1,133 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+
+\begin{flushright}
+``Ordinary life is pretty complex stuff.''\\[10px]
+(Harvey Pekar)
+\end{flushright}
+
+Os sistemas complexos compreendem um campo interdisciplinar da ciência, cujo escopo de problemas que trata não possui uma definição exata. Este conjunto amplo de fenômenos é comumente identificado e agrupado por algumas de suas características: são formados pela contribuição de um conjunto (geralmente grande) de componentes (muitas vezes simples) que, interagindo, estruturam-se de forma auto-organizada, gerando resultados inesperados, que não podem ser previstos pelos estudos estatísticos e/ou matemáticos tradicionais dos elementos formadores do sistema.
+
+Na área dos estudos ambientais, os sistemas complexos aparecem em problemas de diversas naturezas: sistemas de transportes, redes de energia e comunicação, organizações sociais e econômicas, densidade e ocupação humana do espaço, dentre outas. Os estudos do clima e de variáveis meteorológicas ocupam um espaço de particular relevância na intercessão entre os estudos ambientais e os sistemas complexos. Em 2021, a Academia Real das Ciências da Suécia concedeu metade do Prêmio Nobel de Física para Syukuro Manabe e Klaus Hasselmann, cujos estudos apresentam modelos complexos para a análise do clima, em particular apontando para uma correlação entre as emissões de dióxido de carbono e as mudanças climáticas.
+
+Muitos fenômenos complexos são investigados pela análise de grandes conjuntos de dados. É notável a velocidade e quantidade de dados que são gerados, obtidos e armazenados pela humanidade atualmente. A aquisição, manipulação, gestão, armazenamento e criação de valor a partir de dados, através de ambientes computacionais, tem-se apresentado como um novo paradigma tecnológico. Um campo do conhecimento que recebeu a denominação de Ciência de Dados, conceito que envelopa alguns termos frequentemente associados à inovação científica, técnica e social como \emph{Big Data}, mineração de dados, \emph{Business Intelligence} internet das coisas, inteligência artificial (IA) e aprendizado de máquina (AM), dentre outros \cite[p. 12-13]{EMCdata2015}.
+
+Uma das formas em que os dados costumam ser organizados são as denominadas séries temporais. As séries temporais são definidas como um conjunto de observações (numéricas ou categóricas) ordenado no tempo.  Embora muitos dos dados que descrevem as dinâmicas espaciais podem ser registrados na forma de sérias temporais (abastecimento de água nas tubulações, consumo de energia elétrica nos imóveis, fluxos de pessoas e veículos pela cidade, casos de uma doença por dia, etc.), contudo as técnicas de medição de correlações, bem como a devida exploração destas para inferir novos conhecimentos, permanecem como perguntas abertas em muitas sub-áreas das ciências ambientais~\cite{Bermudez-Edo2018}.
+
+\section{Definição do problema}
+\label{sec:problema}
+
+As séries temporais registram aspectos fundamentais de uma série de problemas, de diversas áreas que, devidamente abordados, podem clarificar características e comportamentos destas estruturas de dados. 
+
+O coeficiente \dmc~é uma ferramenta promissora para a análise de correlações em séries temporais múltiplas, permitindo a identificação de padrões complexos que não são capturados por métodos tradicionais. No entanto, sua aplicação em problemas reais ainda é limitada devido à falta de implementações computacionais eficientes e estudos que explorem seu potencial em diferentes contextos.
+
+
+
+\section{Objetivos}
+\label{sec:Objetivos}
+
+Neste trabalho, tem-se por objetivo investigar a aplicabilidade do \pdcca~e do \dmc com o objetivo, não só de identificar correlações entre variáveis, mas também de entender o algoritmo, propor e aperfeiçoar ferramentas computacionais para a realização dos cálculos.
+
+Como objetivos gerais foram elencados:
+
+\begin{enumerate}
+    \label{enum:obj_espec}
+    \item  Testar os algoritmos e os métodos.
+    \item Implementar um algoritmo computacional geral para calcular o \dmc para qualquer número de séries temporais.
+    \item Testar as ferramentas implementadas em novas análises.
+\end{enumerate}
+
+\section{Importância da Pesquisa}
+\label{sec:justificativa}
+
+A pesquisa que propõe melhorias no algoritmo e a implementação de uma ferramenta para o cálculo do \dcca, \pdcca~e \dmc~é de grande relevância, pois aborda um problema computacional desafiador e ainda pouco explorado. A eficiência no cálculo destes métodos é essencial para viabilizar sua aplicação em conjuntos de dados de grande escala, que são cada vez mais comuns em diversas áreas do conhecimento. Além disso, a disponibilização de uma ferramenta computacional robusta e acessível pode democratizar o uso do método, permitindo que pesquisadores de diferentes áreas possam utilizá-lo sem a necessidade de desenvolver suas próprias implementações.
+
+A proposta de melhorias no algoritmo também tem implicações diretas na precisão e na escalabilidade das análises realizadas com o \dmc. Métodos computacionalmente custosos podem limitar o tamanho dos conjuntos de dados analisados ou mesmo inviabilizar estudos em contextos onde o tempo de processamento é crítico. Ao otimizar o cálculo do \dmc, a pesquisa contribui para superar essas limitações, abrindo caminho para novas aplicações e para a exploração de padrões complexos em séries temporais múltiplas.
+
+No contexto das ciências ambientais, as implicações são particularmente significativas. A análise de séries temporais de variáveis climáticas e meteorológicas é fundamental para entender fenômenos como mudanças climáticas, padrões de precipitação e distribuição de energia solar. As redes elétrica, de água e de dados são fontes de informações únicas sobre a dinâmica de uma cidade. A mobilidade de pessoas e mercadorias são problemas desafiadores para gestores, planejadores e empresas privadas. Séries temporais também são exploradas no contexto de dados sísmicos, tanto para antevisão e planejamento diante de ua catástrofe natural, quanto para o mapeamento do sub-solo e identificação de recursos geológicos. Uma ferramenta eficiente para o cálculo do \dmc~pode auxiliar na identificação de correlações entre variáveis ambientais ou com forte implicação no espaço e nas dinâmicas locais, contribuindo para o desenvolvimento de modelos analíticos mais precisos e para a formulação de políticas públicas baseadas em dados confiáveis.
+
+\section{Viabilidade e Limitações}
+\label{sec:limites}
+
+
+A implementação e melhoria dos algoritmos propostos apresentam alta viabilidade, uma vez que não demandam recursos computacionais excepcionais. A maior parte das operações envolvidas, como manipulação de matrizes e cálculos estatísticos, pode ser realizada em computadores domésticos de configurações medianas, resultando em um baixo investimento financeiro.
+
+A viabilidade como análise de hipóteses existe. Certamente limitações como o peso computacional são mais difíceis de antever, mas devem ser levadas em
+conta desde o princípio.
+
+A obtenção de conjuntos de dados reais e confiáveis é um desafio significativo que pode limitar o progresso de pesquisas como esta. A disponibilidade de dados de qualidade frequentemente depende de fatores externos, como acesso a fontes restritas, custos associados à aquisição ou limitações técnicas na coleta e armazenamento.
+
+De resto, vale lembrar que a honestidade do trabalho científico pode levar a resultados que validam, total ou parcialmente, ou invalidam as conjecturas inicias. Apenas com a atenta avaliação dos experimentos realizados pode-se entender os ganhos obtidos no percurso. A análise dos dados meteorológicos será aplicada para descrever esse percurso, independente do status da validação dos resultados.
+
+
+\section{Questões e Hipóteses}
+\label{sec:questoes}
+
+Este projeto foi baseado em algumas premissas:
+
+\begin{enumerate}
+    \label{enum:premissas}
+
+    \item O \dmc, pelas características de análise do método, pode ajudar a entender características de séries temporais e aplicado em problemas de diversas áreas.
+    \item O \dmc~é uma generalização do método \pdcca~para múltiplas séries temporais.
+	\item O \pdcca, em determinadas condições testadas, apresentou resultados mais interessantes (como melhor descrição dos fenômenos) que os apresentados pelo coeficiente de Pearson quando aplicado à séries temporais não estacionárias~\cite{Wang2013}. 
+\end{enumerate}
+
+Partindo destas premissas, procuramos responder perguntas basilares:
+
+\begin{enumerate}
+    \label{enum:quest}
+    \item Poderia-se criar uma ferramenta computacional eficaz para o cálculo dos coeficientes?
+    \item Poderia-se encontrar uma alternativa mais eficaz o cálculo dos coeficientes, principalmente o recente \dmc?
+    \item A implementação e melhorias, se bem sucedidas, poderiam ampliar o número de possíveis investigações em que os coeficientes podem ser aplicados?
+\end{enumerate}
+
+Para orientar o trabalho, as seguintes hipóteses foram formuladas:
+
+\begin{enumerate}
+    \item É possível otimizar os cálculos do \pdcca~e do \dmc.
+    \item Com maior poder de cálculo a aplicação dos coeficientes seria potencializada.
+	\item Uma ferramenta adequada para o cálculo dos coeficientes seria um impulso na utilização e divulgação destes.
+\end{enumerate}
+
+\section{Metodologia}
+\label{sec:metodologia}
+
+A metodologia utilizada neste projeto insere-se dentro da abordagem metodológica experimental, estruturada em três etapas principais.
+
+A primeira etapa consiste em uma revisão bibliográfica abrangente, com o objetivo de compreender os fundamentos teóricos e metodológicos relacionados ao \dfa, \dcca, \pdcca~e \dmc. Nesta fase, busca-se consolidar o entendimento sobre os algoritmos e metodologias vigentes, bem como identificar lacunas e oportunidades de melhoria nos métodos existentes.
+
+Na segunda etapa, realiza-se uma avaliação detalhada das possibilidades e limitações das ferramentas computacionais disponíveis para o cálculo dos coeficientes. Essa avaliação se dará através de uma pesquisa que aplica os métodos, utilizando as ferramentas de cálculo existente. Este procedimento deve embasar o pesquisador para analisar, criticar e avaliar as possibilidades e limitações das ferramentas, das pesquisas e das preguntas que podem ser formuladas e respondidas através do ferramental vigente.
+
+Com base nessa análise, é proposta a implementação de uma nova ferramenta computacional, com foco na otimização do algoritmo, na praticidade do uso e na eficiência do cálculo. Essa etapa envolve o desenvolvimento, teste e validação da ferramenta, garantindo que ela seja robusta e capaz de lidar com conjuntos de dados de diferentes tamanhos e complexidades.
+
+Por fim, na terceira etapa, a ferramenta desenvolvida é aplicada a um conjunto de dados complexo, com o objetivo de testar os avanços proporcionados pela implementação. Essa aplicação prática permite avaliar a eficácia das melhorias realizadas, bem como explorar novas possibilidades de análise e interpretação de padrões em séries temporais múltiplas.
+
+Essa abordagem metodológica experimental permite não apenas validar as hipóteses formuladas, mas também contribuir para o avanço do estado da arte na análise de correlações em séries temporais, com implicações práticas em diversas áreas do conhecimento.
+
+\section{Organização da Tese}
+\label{sec:organizacao}
+
+Esta Tese está dividida em capítulos, sendo que um deles versa sobre as pesquisas e artigos produzidos durante o doutorado. Após uma breve introdução do objeto de estudo, realizada no presente capítulo, segue:
+
+Uma revisão da literatura, no Capítulo~\ref{cap:fund_teorica}, abrangendo nos métodos de correlação entre séries temporais basados no \dfa, com um foco específico no estudo de métodos que propõe alguma forma de correlação entre as séries.
+
+O Capítulo~\ref{cap:cap3} apresenta a produção científica em fora de artigos. Uma sequência de pesquisas que compõem o cerne da Tese. Saõ trabalhos independentes porem interconectados que são apresentados em seguir:
+
+\begin{itemize}
+
+\item A Sessão~\ref{sec:paper_01} apresenta um artigo publicado, apresentando uma aplicação do \dmc~na análise de múltiplas séries temporais. Uma contribuição para a análise de séries de ondas cerebrais,captadas por eletroencefalograma (EEG) também é apresentada.
+
+\item A Sessão~\ref{sec:paper_02} apresenta um artigo ainda não publicado que trata da implementação de uma ferramenta computacional que possibilita velocidade e \emph{usabilidade} no cálculo dos algorítimos do \dfa, \dcca~e \pdcca. Além da implementação da biblioteca, o artigo apresenta como contribuição, uma mudança na sequência de passos extremamente vantajosa para o cálculo do \dcca~e \pdcca, principalmente para cálculo com muitas séries paralelas, como no caso da atribuição de valores na matriz do \pdcca~para cálculo do \dmc.
+
+\item A Sessão~\ref{sec:paper_03} apresenta um experimento utilizando a ferramenta computacional desenvolvida. Testa critérios de semelhança entre séries temporais e aponta a possibilidade de se usar esses critérios na seleção de atributos de algoritmos de aprendizado de máquina.
+
+\end{itemize}
+
+O Capitulo~\ref{cap:coclusion} por fim, apresenta a conclusão da Tese.
+
+O Anexo~\ref{an:a}~apresenta um artigo de co-autoria do discente desta Tese. Esse artigo é anterior ao artigo apresentado no Capítulo~\ref{cap:cap3}, Sessão~\ref{sec:paper_01}. Apresenta análise de dados oriundos da mesma base utilizada no Capítulo~\ref{cap:cap3}, Sessão~\ref{sec:paper_01} utilizando o coeficiente \pdcca~na análise dos dados.
+
+O Anexo~\ref{an:b}~apresenta registros de \emph{sotwares} e de documentação técnica oriundos do desenvolvimento desta Tese.
+
