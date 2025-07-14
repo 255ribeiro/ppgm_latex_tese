@@ -200,6 +200,32 @@ A inversa de cada uma das $42$ matrizes do \pdcca~também foi calculada em menos
 
 É evidente o aumento na quantidade de informações que se pode obter e tratar com as ferramentas computacionais desenvolvidas neste trabalho. É necessário desenvolver instrumentos para acessar essas informações.
 
+\begin{figure}[ht]
+  \caption{Matriz de correlação do \pdcca.}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca4.png}
+    \caption{\pdcca~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca69.png}
+    \caption{\pdcca~$n = 69$}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[ht]
+  \caption{Matriz de correlação do $DPDCCA$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/dpdcca4.png}
+    \caption{$DPDCCA$~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/dpdcca69.png}
+    \caption{$DPDCCA$~$n = 69$}
+  \end{minipage}
+\end{figure}
+
 
 
  
@@ -304,7 +330,34 @@ A Tabela~\ref{tab:time_4} apresenta os resultados dos cinco métodos para $n=4$.
 
   Na tabela~\ref{tab:time_69} ve-se resultados semelhantes. Nesta escala temporal com maior multi-correlação, aparece o $\Sigma DPDCCA$ um pouco acima dos outros e com o critério $DPDCCA$ mais próximos dos demais. Diferenças entre os canais escolhidos em uma escala temporal para a outra também foram registrados.
 
-  A semelhança entre os critérios \pdcca~e $|$ \pdcca $|$~ se deve à característica do sistema de além de ser fortemente muli-correlacionado, também é positivamente multi-correlacionado. Desconsiderando o \pdcca~de um canal com ele mesmo, os valores de \pdcca~variam de $0.9995$ até o mínimo de $-0.2281$. Não existem anti-correlações significativas em nenhuma das escalas temporais calculadas. 
+  A semelhança entre os critérios \pdcca~e $|$ \pdcca $|$~ se deve à característica do sistema de além de ser fortemente muli-correlacionado, também é positivamente multi-correlacionado. Desconsiderando o \pdcca~de um canal com ele mesmo, os valores de \pdcca~variam de $0.9995$ até o mínimo de $-0.2281$. Não existem anti-correlações significativas em nenhuma das escalas temporais calculadas.
+  
+  \begin{figure}[ht]
+  \caption{Gráfico cumulativo do \dmc - Channel: Tf8~$n = 69$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_4.png}
+    \caption{Channel: Tf8~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_69.png}
+    \caption{Channel: Tf8~$n = 69$}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[ht]
+  \caption{Gráfico cumulativo do \dmc - Channel: Af3~$n = 69$}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_4.png}
+    \caption{Channel: Af3~$n = 4$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_69.png}
+    \caption{Channel: Af3~$n = 69$}
+  \end{minipage}
+\end{figure}
+
 
 \subsection{Conclusão}
 
