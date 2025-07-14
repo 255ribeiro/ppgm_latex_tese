@@ -7,18 +7,49 @@
   (John Archibald Wheeler)
 \end{flushright}
 
-O presente capítulo apresenta uma revisão bibliográfica dos métodos utilizados, iniciando por uma explicação passo a passo do método para calcular o \dfa~e o \dcca, sem os quais o \pdcca~e o \dmc~não podem ser entendidos, seguindo pela explanação do cálculo do \pdcca~e do \dmc, como se dá a leitura dos resultados e como são aplicados em análises.
+
+O presente capítulo apresenta uma revisão bibliográfica dos métodos utilizados, iniciando com a definições preliminares, seguindo pela explicação passo a passo do método para calcular o \dfa~e o \dcca, sem os quais o \pdcca~e o \dmc~não podem ser entendidos, seguindo pela explanação do cálculo do \pdcca~e do \dmc, como se dá a leitura dos resultados e como são aplicados em análises.
 
 Em seguida apresenta-se as relações dos métodos com a geometria fractal e multifractal, conceitos importantes nas análises das séries temporais propostas pelos métodos derivados do \dfa.~Apresentamos também metodologia e algorítimo para da determinação da multifractalidade de uma série temporal, segundo o \dfa.
 
 Na Sessão~\ref{ss:vari_cross}, apresenta-se uma seleção de outros algoritmos que, além do \dmc, trabalham com correlações múltiplas baseadas no \dfa. Algoritmos selecionados são apresentados.
 
-Na Sessão~\ref{ss:aplica}, apresenta-se aplicações do que está família de metodologias já foi aplicada, ressaltando a gama de problemas e os mais relacionados cm as ciências ambientais.
+Na Sessão~\ref{ss:aplica}, apresenta-se aplicações do que está família de metodologias já foi aplicada, ressaltando a gama de problemas e os mais relacionados com as ciências ambientais.
+
+\section{Definições preliminares}
+\label{sec:def_pre}
+
+O conceito de correlação pode ser definido como uma medida de associação entre duas ou mais conjuntos de variáveis. Como exemplo podemos citar a correlação de Pearson, uma medida de correlação linear entre dois conjuntos de dados. Para entender o cálculo do coeficiente de Pearson é preciso entender importantes medidas de de dispersão: o desvio padrão e a variância.
+
+A média é uma importante medida de posição para os valores de uma determinada variável. Por medida de posição pode-se entender que a média, soma de todos os valores medidos para uma variável, marca um único valor para toda a série. Embora uma medida importante, a média não apresenta como esses valores se distribuem ao logo das retas. As medidas que procuram capturar a oscilação dos valores são chamadas e medidas de dispersão. As mais importantes destas medidas são a variância ($\sigma^2$) e o desvio padrão  ($\sigma^2$), calculadas de acordo com as Equações \ref{eq:var} e \ref{eq:std} para uma determinada população.
+
+\begin{equation}\label{eq:var}
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
+\end{equation}
+
+\begin{equation}\label{eq:std}
+  \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
+\end{equation}
+
+As duas medidas partem do mesmo princípio: um somatório da diferença entre os valores e a média (desvio) dividido pelo número de observações. Como a somatória destes valores, considerando os positivos, (à direta do valor médio) e negativos (à esquerda da média), seria igual à zero, no cálculo da variância e do desvio padrão, esses valores são elevados ao quadrado. No caso da variância média do somatório dos desvios é calculada e no caso do desvio padrão temos a raiz quadrada da variância. 
+
+\begin{equation}\label{eq:cov}
+  \text{cov}(X,Y) = \frac{1}{N} \sum_{i=1}^{N}(X - \mu_X)(Y - \mu_Y)
+\end{equation}
+
+É possível estabelecer relações entre dois conjuntos de observações a partir da variância e do desvio padrão, mas a covariância consegue atribuir um valor para essa comparação. A covariância (Eq. \ref{eq:cov}) mede o grau de dependência numérica entre duas variáveis. Quando duas variáveis são independentes entre si o valor da covariância é zero. 
+
+\begin{equation}\label{eq:pearson}
+  \rho = \frac{\text{cov}(X,Y)}{\sigma_X \sigma_Y}
+\end{equation}
+
+A correlação de Pearson é um coeficiente de correlação linear, que normaliza os valores da covariância entre $-1$(ante-correlação) e $1$(correlação). Seu cálculo é a razão da covariância entre duas variáveis e o produto dos desvios padrões das mesmas (Eq: \ref{eq:pearson}).
+
 
 \section{Métodos de Análise de Séries Temporais: \dfa, \dcca, \pdcca~e \dmc}
 \label{sec:dmc}
 
-O coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}.\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
+Assim como o coeficiente de Pearson é baseado no desvio padrão e na covariância, o coeficiente \pdcca~\cite{Zebende2011} foi formulado tendo como bases o \emph{Detrended Fluctuation Analysis} (\dfa)~\cite{Peng_1994} e o \emph{Detrended Cross-Correlation Analysis} (\dcca)~\cite{Podobnik2008}. O DFA é um método de análise de uma série temporal que fornece um parâmetro de auto-afinidade. O termo \emph{Detrended} refere-se a eliminação de uma tendência. O processo é executado em 6 passos, como mostrado no Algoritmo~\ref{alg:dfa}.\footnote{Aqui considera-se o cálculo com sobreposição de caixas.}
 
 
 \begin{algorithm} \caption{\dfa} \label{alg:dfa}
@@ -48,7 +79,9 @@ O \dfa~caso tenha uma relação de potência (calda longa) entre $fdfa$ e $n$, e
 \item $\alpha \simeq 3/2$: Ruído browniano.
 \end{itemize}
 
-Para o ajuste do polinômio, definido como a tendência, costuma utilizar um polinômio de primeira ordem, mas existem estudos que comparam o efeito que a ordem do polinômio exerce sobre a análise e a capacidade do polinômio de maior grau capturar a tendência da série \cite{huEffectTrendsDetrended2001}.  
+Para o ajuste do polinômio, definido como a tendência, costuma utilizar um polinômio de primeira ordem, mas existem estudos que comparam o efeito que a ordem do polinômio exerce sobre a análise e a capacidade do polinômio de maior grau capturar a tendência da série \cite{huEffectTrendsDetrended2001}.
+
+O passo 4 do Algoritmo do \dfa~(Alg. \ref{alg:dfa}) apresenta o relação com o cálculo da desvio padrão (Eq: eq:std). Enquanto o desvio padrão soma os quadrados dos valores subtraídos da média, nesta etapa do algoritmo do \dfa~calcula-se o somatório da diferença entre os valores da série integrada com o valor do polinômio de tendência.
 
 O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries temporais \cite{Podobnik2008}. O valor deste coeficiente tende a ser a média dos valores do \dfa~das duas séries e segue os 6 passos descritos no Algoritmo~\ref{alg:dcca}.
 
@@ -72,14 +105,17 @@ O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries tempora
 \end{enumerate}
 \end{algorithm}
 
-Este expoente \(\lambda\) indica a existência de uma correlação entre duas séries regidas por leis de potência, mas não quantifica o nível desta correlação. O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_dcca}) é um coeficiente que, variando entre -1 e 1, aponta ausência de correlação cruzada para valores próximos de zero, sendo maior a correlação quanto mais o valor se aproximar de 1 e maior a anti-correlação quanto mais o valor se aproximar de -1~\cite{Zebende2011}.
+O \dcca~atesta a existência de uma correlação entre duas séries mas não quantifica o nível desta correlação. Assim como a etapa 4 do Algoritmo do \dfa~apresenta uma relação com o desvio padrão, o \dcca aproxima-se da covariância.
 
+O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_dcca}) é um coeficiente que, variando entre -1 e 1, aponta ausência de correlação cruzada para valores próximos de zero, sendo maior a correlação quanto mais o valor se aproximar de 1 e maior a anti-correlação quanto mais o valor se aproximar de -1~\cite{Zebende2011}.
 
 \begin{equation}
   {\rho}_{DCCA}(n) = \frac{F_{DCCA~(x^{j1},~x^{j2})}^{2}(n)}
   {F_{DFA~(x^{j1})}(n) \times F_{DFA~(x^{j2})}(n)}
   \label{eq:p_dcca}
 \end{equation}
+
+
 
 O método foi estatisticamente validado~\cite{PhysRevE.84.066118}, testado~\cite{vassolerZebende2012, Guedes2017, Ferreira2018},
 e critérios para avaliação de relevância estatísticas do resultados foram desenvolvidos~\cite{Guedes2018,Guedes2018a}.

@@ -22,11 +22,21 @@ As séries temporais registram aspectos fundamentais de uma gama de problemas, d
 
 Uma das ferramentas utilizadas para analisar correlações entre séries temporais é o coeficiente \pdcca, que permite quantificar a relação entre duas séries, mesmo quando estas apresentam tendências não estacionárias. O \pdcca~é especialmente útil em contextos onde os métodos tradicionais, como o coeficiente de Pearson, não são adequados devido à presença de tendências ou ruídos de longa duração nas séries analisadas.
 
-O coeficiente \dmc~é também é uma ferramenta promissora para a análise de correlações em séries temporais múltiplas, permitindo a identificação de padrões complexos que não são capturados por métodos tradicionais. O cálculo deste coeficiente envolve o cálculo do \pdcca~de todas as múltiplas séries em combinação duas à duas.
+O coeficiente \dmc~é uma ferramenta promissora para a análise de correlações em séries temporais múltiplas, permitindo a identificação de padrões complexos que não são capturados por métodos tradicionais. O cálculo deste coeficiente envolve o cálculo do \pdcca~de todas as múltiplas séries em combinação duas à duas.
 
-No entanto, sua aplicação em problemas reais ainda é limitada devido à falta de implementações computacionais eficientes e estudos que explorem seu potencial em diferentes contextos.
+Os cálculos do \pdcca~e por extensão,  do \dmc~passam pelos cálculos do \dcca~e \dfa~em determinadas etapas, que carregam boa parte do custo computacional do processo todo.
 
+As publicações que fazem estudos com o \pdcca, tem ao seu dispor algumas opções de ferramentas computacionais com esses cálculos, que basicamente pertencem a dois grupos: os implementados em linguagens interpretadas, como Python e R, que apresentam tempos de computação maiores, por outro lado, maior facilidade de manipular e visualizar as entradas e resultados, os implementados linguagens de mais baixo nível, com maior velocidade, mas permitido menos flexibilidade no pre-processamento e na análise dos resultados, sejam esses gráficos ou numéricos. Esses últimos geralmente são desenvolvidos internamente nos grupos de pesquisa e pouco compartilhados entre os pares.
 
+No caso do \dmc~não existem pacotes disponíveis. Este algoritmo, pela necessidade de calcular a combinação dois a dois de todas as séries envolvidas, trás uma nova complexidade para o cálculo e maior custo computacional. As características do cálculo deste coeficiente podem ser estudadas e benefícios podem ser extraídos dos conhecimentos adquiridos no processo.
+
+Além disso, não está disponível uma implementação geral do \dmc~para qualquer número de séries temporais. Os artigos publicados até então utilizam 3 series apenas. Fazendo com que os pesquisadores tenham que implementar o código para cada número de séries temporais. Isso limita e traz lentidão ao processo.
+
+A integração com eco-sistemas de cálculo estatístico como os do Python e do R é fundamental para o trabalho da ciência de dados de hoje, assim como o desempenho, principalmente para lidar com grandes conjuntos de dados.
+
+Em resumo, por um lado temos coeficientes reconhecidos pela comunidade científica, aplicados em problemas diversos, mas sem ferramentas que consigam ao mesmo tempo entregar um desempenho que viabilize trabalhar com múltiplas séries de longa duração e uma integração com os principais eco-sistemas de ciência de dados.
+
+Essa pesquisa procura entregar uma solução eficiente para o cálculo do \dfa, \dcca. \pdcca~e \dmc, totalmente integrada com as ferramentas do Python de manipulação de dados, matemática, estatística, inteligência artificial e visualização de dados, resolvendo esse diálogo de forma eficiente. Procurando melhorar a velocidade de processamento, principalmente para o processamento de múltiplas séries temporais; oferecendo uma implementação que possa ser aplicada para qualquer número de series temporais.
 
 \section{Objetivos}
 \label{sec:Objetivos}
