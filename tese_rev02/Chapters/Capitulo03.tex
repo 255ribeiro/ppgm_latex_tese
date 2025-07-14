@@ -200,8 +200,9 @@ A inversa de cada uma das $42$ matrizes do \pdcca~também foi calculada em menos
 
 É evidente o aumento na quantidade de informações que se pode obter e tratar com as ferramentas computacionais desenvolvidas neste trabalho. É necessário desenvolver instrumentos para acessar essas informações.
 
+A Figura \ref{fig:mat_cor_pdcca} apresenta as matrizes de correlação do \pdcca~para todos os canais, nas escalas temporais $n=4$ e $n=69$. A aplicação do coeficiente descreve um sistema altamente correlacionado positivamente, mesmo na escala $n=4$, mas sendo ainda maior na escala $n=69$. 
 \begin{figure}[ht]
-  \caption{Matriz de correlação do \pdcca.}
+  \caption{Matriz de correlação do \pdcca}\label{fig:mat_cor_pdcca}
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{./Figures/test_dmc/pdcca4.png}
     \caption{\pdcca~$n = 4$}
@@ -213,8 +214,10 @@ A inversa de cada uma das $42$ matrizes do \pdcca~também foi calculada em menos
   \end{minipage}
 \end{figure}
 
+A Figura \ref{fig:mat_cor_dpdcca}, retrata as matrizes de correlação do $DPDCCA$~para as mesmas escalas temporais. A proposta do $DPDCCA$ é mostrar o quando duas variáveis se relacionam ,levando em conta as outras variáveis do sistema, acaba mostrando uma matriz com a maioria dos valores próximos a zero, com algumas combinações de variáveis se destacando em relação ao sistema. Esses resultados devem ser melhor estudados em trabalhos futuros. 
+
 \begin{figure}[ht]
-  \caption{Matriz de correlação do $DPDCCA$}
+  \caption{Matriz de correlação do $DPDCCA$}\label{fig:mat_cor_dpdcca}
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{./Figures/test_dmc/dpdcca4.png}
     \caption{$DPDCCA$~$n = 4$}
@@ -333,10 +336,10 @@ A Tabela~\ref{tab:time_4} apresenta os resultados dos cinco métodos para $n=4$.
   A semelhança entre os critérios \pdcca~e $|$ \pdcca $|$~ se deve à característica do sistema de além de ser fortemente muli-correlacionado, também é positivamente multi-correlacionado. Desconsiderando o \pdcca~de um canal com ele mesmo, os valores de \pdcca~variam de $0.9995$ até o mínimo de $-0.2281$. Não existem anti-correlações significativas em nenhuma das escalas temporais calculadas.
   
   \begin{figure}[ht]
-  \caption{Gráfico cumulativo do \dmc - Channel: Tf8~$n = 69$}
+  \caption{Gráfico cumulativo do \dmc - Channel: T8~$n = 69$}
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_4.png}
-    \caption{Channel: Tf8~$n = 4$}
+    \caption{Channel: T8~$n = 4$}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
