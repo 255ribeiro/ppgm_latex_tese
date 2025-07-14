@@ -105,9 +105,9 @@ O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries tempora
 \end{enumerate}
 \end{algorithm}
 
-O \dcca~atesta a existência de uma correlação entre duas séries mas não quantifica o nível desta correlação. Assim como a etapa 4 do Algoritmo do \dfa~apresenta uma relação com o desvio padrão, o \dcca aproxima-se da covariância.
+O \dcca~atesta a existência de uma correlação entre duas séries mas não quantifica o nível desta correlação. Assim como a etapa 4 do Algoritmo do \dfa~apresenta uma relação com o desvio padrão, o \dcca~aproxima-se da covariância.
 
-O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_dcca}) é um coeficiente que, variando entre -1 e 1, aponta ausência de correlação cruzada para valores próximos de zero, sendo maior a correlação quanto mais o valor se aproximar de 1 e maior a anti-correlação quanto mais o valor se aproximar de -1~\cite{Zebende2011}.
+O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_dcca}) é um coeficiente que, variando entre $-1$~e $1$, aponta ausência de correlação cruzada para valores próximos de zero, sendo maior a correlação quanto mais o valor se aproximar de 1 e maior a anti-correlação quanto mais o valor se aproximar de -1~\cite{Zebende2011}.
 
 \begin{equation}
   {\rho}_{DCCA}(n) = \frac{F_{DCCA~(x^{j1},~x^{j2})}^{2}(n)}
@@ -115,7 +115,7 @@ O \emph{Detrended cross-correlation coefficient} ou \pdcca~(equação \ref{eq:p_
   \label{eq:p_dcca}
 \end{equation}
 
-
+Considerando a proximidade do \dfa~com o desvio padrão e do \dcca~com a covariância (na etapa número 4), p \pdcca~apresenta grande semelhança com o coeficiente de Pearson, substituindo a covariância pelo \dcca~e os desvios padrões pelos respectivos valores do \dfa.
 
 O método foi estatisticamente validado~\cite{PhysRevE.84.066118}, testado~\cite{vassolerZebende2012, Guedes2017, Ferreira2018},
 e critérios para avaliação de relevância estatísticas do resultados foram desenvolvidos~\cite{Guedes2018,Guedes2018a}.
