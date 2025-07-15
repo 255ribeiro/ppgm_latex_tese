@@ -186,7 +186,6 @@ O código fonte da biblioteca \emph{Zebende} está disponível em \url{https://g
 	\includegraphics[width=.95\textwidth]{./Figures/art_03/dmc_all.png}
   \captionsetup{justification=centering}
   \caption{\dmc~de todo os canais do experimento[1:63] para cada canal como variável dependente.\\Fonte: Elaborada pelos autores}
-
 	\label{fig:a03_dmc_total}
 \end{figure}
 
@@ -202,7 +201,7 @@ A inversa de cada uma das $42$ matrizes do \pdcca~também foi calculada em menos
 
 A Figura \ref{fig:mat_cor_pdcca} apresenta as matrizes de correlação do \pdcca~para todos os canais, nas escalas temporais $n=4$ e $n=69$. A aplicação do coeficiente descreve um sistema altamente correlacionado positivamente, mesmo na escala $n=4$, mas sendo ainda maior na escala $n=69$. 
 \begin{figure}[ht]
-  \caption{Matriz de correlação do \pdcca}\label{fig:mat_cor_pdcca}
+  \caption{Matriz de correlação do \pdcca}
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{./Figures/test_dmc/pdcca4.png}
     \caption{\pdcca~$n = 4$}
@@ -212,12 +211,14 @@ A Figura \ref{fig:mat_cor_pdcca} apresenta as matrizes de correlação do \pdcca
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca69.png}
     \caption{\pdcca~$n = 69$}
   \end{minipage}
+  \captionsetup{justification=centering}
+  \caption{Matriz de correlação do \pdcca.\\Fonte: Elaborada pelos autores}\label{fig:mat_cor_pdcca}
 \end{figure}
 
 A Figura \ref{fig:mat_cor_dpdcca}, retrata as matrizes de correlação do $DPDCCA$~para as mesmas escalas temporais. A proposta do $DPDCCA$ é mostrar o quando duas variáveis se relacionam ,levando em conta as outras variáveis do sistema, acaba mostrando uma matriz com a maioria dos valores próximos a zero, com algumas combinações de variáveis se destacando em relação ao sistema. Esses resultados devem ser melhor estudados em trabalhos futuros. 
 
 \begin{figure}[ht]
-  \caption{Matriz de correlação do $DPDCCA$}\label{fig:mat_cor_dpdcca}
+  
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{./Figures/test_dmc/dpdcca4.png}
     \caption{$DPDCCA$~$n = 4$}
@@ -225,8 +226,10 @@ A Figura \ref{fig:mat_cor_dpdcca}, retrata as matrizes de correlação do $DPDCC
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{./Figures/test_dmc/dpdcca69.png}
-    \caption{$DPDCCA$~$n = 69$}
+    \caption{$DPDCCA$~$n = 69$.\\Fonte: Elaborada pelos autores}
   \end{minipage}
+  \captionsetup{justification=centering}
+  \caption{Matriz de correlação do $DPDCCA$.\\Fonte: Elaborada pelos autores.}\label{fig:mat_cor_dpdcca}
 \end{figure}
 
 
@@ -335,8 +338,7 @@ A Tabela~\ref{tab:time_4} apresenta os resultados dos cinco métodos para $n=4$.
 
   A semelhança entre os critérios \pdcca~e $|$ \pdcca $|$~ se deve à característica do sistema de além de ser fortemente muli-correlacionado, também é positivamente multi-correlacionado. Desconsiderando o \pdcca~de um canal com ele mesmo, os valores de \pdcca~variam de $0.9995$ até o mínimo de $-0.2281$. Não existem anti-correlações significativas em nenhuma das escalas temporais calculadas.
   
-  \begin{figure}[ht]
-  \caption{Gráfico cumulativo do \dmc - Channel: T8~$n = 69$}\label{fig:cumula_t8}
+\begin{figure}[ht]
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_4.png}
     \caption{Channel: T8~$n = 4$}
@@ -346,12 +348,15 @@ A Tabela~\ref{tab:time_4} apresenta os resultados dos cinco métodos para $n=4$.
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_T8.._n_69.png}
     \caption{Channel: Tf8~$n = 69$}
   \end{minipage}
+  \captionsetup{justification=centering}
+  \caption{Gráfico cumulativo do \dmc - Channel: T8~$n = 69$.\\Fonte: Elaborada pelos autores.}\label{fig:cumula_t8}
 \end{figure}
 
+A Figura \ref{fig:cumula_t8} apresenta o gráfico do valor do \dmc, tendo o canal \emph{T8} como variável dependente e utilizando o critério \pdcca~para ordenar os resultados. O eixo $x$ apresenta os valores do \dmc~e o eixo $y$, a quantidade de canais utilizados para calcular o \dmc em cada ponto dividido pelo total de canais. Quando o eixo $y$ tem valor igual a $1$ significa que todos os $63$ canais disponíveis foram utilizados como variáveis independentes.A Figura \ref{fig:cumula_af3} aplica o mesmo procedimento utilizado na Figura \ref{fig:cumula_t8}, agora tendo o canal \emph{Af3} como variável dependente. É importante notar que, para melhor visualização, os eixos $x$ e $y$ estão em escalas diferentes.
 
 
 \begin{figure}[ht]
-  \caption{Gráfico cumulativo do \dmc - Channel: Af3~$n = 69$}\label{fig:cumula_af3}
+
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_4.png}
     \caption{Channel: Af3~$n = 4$}
@@ -361,8 +366,12 @@ A Tabela~\ref{tab:time_4} apresenta os resultados dos cinco métodos para $n=4$.
     \includegraphics[width=\textwidth]{../Figures/test_dmc/pdcca_of_Af3._n_69.png}
     \caption{Channel: Af3~$n = 69$}
   \end{minipage}
+  \captionsetup{justification=centering}
+  \caption{Gráfico cumulativo do \dmc - Channel: Af3~$n = 69$.\\Fonte: Elaborada pelos autores.}  \label{fig:cumula_af3}
 \end{figure}
 
+Na Figura \ref{fig:cumula_t8}, para $n = 4$, o valor do \dmc~varia entre $0.52$ e $0.68$ aproximadamente, 
+ 
 
 \subsection{Conclusão}
 
