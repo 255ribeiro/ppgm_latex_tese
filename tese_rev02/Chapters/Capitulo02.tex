@@ -81,7 +81,7 @@ O \dfa~caso tenha uma relação de potência (calda longa) entre $fdfa$ e $n$, e
 
 Para o ajuste do polinômio, definido como a tendência, costuma utilizar um polinômio de primeira ordem, mas existem estudos que comparam o efeito que a ordem do polinômio exerce sobre a análise e a capacidade do polinômio de maior grau capturar a tendência da série \cite{huEffectTrendsDetrended2001}.
 
-O passo 4 do Algoritmo do \dfa~(Alg. \ref{alg:dfa}) apresenta o relação com o cálculo da desvio padrão (Eq: eq:std). Enquanto o desvio padrão soma os quadrados dos valores subtraídos da média, nesta etapa do algoritmo do \dfa~calcula-se o somatório da diferença entre os valores da série integrada com o valor do polinômio de tendência.
+O passo 4 do Algoritmo do \dfa~(Alg. \ref{alg:dfa}) apresenta semelhanças com o cálculo da desvio padrão (Eq: eq:std). Enquanto o desvio padrão soma os quadrados dos valores subtraídos da média, nesta etapa do algoritmo do \dfa~calcula-se o somatório da diferença entre os valores da série integrada com o valor do polinômio de tendência. Enquanto a medida de dispersão aponta o quanto os valores desviam do valo médio, o passo 4 do \dfa analisa quanto os valores flutuam em relação à tendência. Essa é a ideia por trás do termo função de flutuação. Como a tendência é calculada para um conjunto de $n+1$ pontos, o passo cinco aplica a raiz quadrada da média do valores do passo 4 obtidos para cada cada cálculo de uma nova tendência em relação aos pontos utilizados para o ajuste da tedência.
 
 O \dcca~amplia o \dfa~para estabelecer a correlação entre duas séries temporais \cite{Podobnik2008}. O valor deste coeficiente tende a ser a média dos valores do \dfa~das duas séries e segue os 6 passos descritos no Algoritmo~\ref{alg:dcca}.
 
