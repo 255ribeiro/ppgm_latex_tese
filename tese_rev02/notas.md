@@ -1,4 +1,3 @@
-Certainly! Here is a list of feature selection algorithms commonly used for time series data:
 
 1. Autocorrelation: Measures the correlation between a time series and its lagged versions, helping identify relevant lags.
 
